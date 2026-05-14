@@ -1,0 +1,6 @@
+.claude/
+make_og.py
+*.pyc
+.DS_Store
+Thumbs.db
+node_modules/
