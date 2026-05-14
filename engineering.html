@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>TechM4India Engineering — Build Real. Grow Real.</title>
+
+<!-- SEO: Canonical, Open Graph, Twitter Cards -->
+<link rel="canonical" href="https://www.techm4india.com/engineering">
+<meta name="description" content="TechM4Engineering delivers hands-on, project-based engineering education to Indian students. Build real products, gain industry skills, and become a next-generation engineer.">
+<meta name="keywords" content="TechM4Engineering, engineering education India, hands-on engineering, project-based learning, engineering programs India, STEM education">
+<meta name="author" content="TechM4India">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="geo.region" content="IN-TG">
+<meta name="geo.placename" content="Hyderabad, Telangana, India">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.techm4india.com/engineering">
+<meta property="og:title" content="TechM4Engineering — Real-World Engineering Education India">
+<meta property="og:description" content="TechM4Engineering delivers hands-on, project-based engineering education to Indian students. Build real products, gain industry skills, and become a next-generation engineer.">
+<meta property="og:image" content="https://www.techm4india.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="TechM4India - Building India Innovation Ecosystem">
+<meta property="og:site_name" content="TechM4India">
+<meta name="application-name" content="TechM4India">
+<meta name="msapplication-TileColor" content="#2D2DA8">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@techm4india">
+<meta name="twitter:creator" content="@techm4india">
+<meta name="twitter:title" content="TechM4Engineering — Real-World Engineering Education India">
+<meta name="twitter:description" content="TechM4Engineering delivers hands-on, project-based engineering education to Indian students. Build real products, gain industry skills, and become a next-generation engineer.">
+<meta name="twitter:image" content="https://www.techm4india.com/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.techm4india.com/engineering.html#organization",
+      "name": "TechM4Engineering",
+      "parentOrganization": {"@id": "https://www.techm4india.com/#organization"},
+      "url": "https://www.techm4india.com/engineering",
+      "description": "Real-world engineering education through hands-on projects and industry collaboration",
+      "address": {"@type": "PostalAddress","addressCountry": "IN","addressRegion": "Telangana"}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem","position": 1,"name": "Home","item": "https://www.techm4india.com/"},
+        {"@type": "ListItem","position": 2,"name": "TechM4Engineering","item": "https://www.techm4india.com/engineering"}
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.techm4india.com/#organization",
+      "name": "TechM4India Innovations Pvt Ltd","legalName": "TechM4India Innovations Private Limited","brand": {"@type": "Brand","name": "TechM4India"},
+      "alternateName": ["TechM4India", "Tech M4 India", "TechM4", "techm4india"],
+      "url": "https://www.techm4india.com",
+      "logo": {"@type": "ImageObject","url": "https://www.techm4india.com/logo.png"},
+      "description": "TechM4India is India's multi-vertical innovation and education technology company building next-generation learning ecosystems across India.",
+      "foundingDate": "2023",
+      "address": {"@type": "PostalAddress","addressCountry": "IN","addressRegion": "Telangana","addressLocality": "Hyderabad"},
+      "contactPoint": {"@type": "ContactPoint","contactType": "customer support","telephone": "+916301814246","url": "https://www.techm4india.com/contact"},
+      "sameAs": ["https://www.linkedin.com/company/107389911/","https://wa.me/916301814246","https://www.instagram.com/techm4india","https://twitter.com/techm4india"],
+      "subOrganization": [
+        {"@type": "Organization","name": "TechM4Engineering","url": "https://www.techm4india.com/engineering","description": "Real-world engineering education through hands-on projects and industry collaboration"},
+        {"@type": "Organization","name": "TechM4Solutions","url": "https://www.techm4india.com/solutions","description": "Intelligent platform engineering and AI-powered solutions for India"},
+        {"@type": "Organization","name": "TechM4Space Technology","url": "https://www.techm4india.com/space","description": "Space technology education and aerospace innovation ecosystems"},
+        {"@type": "Organization","name": "TechM4Schools","url": "https://www.techm4india.com/schools","description": "K-12 innovation curriculum transforming school education across India"}
+      ]
+    }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --orange:#FF6B35;--pink:#FF4D8D;--purple:#7B2FF7;--blue:#0EA5E9;
+  --green:#22C55E;--yellow:#FFD60A;--ink:#1A1A2E;--bg:#FFFBF5;
+  --g-main:linear-gradient(135deg,#FF6B35,#FF4D8D);
+  --g-cool:linear-gradient(135deg,#0EA5E9,#7B2FF7);
+  --g-warm:linear-gradient(135deg,#FFD60A,#FF6B35);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Quicksand',sans-serif;background:var(--bg);color:var(--ink);overflow-x:hidden}
+h1,h2,h3,h4{font-family:'Nunito',sans-serif;font-weight:900}
+
+/* PROGRESS */
+#progress-bar{position:fixed;top:0;left:0;height:3px;background:var(--g-main);width:0%;z-index:9999;transition:width .1s}
+
+/* LOADER */
+#loader{position:fixed;inset:0;background:var(--ink);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:10000;transition:opacity .6s,visibility .6s}
+#loader.hidden{opacity:0;visibility:hidden}
+.loader-gear-wrap{position:relative;width:80px;height:80px;margin-bottom:20px}
+.gear{position:absolute;border-radius:50%;border:5px solid rgba(255,255,255,.1);animation:spin 1.2s linear infinite}
+.gear-big{width:80px;height:80px;border-top-color:var(--orange);border-right-color:var(--pink)}
+.gear-sm{width:44px;height:44px;top:26px;left:26px;border-top-color:rgba(255,255,255,.3);animation-direction:reverse;animation-duration:.8s}
+@keyframes spin{to{transform:rotate(360deg)}}
+.loader-logo{font-family:'Nunito',sans-serif;font-weight:900;font-size:1.8rem;color:#fff}
+.loader-logo span{background:var(--g-main);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.loader-bar{width:220px;height:4px;background:rgba(255,255,255,.1);border-radius:99px;margin-top:20px;overflow:hidden}
+.loader-fill{height:100%;background:var(--g-main);border-radius:99px;animation:fill 2s ease forwards}
+@keyframes fill{from{width:0}to{width:100%}}
+.loader-tag{color:rgba(255,255,255,.4);font-size:.82rem;margin-top:10px}
+
+/* NAV */
+nav{position:fixed;top:3px;left:0;right:0;z-index:1000;background:rgba(255,251,245,.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(0,0,0,.06);transition:box-shadow .3s}
+nav.scrolled{box-shadow:0 4px 24px rgba(0,0,0,.08)}
+.nav-inner{max-width:1280px;margin:0 auto;padding:0 32px;height:68px;display:flex;align-items:center;gap:8px}
+.nav-logo{font-family:'Nunito',sans-serif;font-weight:900;font-size:1.4rem;color:var(--ink);text-decoration:none;letter-spacing:-0.5px;margin-right:auto}
+.nav-logo span{background:var(--g-main);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nav-links{display:flex;align-items:center;gap:4px;list-style:none}
+.nav-links a{font-size:.88rem;font-weight:600;color:var(--ink);text-decoration:none;padding:6px 14px;border-radius:8px;transition:background .2s,color .2s}
+.nav-links a:hover,.nav-links a.active{background:rgba(255,107,53,.08);color:var(--orange)}
+.nav-cta{background:var(--g-main);color:#fff !important;padding:10px 22px !important;border-radius:99px !important;font-weight:700 !important}
+.nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer}
+.nav-toggle span{width:22px;height:2px;background:var(--ink);border-radius:2px}
+
+/* HERO */
+.hero{background:var(--ink);padding:148px 32px 0;position:relative;overflow:hidden}
+.hero-blobs{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.hblob{position:absolute;border-radius:50%;filter:blur(80px);animation:bDrift 8s ease-in-out infinite alternate}
+.hb1{width:600px;height:600px;background:rgba(255,107,53,.12);top:-150px;left:-100px}
+.hb2{width:500px;height:500px;background:rgba(123,47,247,.12);bottom:-150px;right:-100px;animation-delay:-4s}
+@keyframes bDrift{from{transform:scale(1)}to{transform:scale(1.15) translate(20px,30px)}}
+.hero-inner{max-width:1280px;margin:0 auto;position:relative;z-index:2}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:99px;padding:8px 18px;font-size:.78rem;font-weight:700;color:rgba(255,255,255,.7);letter-spacing:.5px;text-transform:uppercase;margin-bottom:24px}
+.hero-badge .dot{width:7px;height:7px;background:var(--orange);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4;transform:scale(1.4)}}
+.hero-split{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end}
+.hero-copy h1{font-size:clamp(2.4rem,5.5vw,4.4rem);color:#fff;line-height:1.08;letter-spacing:-2px;margin-bottom:24px}
+.hero-copy h1 .g{background:var(--g-main);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero-copy p{font-size:1.1rem;color:rgba(255,255,255,.55);line-height:1.8;max-width:480px;margin-bottom:36px}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn-primary{background:var(--g-main);color:#fff;padding:14px 28px;border-radius:99px;text-decoration:none;font-weight:700;font-size:.92rem;display:inline-flex;align-items:center;gap:8px;transition:opacity .2s,transform .2s}
+.btn-primary:hover{opacity:.9;transform:translateY(-2px)}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.2);color:rgba(255,255,255,.8);padding:13px 28px;border-radius:99px;text-decoration:none;font-weight:600;font-size:.92rem;display:inline-flex;align-items:center;gap:8px;transition:.2s}
+.btn-ghost:hover{border-color:rgba(255,255,255,.5);color:#fff}
+.hero-visual{padding-bottom:0}
+.code-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:20px 20px 0 0;overflow:hidden}
+.code-bar{background:rgba(255,255,255,.06);padding:14px 20px;display:flex;align-items:center;gap:8px}
+.code-bar .btn-dot{width:12px;height:12px;border-radius:50%}
+.code-bar .btn-dot:nth-child(1){background:#FF5F57}
+.code-bar .btn-dot:nth-child(2){background:#FFBD2E}
+.code-bar .btn-dot:nth-child(3){background:#28CA41}
+.code-bar .file{font-size:.8rem;color:rgba(255,255,255,.35);margin-left:12px}
+.code-body{padding:24px;font-family:monospace;font-size:.85rem;line-height:1.9;color:rgba(255,255,255,.6)}
+.code-body .kw{color:#FF6B35}
+.code-body .fn{color:#FFD60A}
+.code-body .str{color:#22C55E}
+.code-body .cmt{color:rgba(255,255,255,.25)}
+.code-body .num{color:#0EA5E9}
+.hero-stats-bar{display:flex;gap:0;border-top:1px solid rgba(255,255,255,.06);margin-top:72px}
+.hstat{flex:1;text-align:center;padding:28px 16px;border-right:1px solid rgba(255,255,255,.06)}
+.hstat:last-child{border-right:none}
+.hstat .n{font-family:'Nunito',sans-serif;font-weight:900;font-size:1.8rem;background:var(--g-main);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hstat .l{font-size:.78rem;color:rgba(255,255,255,.35);font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-top:4px}
+
+/* TICKER */
+.ticker-wrap{background:rgba(255,107,53,.06);border-top:1px solid rgba(255,107,53,.1);border-bottom:1px solid rgba(255,107,53,.1);padding:16px 0;overflow:hidden}
+.ticker-inner{display:flex;animation:tickScroll 28s linear infinite;width:max-content}
+.ticker-item{padding:0 40px;font-size:.82rem;font-weight:700;color:var(--orange);white-space:nowrap;display:flex;align-items:center;gap:10px;letter-spacing:.3px}
+.ticker-item .sep{opacity:.4}
+@keyframes tickScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* SECTION BASE */
+section{padding:100px 32px}
+.sec-inner{max-width:1280px;margin:0 auto}
+.sec-label{font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--orange);margin-bottom:10px}
+.sec-title{font-size:clamp(1.8rem,3.5vw,2.8rem);color:var(--ink);line-height:1.15;letter-spacing:-1px;margin-bottom:14px}
+.sec-sub{font-size:1rem;color:rgba(26,26,46,.55);line-height:1.8;max-width:560px}
+.sec-title .g{background:var(--g-main);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.sec-title .gc{background:var(--g-cool);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.dark-sec{background:var(--ink)}
+.dark-sec .sec-title{color:#fff}
+.dark-sec .sec-label{color:rgba(255,255,255,.4)}
+.dark-sec .sec-sub{color:rgba(255,255,255,.5)}
+
+/* SEARCH BAR */
+.search-wrap{background:#fff;border:1.5px solid rgba(0,0,0,.1);border-radius:14px;display:flex;align-items:center;gap:12px;padding:6px 6px 6px 20px;max-width:560px;margin:32px 0 0;box-shadow:0 4px 20px rgba(0,0,0,.06)}
+.search-wrap input{flex:1;border:none;outline:none;font-size:.95rem;font-family:'Quicksand',sans-serif;color:var(--ink);background:transparent}
+.search-wrap input::placeholder{color:rgba(26,26,46,.35)}
+.search-btn{background:var(--g-main);color:#fff;border:none;padding:10px 20px;border-radius:10px;font-weight:700;font-size:.88rem;cursor:pointer;transition:opacity .2s}
+.search-btn:hover{opacity:.85}
+
+/* CATEGORIES */
+.cats{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.cat-chip{padding:8px 18px;border-radius:99px;border:1.5px solid rgba(0,0,0,.1);font-size:.82rem;font-weight:700;cursor:pointer;transition:all .2s;background:#fff;color:var(--ink)}
+.cat-chip.active,.cat-chip:hover{background:var(--g-main);color:#fff;border-color:transparent}
+
+/* COURSE GRID */
+.course-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.course-card{background:#fff;border:1px solid rgba(0,0,0,.07);border-radius:20px;overflow:hidden;transition:transform .3s,box-shadow .3s;cursor:pointer}
+.course-card:hover{transform:translateY(-8px);box-shadow:0 24px 60px rgba(0,0,0,.12)}
+.course-thumb{height:180px;display:flex;align-items:center;justify-content:center;font-size:4rem;position:relative;overflow:hidden}
+.course-badge{position:absolute;top:14px;left:14px;background:var(--g-main);color:#fff;padding:5px 12px;border-radius:99px;font-size:.72rem;font-weight:700;letter-spacing:.3px}
+.course-badge.new{background:var(--g-cool)}
+.course-badge.hot{background:linear-gradient(135deg,#FFD60A,#FF6B35)}
+.course-body{padding:20px}
+.course-level{font-size:.72rem;font-weight:700;color:var(--orange);text-transform:uppercase;letter-spacing:.8px;margin-bottom:6px}
+.course-title{font-size:1.02rem;font-weight:800;font-family:'Nunito',sans-serif;color:var(--ink);margin-bottom:8px;line-height:1.3}
+.course-desc{font-size:.82rem;color:rgba(26,26,46,.55);line-height:1.6;margin-bottom:14px}
+.course-meta{display:flex;align-items:center;gap:12px;font-size:.78rem;color:rgba(26,26,46,.45);font-weight:600;margin-bottom:16px;flex-wrap:wrap}
+.course-meta span{display:flex;align-items:center;gap:4px}
+.course-footer{display:flex;align-items:center;justify-content:space-between;padding-top:14px;border-top:1px solid rgba(0,0,0,.06)}
+.course-price{font-family:'Nunito',sans-serif;font-weight:900;font-size:1.2rem;color:var(--ink)}
+.course-price .orig{font-size:.8rem;color:rgba(26,26,46,.35);text-decoration:line-through;font-weight:600;margin-left:4px}
+.enroll-btn{background:var(--g-main);color:#fff;border:none;padding:8px 18px;border-radius:99px;font-size:.82rem;font-weight:700;cursor:pointer;transition:opacity .2s,transform .2s;font-family:'Quicksand',sans-serif}
+.enroll-btn:hover{opacity:.85;transform:scale(1.03)}
+.stars{color:var(--yellow);letter-spacing:-2px}
+
+/* LEARNING PATHS */
+.paths-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.path-card{border-radius:24px;padding:40px 32px;position:relative;overflow:hidden;transition:transform .3s,box-shadow .3s}
+.path-card:hover{transform:translateY(-8px);box-shadow:0 24px 60px rgba(0,0,0,.2)}
+.path-1{background:var(--g-main)}
+.path-2{background:var(--g-cool)}
+.path-3{background:var(--g-warm)}
+.path-icon{font-size:3rem;margin-bottom:16px}
+.path-card h3{font-size:1.3rem;color:#fff;margin-bottom:10px}
+.path-card p{font-size:.88rem;color:rgba(255,255,255,.8);line-height:1.7;margin-bottom:20px}
+.path-modules{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:24px}
+.path-mod{background:rgba(255,255,255,.15);color:#fff;padding:4px 10px;border-radius:99px;font-size:.75rem;font-weight:700}
+.path-btn{background:#fff;color:var(--ink);padding:10px 22px;border-radius:99px;text-decoration:none;font-weight:700;font-size:.85rem;display:inline-flex;align-items:center;gap:6px;transition:opacity .2s}
+.path-btn:hover{opacity:.85}
+.path-num{position:absolute;bottom:-20px;right:-10px;font-family:'Nunito',sans-serif;font-weight:900;font-size:8rem;color:rgba(255,255,255,.06);line-height:1}
+
+/* OUTCOMES */
+.outcomes-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:48px}
+.outcome-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:20px;padding:28px;transition:background .3s,transform .3s}
+.outcome-card:hover{background:rgba(255,255,255,.08);transform:translateY(-4px)}
+.outcome-icon{font-size:2rem;margin-bottom:14px}
+.outcome-card h4{font-size:.98rem;color:#fff;margin-bottom:8px}
+.outcome-card p{font-size:.85rem;color:rgba(255,255,255,.4);line-height:1.6}
+
+/* HOW IT WORKS */
+.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:56px;position:relative}
+.steps-grid::before{content:'';position:absolute;top:36px;left:10%;right:10%;height:2px;background:linear-gradient(to right,var(--orange),var(--purple));z-index:0}
+.step{text-align:center;position:relative;z-index:1}
+.step-num{width:72px;height:72px;border-radius:50%;background:var(--g-main);display:flex;align-items:center;justify-content:center;font-family:'Nunito',sans-serif;font-weight:900;font-size:1.4rem;color:#fff;margin:0 auto 20px;box-shadow:0 8px 24px rgba(255,107,53,.3)}
+.step:nth-child(2) .step-num,.step:nth-child(4) .step-num{background:var(--g-cool);box-shadow:0 8px 24px rgba(14,165,233,.3)}
+.step h4{font-size:.98rem;margin-bottom:8px}
+.step p{font-size:.82rem;color:rgba(26,26,46,.55);line-height:1.6;padding:0 12px}
+
+/* TESTIMONIALS */
+.test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
+.test-card{background:#fff;border:1px solid rgba(0,0,0,.07);border-radius:20px;padding:28px;transition:transform .3s,box-shadow .3s}
+.test-card:hover{transform:translateY(-6px);box-shadow:0 16px 48px rgba(0,0,0,.1)}
+.test-quote{font-size:.95rem;color:rgba(26,26,46,.7);line-height:1.8;margin-bottom:20px;font-style:italic}
+.test-quote::before{content:'"';font-size:2rem;color:var(--orange);font-family:'Nunito',sans-serif;font-weight:900;line-height:0;vertical-align:-8px;margin-right:4px}
+.test-author{display:flex;align-items:center;gap:12px}
+.test-avatar{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0}
+.test-name{font-weight:700;font-size:.9rem;color:var(--ink)}
+.test-role{font-size:.78rem;color:rgba(26,26,46,.45)}
+
+/* CTA */
+.cta-sec{background:var(--ink);text-align:center;position:relative;overflow:hidden}
+.cta-sec::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(123,47,247,.2),transparent 70%)}
+.cta-sec h2{font-size:clamp(2rem,5vw,3.2rem);color:#fff;margin-bottom:18px;letter-spacing:-1px;position:relative;z-index:1}
+.cta-sec p{font-size:1rem;color:rgba(255,255,255,.5);max-width:480px;margin:0 auto 36px;line-height:1.8;position:relative;z-index:1}
+.cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative;z-index:1}
+.btn-outline{border:1.5px solid rgba(255,255,255,.2);color:#fff;padding:13px 28px;border-radius:99px;text-decoration:none;font-weight:700;font-size:.9rem;transition:.2s;display:inline-flex;align-items:center;gap:8px}
+.btn-outline:hover{border-color:rgba(255,255,255,.5);background:rgba(255,255,255,.05)}
+
+/* CART SLIDE */
+#cartPanel{position:fixed;right:-420px;top:0;bottom:0;width:420px;background:#fff;z-index:2000;box-shadow:-8px 0 40px rgba(0,0,0,.15);transition:right .35s cubic-bezier(.25,.46,.45,.94);display:flex;flex-direction:column}
+#cartPanel.open{right:0}
+.cart-header{padding:24px;border-bottom:1px solid rgba(0,0,0,.08);display:flex;align-items:center;justify-content:space-between}
+.cart-header h3{font-size:1.1rem}
+.cart-close{width:36px;height:36px;border-radius:50%;border:none;background:rgba(0,0,0,.06);cursor:pointer;font-size:1.1rem;display:flex;align-items:center;justify-content:center;transition:background .2s}
+.cart-close:hover{background:rgba(0,0,0,.12)}
+.cart-body{flex:1;overflow-y:auto;padding:20px}
+.cart-empty{text-align:center;padding:60px 20px;color:rgba(26,26,46,.4)}
+.cart-empty .ce-icon{font-size:3rem;margin-bottom:12px}
+.cart-item{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid rgba(0,0,0,.06)}
+.ci-icon2{width:50px;height:50px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;flex-shrink:0}
+.ci-info{flex:1}
+.ci-name{font-size:.9rem;font-weight:700;color:var(--ink);margin-bottom:4px}
+.ci-price{font-size:.85rem;font-weight:700;color:var(--orange)}
+.ci-remove{background:none;border:none;cursor:pointer;color:rgba(26,26,46,.35);font-size:.85rem;margin-top:4px;transition:color .2s}
+.ci-remove:hover{color:red}
+.cart-footer{padding:20px;border-top:1px solid rgba(0,0,0,.08)}
+.cart-total{display:flex;justify-content:space-between;font-weight:700;margin-bottom:16px;font-size:1rem}
+.cart-checkout{width:100%;padding:14px;background:var(--g-main);color:#fff;border:none;border-radius:99px;font-size:.95rem;font-weight:700;cursor:pointer;font-family:'Quicksand',sans-serif;transition:opacity .2s}
+.cart-checkout:hover{opacity:.85}
+#cartOverlay{position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:1999;display:none;backdrop-filter:blur(4px)}
+#cartOverlay.open{display:block}
+.cart-btn-fixed{position:fixed;bottom:28px;right:28px;width:56px;height:56px;border-radius:50%;background:var(--g-main);color:#fff;border:none;font-size:1.4rem;cursor:pointer;box-shadow:0 8px 24px rgba(255,107,53,.4);z-index:900;transition:transform .2s;display:flex;align-items:center;justify-content:center}
+.cart-btn-fixed:hover{transform:scale(1.1)}
+.cart-count{position:absolute;top:-4px;right:-4px;background:#fff;color:var(--orange);width:22px;height:22px;border-radius:50%;font-size:.72rem;font-weight:900;display:flex;align-items:center;justify-content:center;border:2px solid var(--orange)}
+
+/* MODAL */
+#modal{position:fixed;inset:0;z-index:3000;display:none;align-items:center;justify-content:center;padding:20px}
+#modal.open{display:flex}
+.modal-bg{position:absolute;inset:0;background:rgba(0,0,0,.6);backdrop-filter:blur(6px)}
+.modal-box{position:relative;z-index:1;background:#fff;border-radius:24px;width:100%;max-width:680px;max-height:90vh;overflow-y:auto}
+.modal-hero{height:200px;display:flex;align-items:center;justify-content:center;font-size:5rem;border-radius:24px 24px 0 0}
+.modal-body{padding:32px}
+.modal-level{font-size:.72rem;font-weight:700;color:var(--orange);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
+.modal-title{font-size:1.6rem;margin-bottom:12px;color:var(--ink)}
+.modal-desc{font-size:.95rem;color:rgba(26,26,46,.6);line-height:1.8;margin-bottom:24px}
+.modal-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.modal-tag{background:rgba(255,107,53,.08);color:var(--orange);padding:6px 14px;border-radius:99px;font-size:.8rem;font-weight:700}
+.modal-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px}
+.modal-stat{text-align:center;padding:16px;background:rgba(0,0,0,.03);border-radius:14px}
+.modal-stat .ms-num{font-family:'Nunito',sans-serif;font-weight:900;font-size:1.5rem;color:var(--ink)}
+.modal-stat .ms-lbl{font-size:.75rem;color:rgba(26,26,46,.45);font-weight:600;text-transform:uppercase;letter-spacing:.5px}
+.modal-footer{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.modal-price{font-family:'Nunito',sans-serif;font-weight:900;font-size:2rem;color:var(--ink)}
+.modal-close{position:absolute;top:16px;right:16px;width:36px;height:36px;border-radius:50%;background:rgba(0,0,0,.08);border:none;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center}
+
+/* FOOTER */
+footer{background:#0d0d1a;padding:72px 32px 32px;border-top:1px solid rgba(255,255,255,.05)}
+.footer-inner{max-width:1280px;margin:0 auto}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
+.footer-brand p{font-size:.88rem;color:rgba(255,255,255,.35);line-height:1.8;margin-top:14px;max-width:260px}
+.footer-col h4{font-size:.8rem;font-weight:700;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:1px;margin-bottom:18px}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:10px}
+.footer-col a{font-size:.86rem;color:rgba(255,255,255,.3);text-decoration:none;transition:color .2s}
+.footer-col a:hover{color:var(--orange)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.06);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.footer-bottom p{font-size:.8rem;color:rgba(255,255,255,.25)}
+.footer-socials{display:flex;gap:10px}
+.footer-socials a{width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.05);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.35);text-decoration:none;font-size:.8rem;transition:.2s}
+.footer-socials a:hover{background:var(--orange);color:#fff}
+
+/* REVEAL */
+.reveal,.reveal-l,.reveal-r{opacity:0;transform:translateY(40px);transition:opacity .7s,transform .7s}
+.reveal-l{transform:translateX(-40px)}
+.reveal-r{transform:translateX(40px)}
+.revealed{opacity:1 !important;transform:none !important}
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+  .course-grid{grid-template-columns:repeat(2,1fr)}
+  .outcomes-grid{grid-template-columns:repeat(2,1fr)}
+  .paths-grid{grid-template-columns:1fr}
+  .footer-top{grid-template-columns:1fr 1fr}
+}
+@media(max-width:900px){
+  .hero-split{grid-template-columns:1fr}
+  .hero-visual{display:none}
+  .steps-grid{grid-template-columns:repeat(2,1fr);gap:32px}
+  .steps-grid::before{display:none}
+  .test-grid{grid-template-columns:1fr}
+}
+@media(max-width:700px){
+  .nav-links{display:none;position:fixed;top:71px;left:0;right:0;background:#fff;flex-direction:column;padding:16px;gap:4px;box-shadow:0 8px 24px rgba(0,0,0,.1)}
+  .nav-links.open{display:flex}
+  .nav-toggle{display:flex}
+  section{padding:72px 24px}
+  .hero{padding:120px 24px 0}
+  .course-grid{grid-template-columns:1fr}
+  .outcomes-grid{grid-template-columns:1fr 1fr}
+  .steps-grid{grid-template-columns:1fr}
+  .footer-top{grid-template-columns:1fr}
+  #cartPanel{width:100%}
+}
+</style>
+</head>
+<body>
+
+<div id="progress-bar"></div>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-gear-wrap">
+    <div class="gear gear-big"></div>
+    <div class="gear gear-sm"></div>
+  </div>
+  <div class="loader-logo">Tech<span>M4</span> Engineering</div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+  <p class="loader-tag">Build Real Skills. Get Real Jobs.</p>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Tech<span>M4</span>India</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="engineering.html" class="active">Engineering</a></li>
+      <li><a href="solutions.html">Solutions</a></li>
+      <li><a href="space.html">Space</a></li>
+      <li><a href="techm4schools.html">Schools</a></li>
+      <li><a href="login.html" class="nav-cta">Get Started →</a></li>
+    </ul>
+    <div class="nav-toggle" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-blobs"><div class="hblob hb1"></div><div class="hblob hb2"></div></div>
+  <div class="hero-inner">
+    <div class="hero-badge"><span class="dot"></span>Engineering Division — TechM4India</div>
+    <div class="hero-split">
+      <div class="hero-copy">
+        <h1>Don't Just Learn Code.<br/><span class="g">Build Products.</span><br/>Get Hired.</h1>
+        <p>India's most immersive engineering education platform — real projects, real mentors, real industry outcomes. No fluff. No theory-only. Just pure, hands-on transformation.</p>
+        <div class="hero-btns">
+          <a href="#courses" class="btn-primary">Explore Courses →</a>
+          <a href="#paths" class="btn-ghost">View Learning Paths</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="code-card">
+          <div class="code-bar">
+            <div class="btn-dot"></div><div class="btn-dot"></div><div class="btn-dot"></div>
+            <span class="file">student_project.py</span>
+          </div>
+          <div class="code-body">
+<span class="cmt"># TechM4India Student Project</span><br/>
+<span class="kw">from</span> techm4 <span class="kw">import</span> AI, Deploy<br/><br/>
+<span class="kw">class</span> <span class="fn">SmartCareerBot</span>:<br/>
+&nbsp;&nbsp;<span class="kw">def</span> <span class="fn">__init__</span>(self):<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;self.model = AI(<span class="str">"gpt-4"</span>)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;self.deployed = <span class="num">False</span><br/><br/>
+&nbsp;&nbsp;<span class="kw">def</span> <span class="fn">launch</span>(self):<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Deploy.to_production(self)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fn">print</span>(<span class="str">"🚀 Live in 3 seconds!"</span>)<br/><br/>
+<span class="cmt"># Students build this on Week 4</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-stats-bar">
+      <div class="hstat"><span class="n">500+</span><span class="l">Students Placed</span></div>
+      <div class="hstat"><span class="n">8</span><span class="l">Core Tracks</span></div>
+      <div class="hstat"><span class="n">3</span><span class="l">Learning Paths</span></div>
+      <div class="hstat"><span class="n">94%</span><span class="l">Placement Rate</span></div>
+      <div class="hstat"><span class="n">₹6L+</span><span class="l">Avg. Package</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-inner">
+    <div class="ticker-item">⚙️ Full Stack Web Dev <span class="sep">|</span></div>
+    <div class="ticker-item">🤖 AI & Machine Learning <span class="sep">|</span></div>
+    <div class="ticker-item">📱 Flutter Mobile Apps <span class="sep">|</span></div>
+    <div class="ticker-item">☁️ Cloud & DevOps <span class="sep">|</span></div>
+    <div class="ticker-item">🔒 Cybersecurity <span class="sep">|</span></div>
+    <div class="ticker-item">🎮 Game Development <span class="sep">|</span></div>
+    <div class="ticker-item">📊 Data Science <span class="sep">|</span></div>
+    <div class="ticker-item">🔗 Blockchain Dev <span class="sep">|</span></div>
+    <div class="ticker-item">⚙️ Full Stack Web Dev <span class="sep">|</span></div>
+    <div class="ticker-item">🤖 AI & Machine Learning <span class="sep">|</span></div>
+    <div class="ticker-item">📱 Flutter Mobile Apps <span class="sep">|</span></div>
+    <div class="ticker-item">☁️ Cloud & DevOps <span class="sep">|</span></div>
+    <div class="ticker-item">🔒 Cybersecurity <span class="sep">|</span></div>
+    <div class="ticker-item">🎮 Game Development <span class="sep">|</span></div>
+    <div class="ticker-item">📊 Data Science <span class="sep">|</span></div>
+    <div class="ticker-item">🔗 Blockchain Dev <span class="sep">|</span></div>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<section style="background:#f7f4ff;padding:100px 32px">
+  <div class="sec-inner">
+    <div style="text-align:center;max-width:600px;margin:0 auto" class="reveal">
+      <div class="sec-label">How It Works</div>
+      <h2 class="sec-title">From Zero to <span class="g">Hired in 4 Steps</span></h2>
+      <p class="sec-sub" style="margin:0 auto 0">No prerequisites needed. No outdated curriculum. Just a clear, structured path from student to professional.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step reveal">
+        <div class="step-num">01</div>
+        <h4>Pick Your Track</h4>
+        <p>Choose from 8 in-demand engineering tracks designed around actual job descriptions, not textbook chapters.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">02</div>
+        <h4>Build Real Projects</h4>
+        <p>Every week, you build something real — from a portfolio app to a production-ready SaaS product your peers actually use.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">03</div>
+        <h4>Get Mentored</h4>
+        <p>Weekly 1-on-1 sessions with industry mentors. Code reviews. Career guidance. Real feedback from people who hire engineers.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">04</div>
+        <h4>Get Placed</h4>
+        <p>Resume prep, mock interviews, LinkedIn optimization, and direct referrals to our 100+ hiring partners across India.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COURSES -->
+<section id="courses">
+  <div class="sec-inner">
+    <div class="reveal">
+      <div class="sec-label">All Courses</div>
+      <h2 class="sec-title">8 Tracks. Infinite <span class="g">Possibilities.</span></h2>
+      <p class="sec-sub">Every course is project-based, industry-aligned, and designed to land you a job — not just a certificate.</p>
+      <div class="search-wrap">
+        <input type="text" id="searchInput" placeholder="Search courses — e.g. React, Python, AI…" oninput="filterCourses()"/>
+        <button class="search-btn" onclick="filterCourses()">Search</button>
+      </div>
+      <div class="cats" id="catBar">
+        <div class="cat-chip active" onclick="setCategory('all',this)">All Tracks</div>
+        <div class="cat-chip" onclick="setCategory('web',this)">Web Dev</div>
+        <div class="cat-chip" onclick="setCategory('ai',this)">AI / ML</div>
+        <div class="cat-chip" onclick="setCategory('mobile',this)">Mobile</div>
+        <div class="cat-chip" onclick="setCategory('cloud',this)">Cloud</div>
+        <div class="cat-chip" onclick="setCategory('data',this)">Data Science</div>
+        <div class="cat-chip" onclick="setCategory('security',this)">Security</div>
+      </div>
+    </div>
+    <div class="course-grid" id="courseGrid">
+      <!-- Populated by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- LEARNING PATHS -->
+<section id="paths" style="background:#f0f4ff;padding:100px 32px">
+  <div class="sec-inner">
+    <div style="text-align:center;max-width:600px;margin:0 auto" class="reveal">
+      <div class="sec-label">Curated Journeys</div>
+      <h2 class="sec-title">3 Learning Paths. <span class="gc">One Clear Goal:</span> Your Dream Job.</h2>
+      <p class="sec-sub" style="margin:0 auto 0">Not sure where to start? Our learning paths bundle the right courses in the right order for your career goal.</p>
+    </div>
+    <div class="paths-grid">
+      <div class="path-card path-1 reveal">
+        <div class="path-icon">🌐</div>
+        <h3>Full-Stack Developer Path</h3>
+        <p>HTML to React to Node to databases to deployment. Build 6 complete applications and land your first dev role.</p>
+        <div class="path-modules">
+          <span class="path-mod">HTML &amp; CSS</span>
+          <span class="path-mod">JavaScript</span>
+          <span class="path-mod">React</span>
+          <span class="path-mod">Node.js</span>
+          <span class="path-mod">MongoDB</span>
+          <span class="path-mod">AWS Deploy</span>
+        </div>
+        <a href="login.html" class="path-btn">Start Path →</a>
+        <div class="path-num">01</div>
+      </div>
+      <div class="path-card path-2 reveal">
+        <div class="path-icon">🤖</div>
+        <h3>AI/ML Engineer Path</h3>
+        <p>Python fundamentals to neural networks to deploying ML models in production. Build real AI applications employers want.</p>
+        <div class="path-modules">
+          <span class="path-mod">Python</span>
+          <span class="path-mod">NumPy &amp; Pandas</span>
+          <span class="path-mod">Scikit-learn</span>
+          <span class="path-mod">TensorFlow</span>
+          <span class="path-mod">LLM APIs</span>
+          <span class="path-mod">MLOps</span>
+        </div>
+        <a href="login.html" class="path-btn">Start Path →</a>
+        <div class="path-num">02</div>
+      </div>
+      <div class="path-card path-3 reveal">
+        <div class="path-icon">☁️</div>
+        <h3>Cloud &amp; DevOps Path</h3>
+        <p>Linux to Docker to Kubernetes to full CI/CD pipelines on AWS and GCP. The skills every modern company desperately needs.</p>
+        <div class="path-modules">
+          <span class="path-mod">Linux</span>
+          <span class="path-mod">Docker</span>
+          <span class="path-mod">Kubernetes</span>
+          <span class="path-mod">AWS</span>
+          <span class="path-mod">Terraform</span>
+          <span class="path-mod">GitHub Actions</span>
+        </div>
+        <a href="login.html" class="path-btn">Start Path →</a>
+        <div class="path-num">03</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUTCOMES DARK -->
+<section class="dark-sec">
+  <div class="sec-inner">
+    <div style="text-align:center;max-width:600px;margin:0 auto" class="reveal">
+      <div class="sec-label">What You Gain</div>
+      <h2 class="sec-title">Skills That <span class="g">Actually Matter</span> in 2025</h2>
+      <p class="sec-sub" style="margin:0 auto 0">Beyond technical skills, TechM4India engineers graduate with the soft skills, portfolio, and professional network to succeed.</p>
+    </div>
+    <div class="outcomes-grid">
+      <div class="outcome-card reveal">
+        <div class="outcome-icon">🧠</div>
+        <h4>Problem-Solving Mindset</h4>
+        <p>Real debugging. Real architecture decisions. Real trade-offs. You'll think like a senior engineer from month one.</p>
+      </div>
+      <div class="outcome-card reveal">
+        <div class="outcome-icon">🏗️</div>
+        <h4>Portfolio of Live Projects</h4>
+        <p>Graduate with 5+ deployed applications that real users are using. Not toy projects — actual products.</p>
+      </div>
+      <div class="outcome-card reveal">
+        <div class="outcome-icon">🤝</div>
+        <h4>Mentor Network</h4>
+        <p>Direct connections to 100+ senior engineers and hiring managers who actively want to refer TechM4India graduates.</p>
+      </div>
+      <div class="outcome-card reveal">
+        <div class="outcome-icon">📋</div>
+        <h4>Interview Readiness</h4>
+        <p>DSA prep, system design, HR rounds, negotiation coaching. We prepare you for every stage of the hiring process.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section>
+  <div class="sec-inner">
+    <div style="text-align:center;max-width:600px;margin:0 auto" class="reveal">
+      <div class="sec-label">Student Stories</div>
+      <h2 class="sec-title">Real Students. <span class="g">Real Transformations.</span></h2>
+    </div>
+    <div class="test-grid">
+      <div class="test-card reveal">
+        <p class="test-quote">I joined with zero coding experience. 6 months later I got placed at Wipro with a ₹7L package. TechM4India literally changed my life trajectory.</p>
+        <div class="test-author">
+          <div class="test-avatar" style="background:linear-gradient(135deg,#FF6B35,#FF4D8D)">👨‍💻</div>
+          <div><div class="test-name">Rajesh K.</div><div class="test-role">Software Engineer, Wipro · Full Stack Path</div></div>
+        </div>
+      </div>
+      <div class="test-card reveal">
+        <p class="test-quote">The project-based approach is what makes the difference. I built a real ML model that's now deployed. That project is what got me my interview at Accenture.</p>
+        <div class="test-author">
+          <div class="test-avatar" style="background:linear-gradient(135deg,#0EA5E9,#7B2FF7)">👩‍💻</div>
+          <div><div class="test-name">Priya S.</div><div class="test-role">ML Engineer, Accenture · AI/ML Path</div></div>
+        </div>
+      </div>
+      <div class="test-card reveal">
+        <p class="test-quote">My college never taught me Docker or Kubernetes. TechM4India's DevOps track had me deploying on AWS in week 3. Now I'm a Cloud Engineer at TCS.</p>
+        <div class="test-author">
+          <div class="test-avatar" style="background:linear-gradient(135deg,#22C55E,#0EA5E9)">👨‍🔧</div>
+          <div><div class="test-name">Arun T.</div><div class="test-role">Cloud Engineer, TCS · DevOps Path</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-sec">
+  <div class="sec-inner">
+    <h2>Your Engineering Career<br/>Starts <span style="background:var(--g-main);-webkit-background-clip:text;-webkit-text-fill-color:transparent">Right Here.</span></h2>
+    <p>500+ engineers placed. 94% placement rate. The only question is: are you next?</p>
+    <div class="cta-btns">
+      <a href="login.html" class="btn-primary">Enroll Now — It's Free to Start →</a>
+      <a href="about.html" class="btn-outline">Learn About TechM4India</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div style="font-family:'Nunito',sans-serif;font-weight:900;font-size:1.4rem;color:#fff">Tech<span style="background:var(--g-main);-webkit-background-clip:text;-webkit-text-fill-color:transparent">M4</span>India</div>
+        <p>Building India's most skilled generation of engineers — one real project at a time.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Divisions</h4>
+        <ul>
+          <li><a href="engineering.html">Engineering</a></li>
+          <li><a href="solutions.html">Solutions</a></li>
+          <li><a href="space.html">Space Technology</a></li>
+          <li><a href="techm4schools.html">Schools</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Courses</h4>
+        <ul>
+          <li><a href="#">Full Stack Dev</a></li>
+          <li><a href="#">AI / ML</a></li>
+          <li><a href="#">Cloud &amp; DevOps</a></li>
+          <li><a href="#">Data Science</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="login.html">Student Login</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 TechM4India Engineering. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="#">in</a><a href="#">tw</a><a href="#">yt</a><a href="#">gh</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- CART PANEL -->
+<div id="cartOverlay" onclick="closeCart()"></div>
+<div id="cartPanel">
+  <div class="cart-header">
+    <h3>🛒 My Courses (<span id="cartCount">0</span>)</h3>
+    <button class="cart-close" onclick="closeCart()">✕</button>
+  </div>
+  <div class="cart-body" id="cartBody">
+    <div class="cart-empty"><div class="ce-icon">🎒</div><p>No courses yet.<br/>Pick your first track!</p></div>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total"><span>Total</span><span id="cartTotal">₹0</span></div>
+    <button class="cart-checkout" onclick="window.location.href='login.html'">Proceed to Enroll →</button>
+  </div>
+</div>
+<button class="cart-btn-fixed" onclick="openCart()">🛒<span class="cart-count" id="cartBadge">0</span></button>
+
+<!-- COURSE MODAL -->
+<div id="modal">
+  <div class="modal-bg" onclick="closeModal()"></div>
+  <div class="modal-box" id="modalBox"></div>
+</div>
+
+<script>
+// DATA
+const courses=[
+  {id:1,emoji:'🌐',title:'Full-Stack Web Development',level:'Beginner → Advanced',cat:'web',desc:'Master HTML, CSS, JavaScript, React, Node.js, and MongoDB. Build 5 complete web applications and deploy them to AWS.',tags:['HTML','CSS','React','Node.js','MongoDB','AWS'],duration:'16 weeks',students:'2,400+',rating:'4.9',price:2999,orig:5999,badge:'Best Seller',bg:'linear-gradient(135deg,#FF6B35,#FF4D8D)'},
+  {id:2,emoji:'🤖',title:'AI & Machine Learning Engineering',level:'Intermediate',cat:'ai',desc:'Python to TensorFlow to real deployed ML models. Build a production AI application that employers actually want to see.',tags:['Python','TensorFlow','Scikit-learn','LLM APIs','MLOps'],duration:'20 weeks',students:'1,800+',rating:'4.9',price:3499,orig:6999,badge:'Hot',bg:'linear-gradient(135deg,#0EA5E9,#7B2FF7)'},
+  {id:3,emoji:'📱',title:'Flutter Mobile App Development',level:'Beginner → Pro',cat:'mobile',desc:'Build beautiful iOS and Android apps with Flutter and Dart. Ship 3 apps to the Play Store during the program.',tags:['Flutter','Dart','Firebase','REST APIs','Play Store'],duration:'14 weeks',students:'1,200+',rating:'4.8',price:2499,orig:4999,badge:'New',bg:'linear-gradient(135deg,#22C55E,#0EA5E9)'},
+  {id:4,emoji:'☁️',title:'Cloud & DevOps Engineering',level:'Intermediate',cat:'cloud',desc:'Linux, Docker, Kubernetes, AWS, Terraform, CI/CD pipelines. The most in-demand engineering skills in 2025.',tags:['AWS','Docker','Kubernetes','Terraform','GitHub Actions'],duration:'18 weeks',students:'900+',rating:'4.9',price:3299,orig:6499,badge:'Hot',bg:'linear-gradient(135deg,#FFD60A,#FF6B35)'},
+  {id:5,emoji:'📊',title:'Data Science & Analytics',level:'Beginner → Advanced',cat:'data',desc:'Excel to Python to Power BI to predictive modelling. Build dashboards that drive real business decisions.',tags:['Python','Pandas','SQL','Power BI','Tableau','Scikit-learn'],duration:'16 weeks',students:'1,500+',rating:'4.8',price:2799,orig:5499,badge:'Best Seller',bg:'linear-gradient(135deg,#7B2FF7,#FF4D8D)'},
+  {id:6,emoji:'🔒',title:'Ethical Hacking & Cybersecurity',level:'Intermediate',cat:'security',desc:'Network security, penetration testing, OWASP Top 10, CTF challenges. Get CEH-ready and protect the digital world.',tags:['Network Security','Kali Linux','Pentest','OWASP','CTF'],duration:'14 weeks',students:'700+',rating:'4.8',price:2999,orig:5999,badge:'',bg:'linear-gradient(135deg,#1A1A2E,#7B2FF7)'},
+  {id:7,emoji:'🎮',title:'Game Development with Unity',level:'Beginner',cat:'web',desc:'C# scripting, physics engines, 2D/3D game design. Build and publish 3 complete games on the Unity Asset Store.',tags:['Unity','C#','Physics','2D/3D','Asset Store'],duration:'12 weeks',students:'600+',rating:'4.7',price:2199,orig:4299,badge:'New',bg:'linear-gradient(135deg,#FF6B35,#FFD60A)'},
+  {id:8,emoji:'🔗',title:'Blockchain & Web3 Development',level:'Advanced',cat:'web',desc:'Solidity, smart contracts, DeFi protocols, NFT marketplaces. Build on Ethereum and Polygon from day one.',tags:['Solidity','Ethereum','Polygon','Smart Contracts','DeFi'],duration:'16 weeks',students:'400+',rating:'4.8',price:3999,orig:7999,badge:'New',bg:'linear-gradient(135deg,#0EA5E9,#22C55E)'},
+];
+
+let cart=[];
+let activeCat='all';
+
+function renderCourses(){
+  const q=document.getElementById('searchInput').value.toLowerCase();
+  const filtered=courses.filter(c=>{
+    const catMatch=activeCat==='all'||c.cat===activeCat;
+    const qMatch=!q||c.title.toLowerCase().includes(q)||c.tags.join(' ').toLowerCase().includes(q);
+    return catMatch&&qMatch;
+  });
+  const grid=document.getElementById('courseGrid');
+  grid.innerHTML=filtered.length===0?'<div style="grid-column:1/-1;text-align:center;padding:60px;color:rgba(26,26,46,.4)"><div style="font-size:3rem;margin-bottom:12px">🔍</div><p>No courses found for that search.</p></div>':
+  filtered.map(c=>`
+  <div class="course-card revealed" onclick="openModal(${c.id})">
+    <div class="course-thumb" style="background:${c.bg}">
+      ${c.emoji}
+      ${c.badge?`<span class="course-badge${c.badge==='New'?' new':c.badge==='Hot'?' hot':''}">${c.badge}</span>`:''}
+    </div>
+    <div class="course-body">
+      <div class="course-level">${c.level}</div>
+      <div class="course-title">${c.title}</div>
+      <div class="course-desc">${c.desc.substring(0,90)}…</div>
+      <div class="course-meta">
+        <span>⏱ ${c.duration}</span>
+        <span>👥 ${c.students}</span>
+        <span><span class="stars">★</span> ${c.rating}</span>
+      </div>
+      <div class="course-footer">
+        <div class="course-price">₹${c.price.toLocaleString()} <span class="orig">₹${c.orig.toLocaleString()}</span></div>
+        <button class="enroll-btn" onclick="event.stopPropagation();addToCart(${c.id})">Add to Cart</button>
+      </div>
+    </div>
+  </div>`).join('');
+}
+
+function filterCourses(){renderCourses()}
+function setCategory(cat,el){
+  activeCat=cat;
+  document.querySelectorAll('.cat-chip').forEach(c=>c.classList.remove('active'));
+  el.classList.add('active');
+  renderCourses();
+}
+
+function openModal(id){
+  const c=courses.find(x=>x.id===id);
+  if(!c)return;
+  document.getElementById('modalBox').innerHTML=`
+  <button class="modal-close" onclick="closeModal()">✕</button>
+  <div class="modal-hero" style="background:${c.bg}">${c.emoji}</div>
+  <div class="modal-body">
+    <div class="modal-level">${c.level}</div>
+    <h2 class="modal-title">${c.title}</h2>
+    <p class="modal-desc">${c.desc}</p>
+    <div class="modal-tags">${c.tags.map(t=>`<span class="modal-tag">${t}</span>`).join('')}</div>
+    <div class="modal-row">
+      <div class="modal-stat"><div class="ms-num">${c.duration}</div><div class="ms-lbl">Duration</div></div>
+      <div class="modal-stat"><div class="ms-num">${c.students}</div><div class="ms-lbl">Enrolled</div></div>
+      <div class="modal-stat"><div class="ms-num">★ ${c.rating}</div><div class="ms-lbl">Rating</div></div>
+      <div class="modal-stat"><div class="ms-num">Certificate</div><div class="ms-lbl">On Completion</div></div>
+    </div>
+    <div class="modal-footer">
+      <div class="modal-price">₹${c.price.toLocaleString()} <span style="font-size:1rem;color:rgba(26,26,46,.35);text-decoration:line-through;font-weight:600">₹${c.orig.toLocaleString()}</span></div>
+      <button class="enroll-btn" style="padding:12px 28px;font-size:.95rem" onclick="addToCart(${c.id});closeModal()">Add to Cart →</button>
+    </div>
+  </div>`;
+  document.getElementById('modal').classList.add('open');
+}
+function closeModal(){document.getElementById('modal').classList.remove('open')}
+function openCart(){document.getElementById('cartPanel').classList.add('open');document.getElementById('cartOverlay').classList.add('open')}
+function closeCart(){document.getElementById('cartPanel').classList.remove('open');document.getElementById('cartOverlay').classList.remove('open')}
+
+function addToCart(id){
+  if(cart.find(x=>x.id===id))return;
+  cart.push(courses.find(x=>x.id===id));
+  updateCart();
+  openCart();
+}
+function removeFromCart(id){
+  cart=cart.filter(x=>x.id!==id);
+  updateCart();
+}
+function updateCart(){
+  const count=cart.length;
+  document.getElementById('cartCount').textContent=count;
+  document.getElementById('cartBadge').textContent=count;
+  const total=cart.reduce((a,c)=>a+c.price,0);
+  document.getElementById('cartTotal').textContent='₹'+total.toLocaleString();
+  const body=document.getElementById('cartBody');
+  if(cart.length===0){
+    body.innerHTML='<div class="cart-empty"><div class="ce-icon">🎒</div><p>No courses yet.<br/>Pick your first track!</p></div>';
+  } else {
+    body.innerHTML=cart.map(c=>`
+    <div class="cart-item">
+      <div class="ci-icon2" style="background:${c.bg}">${c.emoji}</div>
+      <div class="ci-info">
+        <div class="ci-name">${c.title}</div>
+        <div class="ci-price">₹${c.price.toLocaleString()}</div>
+        <button class="ci-remove" onclick="removeFromCart(${c.id})">Remove</button>
+      </div>
+    </div>`).join('');
+  }
+}
+
+// LOADER
+window.addEventListener('load',function(){
+  setTimeout(function(){document.getElementById('loader').classList.add('hidden')},2000)
+})
+
+// PROGRESS
+window.addEventListener('scroll',function(){
+  document.getElementById('progress-bar').style.width=(window.scrollY/(document.body.scrollHeight-innerHeight)*100)+'%';
+  document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>10);
+})
+
+// NAV
+function toggleNav(){document.getElementById('navLinks').classList.toggle('open')}
+
+// REVEAL
+var ro=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting)x.target.classList.add('revealed')})},{threshold:.12})
+document.querySelectorAll('.reveal,.reveal-l,.reveal-r').forEach(function(el){ro.observe(el)})
+
+// PAGE TRANSITION
+document.querySelectorAll('a[href]').forEach(function(a){
+  var h=a.getAttribute('href');
+  if(h&&!h.startsWith('#')&&!h.startsWith('mailto')){
+    a.addEventListener('click',function(e){
+      e.preventDefault();
+      document.body.style.opacity='0';
+      document.body.style.transition='opacity .3s';
+      setTimeout(function(){window.location.href=h},300);
+    });
+  }
+});
+document.body.style.opacity='0';
+setTimeout(function(){document.body.style.transition='opacity .4s';document.body.style.opacity='1'},100);
+
+// INIT
+renderCourses();
+</script>
+</body>
+</html>
