@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://techm4india.com/sitemap.xml

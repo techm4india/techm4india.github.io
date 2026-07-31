@@ -1,0 +1,2812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>TechM4Engineering | Engineering Innovation Programs | TechM4India</title>
+
+<link rel="canonical" href="https://techm4india.com/engineering">
+<meta name="description" content="TechM4Engineering by TechM4India offers industry-ready engineering innovation programs for students and professionals to build future-ready skills.">
+<meta name="keywords" content="TechM4Engineering, civil engineering training, mechanical engineering courses, Revit training, STAAD Pro, ANSYS, HyperMesh, ETABS, AutoCAD, BIM, VLSI design, EV Powertrain, battery management system, full stack devops, Aspen Plus, piping engineering India">
+<meta name="author" content="TechM4India">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="geo.region" content="IN-TG">
+<meta name="geo.placename" content="Hyderabad, Telangana, India">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://techm4india.com/engineering">
+<meta property="og:title" content="TechM4Engineering | Engineering Innovation Programs | TechM4India">
+<meta property="og:description" content="TechM4Engineering by TechM4India offers industry-ready engineering innovation programs for students and professionals to build future-ready skills.">
+<meta property="og:image" content="https://techm4india.com/logo.png">
+<meta property="og:site_name" content="TechM4India">
+<meta name="application-name" content="TechM4India">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@techm4india">
+<meta name="twitter:title" content="TechM4Engineering | Engineering Innovation Programs | TechM4India">
+<meta name="twitter:description" content="TechM4Engineering by TechM4India offers industry-ready engineering innovation programs for students and professionals to build future-ready skills.">
+<meta name="twitter:image" content="https://techm4india.com/logo.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://techm4india.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "TechM4Engineering",
+          "item": "https://techm4india.com/engineering"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+
+<style>
+/* ===== ROOT ===== */
+:root{
+  --navy:#0B1F3A;
+  --royal:#1A3F7A;
+  --blue:#1E6FD9;
+  --red:#D72638;
+  --orange:#FF6B35;
+  --white:#FFFFFF;
+  --offwhite:#F7F9FC;
+  --grey:#C9D1D9;
+  --grey2:#8B98A9;
+  --ink:#0D1B2A;
+  --civil:#1E6FD9;
+  --mech:#D72638;
+  --cse:#7B2FF7;
+  --eee:#EAB308;
+  --ece:#0EA5E9;
+  --chem:#10B981;
+  --g-civil:linear-gradient(135deg,#1E6FD9,#0B1F3A);
+  --g-mech:linear-gradient(135deg,#D72638,#7B0F1E);
+  --g-cse:linear-gradient(135deg,#7B2FF7,#4F15B7);
+  --g-eee:linear-gradient(135deg,#EAB308,#B45309);
+  --g-ece:linear-gradient(135deg,#0EA5E9,#0369A1);
+  --g-chem:linear-gradient(135deg,#10B981,#047857);
+  --g-brand:linear-gradient(135deg,#FF6B35,#D72638);
+  --shadow-sm:0 2px 8px rgba(11,31,58,.08);
+  --shadow-md:0 8px 32px rgba(11,31,58,.12);
+  --shadow-lg:0 24px 64px rgba(11,31,58,.18);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--white);color:var(--ink);overflow-x:hidden}
+h1,h2,h3,h4,h5{font-family:'Sora',sans-serif;font-weight:700}
+
+/* ===== PROGRESS ===== */
+#progress-bar{position:fixed;top:0;left:0;height:3px;background:var(--g-brand);width:0%;z-index:9999;transition:width .1s}
+
+/* ===== LOADER ===== */
+#loader{position:fixed;inset:0;background:var(--navy);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:10000;transition:opacity .7s,visibility .7s}
+#loader.hidden{opacity:0;visibility:hidden;pointer-events:none}
+.loader-blueprint{position:absolute;inset:0;background-image:linear-gradient(rgba(30,111,217,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(30,111,217,.06) 1px,transparent 1px);background-size:40px 40px;pointer-events:none}
+.loader-ring{width:72px;height:72px;border:3px solid rgba(255,255,255,.1);border-top-color:var(--orange);border-right-color:var(--blue);border-radius:50%;animation:spin 1s linear infinite;margin-bottom:24px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.loader-brand{font-family:'Sora',sans-serif;font-weight:800;font-size:1.6rem;color:#fff;letter-spacing:-0.5px}
+.loader-brand span{background:var(--g-brand);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.loader-sub{font-size:.78rem;color:rgba(255,255,255,.35);margin-top:8px;letter-spacing:2px;text-transform:uppercase}
+.loader-bar{width:200px;height:2px;background:rgba(255,255,255,.08);border-radius:99px;margin-top:24px;overflow:hidden}
+.loader-fill{height:100%;background:var(--g-brand);border-radius:99px;animation:fill 2.2s ease forwards}
+@keyframes fill{from{width:0}to{width:100%}}
+
+/* ===== NAV ===== */
+nav{position:fixed;top:3px;left:0;right:0;z-index:1000;background:rgba(255,255,255,.96);backdrop-filter:blur(20px);border-bottom:1px solid rgba(11,31,58,.08);transition:box-shadow .3s}
+nav.scrolled{box-shadow:0 4px 32px rgba(11,31,58,.1)}
+.nav-inner{max-width:1300px;margin:0 auto;padding:0 24px;height:70px;display:flex;align-items:center;gap:8px}
+.nav-logo{font-family:'Sora',sans-serif;font-weight:800;font-size:1.3rem;color:var(--navy);text-decoration:none;margin-right:auto;letter-spacing:-0.5px;white-space:nowrap;display:inline-flex;align-items:center;gap:10px}
+.nav-logo img{height:34px;width:auto;vertical-align:middle;object-fit:contain}
+.nav-logo span{background:var(--g-brand);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nav-links{display:flex;align-items:center;gap:2px;list-style:none}
+.nav-links a{font-size:.82rem;font-weight:600;color:var(--ink);text-decoration:none;padding:6px 10px;border-radius:8px;transition:all .2s;white-space:nowrap}
+.nav-links a:hover{background:rgba(30,111,217,.07);color:var(--blue)}
+.nav-links a.active{background:rgba(30,111,217,.1);color:var(--blue)}
+.nav-cta{background:var(--navy) !important;color:#fff !important;padding:8px 16px !important;border-radius:8px !important;font-weight:700 !important;transition:all .2s !important;white-space:nowrap}
+.nav-cta:hover{background:var(--royal) !important;transform:translateY(-1px) !important}
+.nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;margin-left:12px}
+.nav-toggle span{width:22px;height:2px;background:var(--ink);border-radius:2px}
+
+/* ===== HERO ===== */
+.hero{background:var(--navy);padding:140px 40px 0;position:relative;overflow:hidden;min-height:92vh;display:flex;align-items:flex-end}
+.hero-bp{position:absolute;inset:0;background-image:linear-gradient(rgba(30,111,217,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(30,111,217,.05) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
+.hero-glow1{position:absolute;width:700px;height:700px;background:radial-gradient(circle,rgba(30,111,217,.15) 0%,transparent 70%);top:-200px;right:-100px;pointer-events:none}
+.hero-glow2{position:absolute;width:500px;height:500px;background:radial-gradient(circle,rgba(215,38,56,.1) 0%,transparent 70%);bottom:-100px;left:-50px;pointer-events:none}
+.hero-inner{max-width:1300px;margin:0 auto;width:100%;position:relative;z-index:2}
+.hero-badge{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:8px 18px;font-size:.72rem;font-weight:700;color:rgba(255,255,255,.6);letter-spacing:2px;text-transform:uppercase;margin-bottom:28px}
+.hero-badge .dot{width:6px;height:6px;background:var(--orange);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.5)}}
+.hero-split{display:grid;grid-template-columns:1.1fr 0.9fr;gap:80px;align-items:end;padding-bottom:0}
+.hero-copy h1{font-size:clamp(1.8rem,3.6vw,2.8rem);color:#fff;line-height:1.15;letter-spacing:-1.2px;margin-bottom:20px}
+.hero-copy h1 .accent{background:none;-webkit-text-fill-color:#fff;color:#fff}
+.hero-copy h1 .accent-blue{background:none;-webkit-text-fill-color:#fff;color:#fff}
+.hero-copy p{font-size:1.02rem;color:rgba(255,255,255,.5);line-height:1.85;max-width:500px;margin-bottom:36px;font-weight:400}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:56px}
+.btn-primary{background:var(--g-brand);color:#fff;padding:14px 30px;border-radius:8px;text-decoration:none;font-weight:700;font-size:.9rem;display:inline-flex;align-items:center;gap:8px;transition:all .25s;border:none;cursor:pointer;font-family:'Inter',sans-serif}
+.btn-primary:hover{opacity:.9;transform:translateY(-2px);box-shadow:0 8px 24px rgba(215,38,56,.3)}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.15);color:rgba(255,255,255,.75);padding:13px 30px;border-radius:8px;text-decoration:none;font-weight:600;font-size:.9rem;display:inline-flex;align-items:center;gap:8px;transition:all .25s}
+.btn-ghost:hover{border-color:rgba(255,255,255,.4);color:#fff;background:rgba(255,255,255,.05)}
+
+/* Engineering visual panel */
+.hero-visual{padding-bottom:0}
+.eng-panel{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:16px 16px 0 0;overflow:hidden}
+.eng-panel-bar{background:rgba(255,255,255,.05);padding:14px 20px;display:flex;align-items:center;gap:10px;border-bottom:1px solid rgba(255,255,255,.06)}
+.ep-dot{width:10px;height:10px;border-radius:50%}
+.ep-dot:nth-child(1){background:#FF5F57}
+.ep-dot:nth-child(2){background:#FFBD2E}
+.ep-dot:nth-child(3){background:#28CA41}
+.ep-file{font-size:.75rem;color:rgba(255,255,255,.25);margin-left:12px;font-family:monospace}
+.eng-panel-body{padding:24px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ep-stat{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:10px;padding:16px;text-align:center}
+.ep-stat .n{font-family:'Sora',sans-serif;font-weight:800;font-size:1.5rem;background:var(--g-brand);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.ep-stat .l{font-size:.7rem;color:rgba(255,255,255,.3);margin-top:4px;letter-spacing:.5px;text-transform:uppercase}
+.ep-tools{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.ep-tool{background:rgba(30,111,217,.15);border:1px solid rgba(30,111,217,.25);color:rgba(255,255,255,.7);padding:5px 12px;border-radius:4px;font-size:.72rem;font-weight:600;letter-spacing:.3px}
+.ep-tool.mech{background:rgba(215,38,56,.12);border-color:rgba(215,38,56,.25)}
+
+/* Stats bar */
+.hero-stats-bar{display:flex;border-top:1px solid rgba(255,255,255,.06);margin-top:0}
+.hstat{flex:1;text-align:center;padding:28px 16px;border-right:1px solid rgba(255,255,255,.06);transition:background .2s}
+.hstat:last-child{border-right:none}
+.hstat:hover{background:rgba(255,255,255,.02)}
+.hstat .n{font-family:'Sora',sans-serif;font-weight:800;font-size:1.9rem;color:#fff}
+.hstat .n span{background:var(--g-brand);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hstat .l{font-size:.72rem;color:rgba(255,255,255,.3);font-weight:500;text-transform:uppercase;letter-spacing:1px;margin-top:5px}
+
+/* ===== TICKER ===== */
+.ticker-wrap{background:rgba(30,111,217,.03);border-top:1px solid rgba(30,111,217,.08);border-bottom:1px solid rgba(30,111,217,.08);padding:18px 0;overflow:hidden}
+.ticker-inner{display:flex;animation:tickScroll 30s linear infinite;width:max-content}
+.ticker-logo{padding:0 40px;display:flex;align-items:center;justify-content:center}
+.ticker-logo img{height:36px;width:auto;max-width:140px;object-fit:contain;opacity:0.85;transition:all 0.35s ease}
+.ticker-logo img:hover{opacity:1;transform:scale(1.1)}
+@keyframes tickScroll{0%{transform:translateX(-50%)}100%{transform:translateX(0)}}
+
+/* ===== SECTION BASE ===== */
+section{padding:96px 40px}
+.sec-inner{max-width:1300px;margin:0 auto}
+.sec-eyebrow{font-size:.7rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--blue);margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.sec-eyebrow::after{content:'';flex:1;max-width:40px;height:1px;background:var(--blue);opacity:.4}
+.sec-title{font-size:clamp(1.9rem,3.5vw,2.9rem);color:var(--navy);line-height:1.1;letter-spacing:-1.5px;margin-bottom:16px}
+.sec-sub{font-size:.98rem;color:var(--grey2);line-height:1.85;max-width:580px}
+.sec-title .t-blue{color:var(--blue)}
+.sec-title .t-red{color:var(--red)}
+.sec-title .t-orange{color:var(--orange)}
+
+/* ===== PROGRAMS SECTION & GEONIXA CARD STYLING ===== */
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 28px;
+  margin-top: 36px;
+}
+.prog-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.015);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), border-color 0.3s;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+}
+.prog-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(11, 31, 58, 0.07);
+  border-color: rgba(30, 111, 217, 0.12);
+}
+.prog-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background: #f4f4f5;
+}
+.prog-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.prog-card:hover .prog-img-wrap img {
+  transform: scale(1.05);
+}
+.prog-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(11, 31, 58, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #ffffff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.prog-badge .badge-dot {
+  width: 6px;
+  height: 6px;
+  background: #10b981;
+  border-radius: 50%;
+  display: inline-block;
+  animation: badgePulse 2s infinite;
+}
+@keyframes badgePulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.4); }
+}
+.prog-eyebrow {
+  font-size: 0.72rem;
+  color: #71717a;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+.prog-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #09090b;
+  line-height: 1.35;
+  margin-bottom: 4px;
+  font-family: 'Sora', sans-serif;
+  letter-spacing: -0.5px;
+}
+.prog-title-split {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #ff5722;
+  line-height: 1.3;
+  margin-bottom: 10px;
+  font-family: 'Sora', sans-serif;
+  letter-spacing: -0.2px;
+}
+.prog-sub {
+  font-size: 0.88rem;
+  color: #52525b;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+.prog-meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+  border-top: 1px solid #f4f4f5;
+  margin-bottom: 20px;
+}
+.prog-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  color: #71717a;
+  font-weight: 600;
+}
+.prog-meta-item.cert {
+  color: #ea580c;
+}
+.prog-btn {
+  width: 100%;
+  padding: 13px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  text-align: center;
+  border: 1.5px solid #e4e4e7;
+  background: #ffffff;
+  color: #18181b;
+  transition: all 0.2s ease;
+  font-family: 'Inter', sans-serif;
+}
+.prog-card:hover .prog-btn {
+  background: #ff5722;
+  border-color: #ff5722;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(255, 87, 34, 0.3);
+}
+
+/* ===== FILTER BUTTONS STYLING ===== */
+.tf-btn {
+  background: transparent;
+  border: 1.5px solid rgba(11, 31, 58, 0.1);
+  color: #52525b;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-family: 'Inter', sans-serif;
+}
+.tf-btn:hover {
+  background: rgba(30, 111, 217, 0.05);
+  border-color: var(--blue);
+  color: var(--blue);
+}
+.tf-btn.active-all, .tf-btn.active-civil, .tf-btn.active-mech, .tf-btn.active-cse, .tf-btn.active-eee, .tf-btn.active-ece, .tf-btn.active-comm, .tf-btn.active-chem {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: #ffffff;
+}
+.tf-btn.active-civil { background: var(--blue); border-color: var(--blue); }
+.tf-btn.active-mech { background: var(--red); border-color: var(--red); }
+.tf-btn.active-cse { background: var(--cse); border-color: var(--cse); }
+.tf-btn.active-eee { background: var(--eee); border-color: var(--eee); }
+.tf-btn.active-ece { background: var(--ece); border-color: var(--ece); }
+.tf-btn.active-comm { background: #14b8a6; border-color: #14b8a6; }
+.tf-btn.active-chem { background: var(--chem); border-color: var(--chem); }
+
+/* ===== PROCESS STEPS ===== */
+.process-wrap{margin-top:64px}
+.process-steps{display:flex;align-items:flex-start;gap:0;position:relative}
+.process-steps::before{content:'';position:absolute;top:28px;left:28px;right:28px;height:1px;background:linear-gradient(to right,var(--blue),var(--red));opacity:.2;z-index:0}
+.p-step{flex:1;text-align:center;position:relative;z-index:1;padding:0 12px}
+.p-step-num{width:56px;height:56px;border-radius:50%;background:var(--offwhite);border:2px solid rgba(30,111,217,.2);display:flex;align-items:center;justify-content:center;font-family:'Sora',sans-serif;font-weight:800;font-size:1.1rem;color:var(--blue);margin:0 auto 16px;transition:all .3s}
+.p-step:hover .p-step-num{background:var(--blue);color:#fff;border-color:var(--blue);transform:scale(1.1)}
+.p-step h4{font-size:.9rem;font-weight:700;color:var(--navy);margin-bottom:6px}
+.p-step p{font-size:.8rem;color:var(--grey2);line-height:1.6}
+.p-step.red .p-step-num{border-color:rgba(215,38,56,.2);color:var(--red)}
+.p-step.red:hover .p-step-num{background:var(--red);border-color:var(--red)}
+
+/* ===== TRACKS ===== */
+.tracks-intro{display:flex;flex-wrap:wrap;gap:24px;justify-content:center;margin-top:56px}
+.track-hero{flex:1 1 calc(33.333% - 24px);min-width:320px;max-width:390px;border-radius:20px;padding:48px 40px;position:relative;overflow:hidden;transition:transform .3s,box-shadow .3s}
+.track-hero:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.track-hero.civil{background:var(--navy);border:1px solid rgba(30,111,217,.3)}
+.track-hero.mech{background:#1A0205;border:1px solid rgba(215,38,56,.3)}
+.track-bp{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:30px 30px;pointer-events:none}
+.track-hero-glow{position:absolute;width:300px;height:300px;border-radius:50%;top:-80px;right:-80px;pointer-events:none;filter:blur(60px)}
+.civil .track-hero-glow{background:rgba(30,111,217,.2)}
+.mech .track-hero-glow{background:rgba(215,38,56,.2)}
+.track-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:6px 14px;font-size:.7rem;font-weight:700;color:rgba(255,255,255,.6);letter-spacing:2px;text-transform:uppercase;margin-bottom:20px;position:relative;z-index:1}
+.track-hero h2{font-size:2rem;color:#fff;line-height:1.15;letter-spacing:-1px;margin-bottom:12px;position:relative;z-index:1}
+.track-hero p{font-size:.88rem;color:rgba(255,255,255,.5);line-height:1.75;margin-bottom:24px;position:relative;z-index:1;max-width:340px}
+.track-tools{display:flex;flex-wrap:wrap;gap:8px;position:relative;z-index:1;margin-bottom:28px}
+.t-tool{padding:5px 12px;border-radius:4px;font-size:.72rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase}
+.civil .t-tool{background:rgba(30,111,217,.2);border:1px solid rgba(30,111,217,.4);color:rgba(255,255,255,.75)}
+.mech .t-tool{background:rgba(215,38,56,.2);border:1px solid rgba(215,38,56,.4);color:rgba(255,255,255,.75)}
+.track-cta{display:inline-flex;align-items:center;gap:8px;color:#fff;font-weight:700;font-size:.88rem;position:relative;z-index:1;text-decoration:none;padding:12px 24px;border-radius:8px;transition:all .25s;cursor:pointer;border:none;outline:none}
+.civil .track-cta{background:rgba(30,111,217,.25);border:1px solid rgba(30,111,217,.4)}
+.civil .track-cta:hover{background:var(--blue);border-color:var(--blue)}
+.mech .track-cta{background:rgba(215,38,56,.25);border:1px solid rgba(215,38,56,.4)}
+.mech .track-cta:hover{background:var(--red);border-color:var(--red)}
+
+/* ===== MULTIDISCIPLINARY TRACK STYLES ===== */
+.track-hero.cse{background:#100925;border:1px solid rgba(123,47,247,.3)}
+.track-hero.eee{background:#1A1201;border:1px solid rgba(245,158,11,.3)}
+.track-hero.ece{background:#031720;border:1px solid rgba(14,165,233,.3)}
+.track-hero.comm{background:#021B1B;border:1px solid rgba(20,184,166,.3)}
+.track-hero.chem{background:#041A12;border:1px solid rgba(16,185,129,.3)}
+.cse .track-hero-glow{background:rgba(123,47,247,.2)}
+.eee .track-hero-glow{background:rgba(245,158,11,.2)}
+.ece .track-hero-glow{background:rgba(14,165,233,.2)}
+.comm .track-hero-glow{background:rgba(20,184,166,.2)}
+.chem .track-hero-glow{background:rgba(16,185,129,.2)}
+.cse .t-tool{background:rgba(123,47,247,.2);border:1px solid rgba(123,47,247,.4);color:rgba(255,255,255,.75)}
+.eee .t-tool{background:rgba(245,158,11,.2);border:1px solid rgba(245,158,11,.4);color:rgba(255,255,255,.75)}
+.ece .t-tool{background:rgba(14,165,233,.2);border:1px solid rgba(14,165,233,.4);color:rgba(255,255,255,.75)}
+.comm .t-tool{background:rgba(20,184,166,.2);border:1px solid rgba(20,184,166,.4);color:rgba(255,255,255,.75)}
+.chem .t-tool{background:rgba(16,185,129,.2);border:1px solid rgba(16,185,129,.4);color:rgba(255,255,255,.75)}
+.cse .track-cta{background:rgba(123,47,247,.25);border:1px solid rgba(123,47,247,.4)}
+.cse .track-cta:hover{background:var(--cse);border-color:var(--cse)}
+.eee .track-cta{background:rgba(245,158,11,.25);border:1px solid rgba(245,158,11,.4)}
+.eee .track-cta:hover{background:var(--eee);border-color:var(--eee)}
+.ece .track-cta{background:rgba(14,165,233,.25);border:1px solid rgba(14,165,233,.4)}
+.ece .track-cta:hover{background:var(--ece);border-color:var(--ece)}
+.chem .track-cta{background:rgba(16,185,129,.25);border:1px solid rgba(16,185,129,.4)}
+.chem .track-cta:hover{background:var(--chem);border-color:var(--chem)}
+
+.tf-btn.active-cse,.tf-btn:hover.cse-btn{background:var(--cse);color:#fff;border-color:var(--cse)}
+.tf-btn.active-eee,.tf-btn:hover.eee-btn{background:var(--eee);color:#fff;border-color:var(--eee)}
+.tf-btn.active-ece,.tf-btn:hover.ece-btn{background:var(--ece);color:#fff;border-color:var(--ece)}
+.tf-btn.active-chem,.tf-btn:hover.chem-btn{background:var(--chem);color:#fff;border-color:var(--chem)}
+
+.prog-track-badge.cse{background:rgba(123,47,247,.9)}
+.prog-track-badge.eee{background:rgba(245,158,11,.9)}
+.prog-track-badge.ece{background:rgba(14,165,233,.9)}
+.prog-track-badge.chem{background:rgba(16,185,129,.9)}
+
+.prog-view-btn.cse{background:var(--cse)}
+.prog-view-btn.eee{background:var(--eee)}
+.prog-view-btn.ece{background:var(--ece)}
+.prog-view-btn.chem{background:var(--chem)}
+
+.pp-hero.cse{background:#100925}
+.pp-hero.eee{background:#1A1201}
+.pp-hero.ece{background:#031720}
+.pp-hero.chem{background:#041A12}
+.pp-hero.cse .pp-hero-glow{background:rgba(123,47,247,.25)}
+.pp-hero.eee .pp-hero-glow{background:rgba(245,158,11,.25)}
+.pp-hero.ece .pp-hero-glow{background:rgba(14,165,233,.25)}
+.pp-hero.chem .pp-hero-glow{background:rgba(16,185,129,.25)}
+.pp-hero.cse .pp-track-tag{background:rgba(123,47,247,.3);border:1px solid rgba(123,47,247,.5)}
+.pp-hero.eee .pp-track-tag{background:rgba(245,158,11,.3);border:1px solid rgba(245,158,11,.5)}
+.pp-hero.ece .pp-track-tag{background:rgba(14,165,233,.3);border:1px solid rgba(14,165,233,.5)}
+.pp-hero.chem .pp-track-tag{background:rgba(16,185,129,.3);border:1px solid rgba(16,185,129,.5)}
+.pp-hero.cse .pp-tool-badge{background:rgba(123,47,247,.2);border:1px solid rgba(123,47,247,.4);color:rgba(255,255,255,.8)}
+.pp-hero.eee .pp-tool-badge{background:rgba(245,158,11,.2);border:1px solid rgba(245,158,11,.4);color:rgba(255,255,255,.8)}
+.pp-hero.ece .pp-tool-badge{background:rgba(14,165,233,.2);border:1px solid rgba(14,165,233,.4);color:rgba(255,255,255,.8)}
+.pp-hero.chem .pp-tool-badge{background:rgba(16,185,129,.2);border:1px solid rgba(16,185,129,.4);color:rgba(255,255,255,.8)}
+
+.tool-track.cse{background:rgba(123,47,247,.08);color:var(--cse)}
+.tool-track.eee{background:rgba(245,158,11,.08);color:var(--eee)}
+.tool-track.ece{background:rgba(14,165,233,.08);color:var(--ece)}
+.tool-track.chem{background:rgba(16,185,129,.08);color:var(--chem)}
+
+/* ===== PROGRAMS SECTION ===== */
+.programs-header{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:48px;flex-wrap:wrap;gap:20px}
+.track-filter{display:flex;gap:10px}
+.tf-btn{padding:9px 22px;border-radius:6px;border:1.5px solid rgba(11,31,58,.12);font-size:.82rem;font-weight:700;cursor:pointer;transition:all .2s;background:#fff;color:var(--ink);font-family:'Inter',sans-serif}
+.tf-btn.active-civil,.tf-btn:hover.civil-btn{background:var(--navy);color:#fff;border-color:var(--navy)}
+.tf-btn.active-mech,.tf-btn:hover.mech-btn{background:var(--red);color:#fff;border-color:var(--red)}
+.tf-btn.active-all{background:var(--navy);color:#fff;border-color:var(--navy)}
+
+.programs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.prog-card{background:#fff;border:1px solid rgba(11,31,58,.08);border-radius:16px;overflow:hidden;transition:transform .3s,box-shadow .3s;cursor:pointer}
+.prog-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.prog-thumb{height:200px;position:relative;display:flex;align-items:flex-end;padding:20px;overflow:hidden}
+.prog-thumb-bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.prog-thumb-overlay{position:absolute;inset:0}
+.prog-thumb-content{position:relative;z-index:1;width:100%}
+.prog-track-badge{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:4px;font-size:.68rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#fff;margin-bottom:10px}
+.prog-track-badge.civil{background:rgba(30,111,217,.9)}
+.prog-track-badge.mech{background:rgba(215,38,56,.9)}
+.prog-title-overlay{font-family:'Sora',sans-serif;font-weight:700;font-size:1.15rem;color:#fff;line-height:1.2;text-shadow:0 2px 8px rgba(0,0,0,.5)}
+.prog-body{padding:22px}
+.prog-desc{font-size:.83rem;color:var(--grey2);line-height:1.7;margin-bottom:16px}
+.prog-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+.prog-tag{padding:4px 10px;border-radius:4px;font-size:.7rem;font-weight:600;background:var(--offwhite);color:var(--grey2);border:1px solid rgba(11,31,58,.08)}
+.prog-meta{display:flex;align-items:center;gap:16px;font-size:.75rem;color:var(--grey2);font-weight:600;margin-bottom:18px}
+.prog-meta span{display:flex;align-items:center;gap:5px}
+.prog-footer{display:flex;align-items:center;justify-content:space-between;padding-top:16px;border-top:1px solid rgba(11,31,58,.07)}
+.prog-credit{display:flex;align-items:center;gap:6px;font-size:.75rem;font-weight:700;color:var(--blue);background:rgba(30,111,217,.08);padding:4px 10px;border-radius:4px}
+.prog-view-btn{display:inline-flex;align-items:center;gap:6px;padding:9px 20px;border-radius:7px;font-size:.82rem;font-weight:700;cursor:pointer;transition:all .2s;border:none;font-family:'Inter',sans-serif;color:#fff}
+.prog-view-btn.civil{background:var(--blue)}
+.prog-view-btn.mech{background:var(--red)}
+.prog-view-btn:hover{opacity:.88;transform:translateY(-1px)}
+
+/* ===== PROGRAM DETAIL PANEL ===== */
+#progPanel{position:fixed;inset:0;z-index:5000;display:none;overflow-y:auto}
+#progPanel.open{display:block}
+.pp-backdrop{position:fixed;inset:0;background:rgba(11,31,58,.7);backdrop-filter:blur(6px)}
+.pp-content{position:relative;z-index:1;min-height:100vh;background:#fff;max-width:900px;margin:0 auto;box-shadow:var(--shadow-lg)}
+.pp-close{position:fixed;top:24px;right:24px;width:44px;height:44px;border-radius:50%;background:#fff;border:none;font-size:1.1rem;cursor:pointer;box-shadow:var(--shadow-md);display:flex;align-items:center;justify-content:center;z-index:2;transition:all .2s}
+.pp-close:hover{transform:rotate(90deg);background:var(--offwhite)}
+
+.pp-hero{padding:0;position:relative;overflow:hidden;display:flex;min-height:260px}
+.pp-hero.civil{background:var(--navy)}
+.pp-hero.mech{background:#1A0205}
+.pp-hero-bp{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:30px 30px;z-index:0}
+.pp-hero-glow{position:absolute;width:400px;height:400px;border-radius:50%;top:-150px;left:-100px;filter:blur(80px);pointer-events:none;z-index:0}
+.pp-hero.civil .pp-hero-glow{background:rgba(30,111,217,.25)}
+.pp-hero.mech .pp-hero-glow{background:rgba(215,38,56,.25)}
+.pp-hero-img-wrap{position:absolute;top:0;right:0;width:45%;height:100%;z-index:1}
+.pp-hero-img{width:100%;height:100%;object-fit:cover;display:block}
+.pp-hero-img-overlay{position:absolute;inset:0;background:linear-gradient(to right, var(--pp-overlay-color, #0a1628) 0%, transparent 70%)}
+.pp-hero.civil .pp-hero-img-overlay{background:linear-gradient(to right, #0c1e3d 0%, rgba(12,30,61,0.5) 60%, transparent 100%)}
+.pp-hero.mech .pp-hero-img-overlay{background:linear-gradient(to right, #1a0205 0%, rgba(26,2,5,0.5) 60%, transparent 100%)}
+.pp-hero.cse .pp-hero-img-overlay{background:linear-gradient(to right, #0d0820 0%, rgba(13,8,32,0.5) 60%, transparent 100%)}
+.pp-hero.eee .pp-hero-img-overlay{background:linear-gradient(to right, #1a1200 0%, rgba(26,18,0,0.5) 60%, transparent 100%)}
+.pp-hero.ece .pp-hero-img-overlay{background:linear-gradient(to right, #031720 0%, rgba(3,23,32,0.5) 60%, transparent 100%)}
+.pp-hero.comm .pp-hero-img-overlay{background:linear-gradient(to right, #021b1b 0%, rgba(2,27,27,0.5) 60%, transparent 100%)}
+.pp-hero.chem .pp-hero-img-overlay{background:linear-gradient(to right, #041a12 0%, rgba(4,26,18,0.5) 60%, transparent 100%)}
+.pp-hero-content{position:relative;z-index:2;padding:52px 56px 44px;flex:1;max-width:62%}
+.pp-track-tag{display:inline-flex;align-items:center;gap:8px;border-radius:4px;padding:6px 14px;font-size:.68rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#fff;margin-bottom:20px;position:relative;z-index:1}
+.pp-hero.civil .pp-track-tag{background:rgba(30,111,217,.3);border:1px solid rgba(30,111,217,.5)}
+.pp-hero.mech .pp-track-tag{background:rgba(215,38,56,.3);border:1px solid rgba(215,38,56,.5)}
+.pp-hero h1{font-size:2.2rem;color:#fff;line-height:1.1;letter-spacing:-1px;margin-bottom:14px;position:relative;z-index:1}
+.pp-hero p{font-size:.95rem;color:rgba(255,255,255,.55);line-height:1.8;max-width:520px;position:relative;z-index:1;margin-bottom:32px}
+.pp-hero-stats{display:flex;gap:32px;position:relative;z-index:1;flex-wrap:wrap}
+.pp-hs{text-align:left}
+.pp-hs .n{font-family:'Sora',sans-serif;font-weight:800;font-size:1.6rem;color:#fff}
+.pp-hs .l{font-size:.7rem;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:1px;margin-top:2px}
+.pp-hero-tools{display:flex;flex-wrap:wrap;gap:8px;position:relative;z-index:1}
+.pp-tool-badge{padding:6px 14px;border-radius:4px;font-size:.75rem;font-weight:700}
+.pp-hero.civil .pp-tool-badge{background:rgba(30,111,217,.2);border:1px solid rgba(30,111,217,.4);color:rgba(255,255,255,.8)}
+.pp-hero.mech .pp-tool-badge{background:rgba(215,38,56,.2);border:1px solid rgba(215,38,56,.4);color:rgba(255,255,255,.8)}
+
+.pp-body{padding:56px}
+
+/* Journey formula */
+.pp-formula{background:var(--offwhite);border-radius:16px;padding:32px;margin-bottom:48px;border:1px solid rgba(11,31,58,.07)}
+.pp-formula-title{font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--grey2);margin-bottom:20px}
+.pp-formula-steps{display:flex;align-items:center;gap:0;flex-wrap:wrap}
+.pp-fs{flex:1;text-align:center;padding:0 8px;min-width:80px}
+.pp-fs-circle{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-weight:800;font-size:.85rem;color:#fff}
+.pp-fs h5{font-size:.78rem;font-weight:700;color:var(--navy);line-height:1.3}
+.pp-arrow{font-size:1.2rem;color:var(--grey);flex-shrink:0;padding:0 4px}
+
+/* Curriculum */
+.pp-section-title{font-size:.72rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--grey2);margin-bottom:24px;display:flex;align-items:center;gap:10px}
+.pp-section-title::after{content:'';flex:1;height:1px;background:rgba(11,31,58,.07)}
+.curriculum-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:48px}
+.curr-phase{border:1px solid rgba(11,31,58,.08);border-radius:14px;padding:24px;background:#fff;transition:box-shadow .2s}
+.curr-phase:hover{box-shadow:var(--shadow-sm)}
+.curr-phase-header{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.curr-phase-num{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'Sora',sans-serif;font-weight:800;font-size:.85rem;color:#fff;flex-shrink:0}
+.curr-phase-label{font-size:.65rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--grey2);margin-bottom:2px}
+.curr-phase-name{font-size:.92rem;font-weight:700;color:var(--navy)}
+.curr-topics{list-style:none;margin-bottom:14px}
+.curr-topics li{font-size:.8rem;color:var(--grey2);padding:4px 0;display:flex;align-items:flex-start;gap:8px;line-height:1.5}
+.curr-topics li::before{content:'→';color:var(--blue);font-weight:700;flex-shrink:0;margin-top:1px}
+.curr-projects{margin-top:12px;padding-top:12px;border-top:1px solid rgba(11,31,58,.06)}
+.curr-projects-label{font-size:.65rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--grey2);margin-bottom:8px}
+.curr-project-item{font-size:.78rem;color:var(--navy);font-weight:600;padding:5px 10px;background:var(--offwhite);border-radius:4px;margin-bottom:6px;display:flex;align-items:center;gap:6px}
+.curr-project-item::before{content:'⚙';font-size:.75rem}
+
+/* Outcomes */
+.pp-outcomes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:48px}
+.pp-outcome{padding:20px;border-radius:12px;background:var(--offwhite);border:1px solid rgba(11,31,58,.07);text-align:center}
+.pp-outcome-icon{font-size:1.6rem;margin-bottom:10px}
+.pp-outcome h5{font-size:.85rem;font-weight:700;color:var(--navy);margin-bottom:6px}
+.pp-outcome p{font-size:.76rem;color:var(--grey2);line-height:1.6}
+
+/* Career paths */
+.pp-careers{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:48px}
+.pp-career{padding:8px 16px;border-radius:6px;font-size:.8rem;font-weight:600;background:#fff;border:1.5px solid rgba(11,31,58,.12);color:var(--navy);display:flex;align-items:center;gap:6px}
+.pp-career::before{content:'▸';color:var(--blue);font-size:.7rem}
+
+/* CTA in panel */
+.pp-cta{background:var(--offwhite);border-radius:16px;padding:40px;text-align:center;border:1px solid rgba(11,31,58,.07)}
+.pp-cta h3{font-size:1.4rem;color:var(--navy);margin-bottom:10px}
+.pp-cta p{font-size:.88rem;color:var(--grey2);margin-bottom:24px;line-height:1.7}
+.pp-cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* ===== TOOLS ECOSYSTEM ===== */
+.tools-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:0;margin-top:56px;border:1px solid rgba(11,31,58,.08);border-radius:16px;overflow:hidden}
+.tool-cell{padding:28px 20px;text-align:center;border-right:1px solid rgba(11,31,58,.06);border-bottom:1px solid rgba(11,31,58,.06);transition:background .2s,transform .2s;cursor:default}
+.tool-cell:hover{background:var(--offwhite);transform:translateY(-2px)}
+.tool-cell:nth-child(6n){border-right:none}
+.tool-cell:nth-last-child(-n+6){border-bottom:none}
+.tool-icon{font-size:2rem;margin-bottom:10px}
+.tool-name{font-size:.8rem;font-weight:700;color:var(--navy);margin-bottom:4px}
+.tool-track{font-size:.65rem;font-weight:600;letter-spacing:1px;text-transform:uppercase;padding:2px 8px;border-radius:3px}
+.tool-track.civil{background:rgba(30,111,217,.08);color:var(--blue)}
+.tool-track.mech{background:rgba(215,38,56,.08);color:var(--red)}
+.tool-track.both{background:rgba(255,107,53,.08);color:var(--orange)}
+
+/* ===== LABS VISION ===== */
+.labs-section{background:var(--navy);position:relative;overflow:hidden}
+.labs-bp{position:absolute;inset:0;background-image:linear-gradient(rgba(30,111,217,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(30,111,217,.04) 1px,transparent 1px);background-size:50px 50px;pointer-events:none}
+.labs-glow{position:absolute;width:600px;height:600px;background:radial-gradient(circle,rgba(30,111,217,.12) 0%,transparent 70%);top:-200px;right:-200px;pointer-events:none}
+.labs-inner{position:relative;z-index:1}
+.labs-eyebrow{font-size:.7rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.labs-eyebrow::after{content:'';flex:1;max-width:40px;height:1px;background:rgba(255,255,255,.2)}
+.labs-title{font-size:clamp(1.9rem,3.5vw,2.8rem);color:#fff;line-height:1.1;letter-spacing:-1.5px;margin-bottom:14px}
+.labs-title span{background:linear-gradient(135deg,#4FA3FF,#1E6FD9);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.labs-sub{font-size:.95rem;color:rgba(255,255,255,.45);line-height:1.85;max-width:540px;margin-bottom:56px}
+.labs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.lab-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:32px 28px;transition:all .3s}
+.lab-card:hover{background:rgba(255,255,255,.07);transform:translateY(-4px);border-color:rgba(30,111,217,.3)}
+.lab-icon{width:52px;height:52px;border-radius:12px;background:rgba(30,111,217,.2);border:1px solid rgba(30,111,217,.3);display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:18px}
+.lab-card h4{font-size:1rem;color:#fff;margin-bottom:8px}
+.lab-card p{font-size:.82rem;color:rgba(255,255,255,.4);line-height:1.7}
+.lab-badge{display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-size:.68rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--blue);background:rgba(30,111,217,.15);padding:4px 10px;border-radius:4px}
+
+/* ===== CREDIT PROGRAMS ===== */
+.credit-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:56px}
+.credit-card{background:#fff;border:1px solid rgba(11,31,58,.08);border-radius:16px;padding:36px;position:relative;overflow:hidden;transition:all .3s}
+.credit-card:hover{box-shadow:var(--shadow-md);transform:translateY(-4px)}
+.credit-corner{position:absolute;top:0;right:0;width:120px;height:120px;opacity:.04}
+.credit-label{display:inline-flex;align-items:center;gap:8px;font-size:.68rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:5px 12px;border-radius:4px;margin-bottom:16px}
+.credit-card.a .credit-label{background:rgba(30,111,217,.1);color:var(--blue)}
+.credit-card.b .credit-label{background:rgba(215,38,56,.1);color:var(--red)}
+.credit-card.c .credit-label{background:rgba(255,107,53,.1);color:var(--orange)}
+.credit-card.d .credit-label{background:rgba(22,163,74,.1);color:#16A34A}
+.credit-card h3{font-size:1.2rem;color:var(--navy);margin-bottom:10px}
+.credit-card p{font-size:.85rem;color:var(--grey2);line-height:1.7;margin-bottom:20px}
+.credit-features{list-style:none}
+.credit-features li{font-size:.82rem;color:var(--ink);padding:7px 0;border-bottom:1px solid rgba(11,31,58,.05);display:flex;align-items:flex-start;gap:10px;line-height:1.5}
+.credit-features li:last-child{border-bottom:none}
+.credit-features li::before{content:'✓';color:var(--blue);font-weight:900;flex-shrink:0;margin-top:1px}
+
+/* ===== JOURNEY PROCESS ===== */
+.journey-wrap{margin-top:56px}
+.journey-flow{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;position:relative}
+.journey-flow::before{content:'';position:absolute;top:36px;left:10%;right:10%;height:2px;background:linear-gradient(to right,var(--blue),var(--red));opacity:.15}
+.j-step{text-align:center;position:relative;z-index:1}
+.j-num{width:72px;height:72px;border-radius:50%;border:2px solid rgba(11,31,58,.1);background:#fff;display:flex;align-items:center;justify-content:center;font-family:'Sora',sans-serif;font-weight:800;font-size:1.1rem;color:var(--navy);margin:0 auto 16px;box-shadow:var(--shadow-sm);transition:all .3s;position:relative}
+.j-step:hover .j-num{background:var(--blue);color:#fff;border-color:var(--blue);transform:scale(1.1);box-shadow:0 8px 24px rgba(30,111,217,.3)}
+.j-num-label{font-size:.6rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;position:absolute;bottom:-18px;left:50%;transform:translateX(-50%);white-space:nowrap;color:var(--blue)}
+.j-step h4{font-size:.9rem;font-weight:700;color:var(--navy);margin-bottom:6px;margin-top:20px}
+.j-step p{font-size:.78rem;color:var(--grey2);line-height:1.6}
+
+/* ===== OUTCOMES DARK ===== */
+.outcomes-dark{background:var(--offwhite)}
+.outcomes-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:56px}
+.oc{background:#fff;border:1px solid rgba(11,31,58,.08);border-radius:16px;padding:28px;transition:all .3s}
+.oc:hover{transform:translateY(-4px);box-shadow:var(--shadow-md)}
+.oc-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:16px}
+.oc h4{font-size:.95rem;font-weight:700;color:var(--navy);margin-bottom:8px}
+.oc p{font-size:.8rem;color:var(--grey2);line-height:1.65}
+
+/* ===== CTA ===== */
+.cta-sec{background:var(--navy);text-align:center;position:relative;overflow:hidden}
+.cta-bp{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:40px 40px}
+.cta-glow{position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(30,111,217,.15) 0%,transparent 60%)}
+.cta-inner{position:relative;z-index:1}
+.cta-sec h2{font-size:clamp(1.9rem,4vw,3rem);color:#fff;margin-bottom:16px;letter-spacing:-1.5px}
+.cta-sec p{font-size:.95rem;color:rgba(255,255,255,.45);max-width:480px;margin:0 auto 36px;line-height:1.85}
+.cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn-white{background:#fff;color:var(--navy);padding:14px 30px;border-radius:8px;text-decoration:none;font-weight:700;font-size:.9rem;display:inline-flex;align-items:center;gap:8px;transition:all .25s}
+.btn-white:hover{background:var(--offwhite);transform:translateY(-2px)}
+.btn-ghost-white{border:1.5px solid rgba(255,255,255,.15);color:rgba(255,255,255,.75);padding:13px 30px;border-radius:8px;text-decoration:none;font-weight:600;font-size:.9rem;display:inline-flex;align-items:center;gap:8px;transition:all .25s}
+.btn-ghost-white:hover{border-color:rgba(255,255,255,.4);color:#fff}
+
+/* ===== FOOTER ===== */
+footer{background:#060E1A;padding:72px 40px 32px;border-top:1px solid rgba(255,255,255,.04)}
+.footer-inner{max-width:1300px;margin:0 auto}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px}
+.footer-brand p{font-size:.84rem;color:rgba(255,255,255,.55);line-height:1.8;margin-top:14px;max-width:260px}
+.footer-col h4{font-size:.7rem;font-weight:700;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:2px;margin-bottom:18px}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:10px}
+.footer-col a{font-size:.84rem;color:rgba(255,255,255,.55);text-decoration:none;transition:color .2s}
+.footer-col a:hover{color:rgba(255,255,255,.9)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.04);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.footer-bottom p{font-size:.78rem;color:rgba(255,255,255,.45)}
+.footer-socials{display:flex;gap:10px}
+.footer-socials a{width:32px;height:32px;border-radius:6px;background:rgba(255,255,255,.04);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.55);text-decoration:none;font-size:.78rem;transition:all .2s;border:1px solid rgba(255,255,255,.06)}
+.footer-socials a:hover{background:var(--blue);color:#fff;border-color:var(--blue)}
+
+/* ===== REVEAL ===== */
+.reveal,.reveal-l,.reveal-r{opacity:0;transform:translateY(32px);transition:opacity .7s ease,transform .7s ease}
+.reveal-l{transform:translateX(-32px)}
+.reveal-r{transform:translateX(32px)}
+.revealed{opacity:1 !important;transform:none !important}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:1100px){
+  .programs-grid{grid-template-columns:repeat(2,1fr)}
+  .tracks-intro{grid-template-columns:repeat(2,1fr)}
+  .tools-grid{grid-template-columns:repeat(4,1fr)}
+  .tools-grid .tool-cell:nth-child(4n){border-right:none}
+  .outcomes-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-top{grid-template-columns:1fr 1fr}
+  .hero-split{grid-template-columns:1fr;gap:48px}
+}
+@media(max-width:900px){
+  .tracks-intro{grid-template-columns:1fr}
+  .labs-grid{grid-template-columns:1fr 1fr}
+  .credit-grid{grid-template-columns:1fr}
+  .journey-flow{grid-template-columns:repeat(3,1fr);gap:24px}
+  .journey-flow::before{display:none}
+  .curriculum-grid{grid-template-columns:1fr}
+  .pp-outcomes{grid-template-columns:1fr 1fr}
+  .pp-hero{min-height:220px}
+  .pp-hero-content{padding:40px 32px;max-width:70%}
+  .pp-hero-img-wrap{width:35%}
+  .pp-body{padding:36px 32px}
+}
+
+@media(max-width:700px){
+  section{padding:72px 24px}
+  .hero{padding:120px 24px 0}
+  .programs-grid{grid-template-columns:1fr}
+  .tools-grid{grid-template-columns:repeat(2,1fr)}
+  .tools-grid .tool-cell:nth-child(2n){border-right:none}
+  .outcomes-grid{grid-template-columns:1fr}
+  .labs-grid{grid-template-columns:1fr}
+  .process-steps{flex-direction:column;gap:24px}
+  .process-steps::before{display:none}
+  .hero-stats-bar{flex-wrap:wrap}
+  .hstat{min-width:50%;border-right:none;border-bottom:1px solid rgba(255,255,255,.06)}
+  .journey-flow{grid-template-columns:1fr 1fr}
+  .pp-hero-stats{gap:20px}
+  .pp-outcomes{grid-template-columns:1fr}
+  .pp-hero{min-height:auto;flex-direction:column}
+  .pp-hero-img-wrap{position:relative;width:100%;height:180px}
+  .pp-hero-img-overlay{background:linear-gradient(to bottom, transparent 30%, var(--pp-bg, #0a1628) 100%) !important}
+  .pp-hero-content{max-width:100%;padding:28px 24px}
+  .pp-body{padding:28px 24px}
+  footer{padding:56px 24px 28px}
+  .footer-top{grid-template-columns:1fr}
+}
+</style>
+<script>(function(){try{var n=performance.getEntriesByType&&performance.getEntriesByType('navigation')[0];if(sessionStorage.getItem('tm4_loader_seen')||(n&&n.type!=='navigate'))document.documentElement.classList.add('skip-loader');}catch(e){}})();</script>
+<link href="../assets/css/responsive-base.css" rel="stylesheet"/>
+</head>
+<body>
+
+<div id="progress-bar"></div>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-blueprint"></div>
+  <div class="loader-ring"></div>
+  <div class="loader-brand">Tech<span>M4</span>Engineering</div>
+  <div class="loader-sub">Civil · Mechanical · CSE · EEE · ECE · Chemical</div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+</div>
+
+<!-- NAV -->
+<button aria-label="Close navigation overlay" class="nav-overlay" id="navOverlay" type="button"></button>
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo"><img src="../logo.png" alt="TechM4India Logo"><span style="background:none;-webkit-text-fill-color:initial;color:inherit;">Tech<span>M4</span>India</span></a>
+    <ul class="nav-links" id="navLinks">
+<li><button aria-label="Close menu" class="nav-close" id="navClose" type="button">×</button></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/engineering" class="active">Engineering</a></li>
+      <li><a href="/solutions">Solutions</a></li>
+      <li><a href="/schools">Schools</a></li>
+      <li><a href="/space">Space</a></li>
+      <li><a href="/contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button aria-controls="navLinks" aria-expanded="false" aria-label="Open navigation menu" class="nav-toggle" id="navToggle" type="button">
+<span></span><span></span><span></span>
+</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bp"></div>
+  <div class="hero-glow1"></div>
+  <div class="hero-glow2"></div>
+  <div class="hero-inner">
+    <div class="hero-badge"><span class="dot"></span>TechM4Engineering — Advanced Engineering Programs</div>
+    <div class="hero-split">
+      <div class="hero-copy">
+        <h1>Engineering India's<br/><span class="accent-blue">Industrial Future</span><br/>Through <span class="accent">Hands-On Innovation.</span></h1>
+        <p>India's most advanced multidisciplinary engineering training ecosystem. Master Revit, ANSYS, VLSI, EV Powertrain, Full-Stack DevOps, Aspen Plus and more — through real-world projects, structured mentorship, and institute-level lab programs.</p>
+        <div class="hero-btns">
+          <a href="#programs" class="btn-primary">Explore Programs →</a>
+          <a href="#labs-vision" class="btn-ghost">Our Lab Vision</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="eng-panel">
+          <div class="eng-panel-bar">
+            <div class="ep-dot"></div><div class="ep-dot"></div><div class="ep-dot"></div>
+            <span class="ep-file">structural_analysis.rvt — Revit 2025</span>
+          </div>
+          <div class="eng-panel-body">
+            <div class="ep-stat"><div class="n">4+</div><div class="l">Semesters</div></div>
+            <div class="ep-stat"><div class="n">12+</div><div class="l">Software Tools</div></div>
+            <div class="ep-stat"><div class="n">2</div><div class="l">Specializations</div></div>
+            <div class="ep-stat"><div class="n">100%</div><div class="l">Project Based</div></div>
+            <div class="ep-tools">
+              <div class="ep-tool">Revit</div>
+              <div class="ep-tool">STAAD Pro</div>
+              <div class="ep-tool">ETABS</div>
+              <div class="ep-tool mech">ANSYS</div>
+              <div class="ep-tool mech">HyperMesh</div>
+              <div class="ep-tool">AutoCAD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-stats-bar">
+      <div class="hstat"><span class="n"><span>500+</span></span><span class="l">Engineers Trained</span></div>
+      <div class="hstat"><span class="n"><span>2</span></span><span class="l">Specializations</span></div>
+      <div class="hstat"><span class="n"><span>8+</span></span><span class="l">Industry Programs</span></div>
+      <div class="hstat"><span class="n"><span>12+</span></span><span class="l">Software Tools</span></div>
+      <div class="hstat"><span class="n"><span>50+</span></span><span class="l">Institute Partners</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-inner">
+    <div class="ticker-logo"><img src="../assets/images/logo_autocad.png" alt="AutoCAD"></div>
+    <div class="ticker-logo"><img src="../assets/images/logo_revit.png" alt="Revit"></div>
+    <div class="ticker-logo"><img src="../assets/images/logo_ansys.png" alt="ANSYS"></div>
+    <div class="ticker-logo"><img src="../assets/images/logo_solidworks.png" alt="SolidWorks"></div>
+    <div class="ticker-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python"></div>
+    <div class="ticker-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="MATLAB"></div>
+    <div class="ticker-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Dassault_Systemes_logo.svg" alt="CATIA"></div>
+    <div class="ticker-logo"><img src="../assets/images/logo_staad.png" alt="STAAD Pro"></div>
+    <div class="ticker-logo"><img src="../assets/images/logo_java.png" alt="Java"></div>
+    <div class="ticker-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="Linux"></div>
+    <div class="ticker-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Arduino_Logo.svg" alt="Arduino"></div>
+    <div class="ticker-logo"><img src="../assets/images/logo_raspberry.png" alt="Raspberry Pi"></div>
+    <!-- Duplicate set for seamless infinite scroll -->
+    <div class="ticker-logo"><img src="../assets/images/logo_autocad.png" alt="AutoCAD"></div>
+    <div class="ticker-logo"><img src="../assets/images/logo_revit.png" alt="Revit"></div>
+    <div class="ticker-logo"><img src="../assets/images/logo_ansys.png" alt="ANSYS"></div>
+    <div class="ticker-logo"><img src="../assets/images/logo_solidworks.png" alt="SolidWorks"></div>
+    <div class="ticker-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python"></div>
+    <div class="ticker-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="MATLAB"></div>
+    <div class="ticker-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Dassault_Systemes_logo.svg" alt="CATIA"></div>
+    <div class="ticker-logo"><img src="../assets/images/logo_staad.png" alt="STAAD Pro"></div>
+    <div class="ticker-logo"><img src="../assets/images/logo_java.png" alt="Java"></div>
+    <div class="ticker-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="Linux"></div>
+    <div class="ticker-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Arduino_Logo.svg" alt="Arduino"></div>
+    <div class="ticker-logo"><img src="../assets/images/logo_raspberry.png" alt="Raspberry Pi"></div>
+  </div>
+</div>
+
+<!-- LEARNING JOURNEY -->
+<section style="background:var(--offwhite)">
+  <div class="sec-inner">
+    <div style="max-width:600px;margin:0 auto;text-align:center" class="reveal">
+      <div class="sec-eyebrow" style="justify-content:center">The TechM4 Path</div>
+      <h2 class="sec-title" style="text-align:center">Learn → Design → Analyze → <span class="t-blue">Build</span> → <span class="t-red">Implement</span></h2>
+      <p class="sec-sub" style="margin:0 auto 0;text-align:center">Every program follows our proven 5-phase methodology — from foundational theory to industry-ready implementation in real projects.</p>
+    </div>
+    <div class="journey-wrap">
+      <div class="journey-flow">
+        <div class="j-step reveal">
+          <div class="j-num" style="border-color:rgba(30,111,217,.3)">P1<div class="j-num-label">Foundation</div></div>
+          <h4>Learn</h4>
+          <p>Master fundamentals — engineering theory, software basics, industry standards and best practices.</p>
+        </div>
+        <div class="j-step reveal">
+          <div class="j-num" style="border-color:rgba(30,111,217,.3)">P2<div class="j-num-label">Application</div></div>
+          <h4>Design</h4>
+          <p>Apply tools on real-world projects — architectural layouts, structural models, mechanical assemblies.</p>
+        </div>
+        <div class="j-step reveal">
+          <div class="j-num" style="border-color:rgba(215,38,56,.3)">P3<div class="j-num-label">Simulation</div></div>
+          <h4>Analyze</h4>
+          <p>Run simulations, structural analysis, FEA workflows and validate designs against industry norms.</p>
+        </div>
+        <div class="j-step reveal">
+          <div class="j-num" style="border-color:rgba(215,38,56,.3)">P4<div class="j-num-label">Project Lab</div></div>
+          <h4>Build</h4>
+          <p>Execute capstone projects — complete deliverables, documentation, and portfolio-grade outputs.</p>
+        </div>
+        <div class="j-step reveal">
+          <div class="j-num" style="border-color:rgba(255,107,53,.3)">P5<div class="j-num-label">Industry Ready</div></div>
+          <h4>Implement</h4>
+          <p>Industry presentation, placement support, internship readiness, and professional certification.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TWO TRACKS -->
+<section>
+  <div class="sec-inner">
+    <div class="reveal">
+      <div class="sec-eyebrow">Two Specializations. One Mission.</div>
+      <h2 class="sec-title">Choose Your <span class="t-blue">Engineering</span> Path</h2>
+      <p class="sec-sub">Whether you're building structures that shape skylines or designing systems that power industries —</p>
+    </div>
+    <div class="tracks-intro">
+      <!-- Track 01: Civil -->
+      <div class="track-hero civil reveal">
+        <div class="track-bp"></div>
+        <div class="track-hero-glow"></div>
+        <div class="track-tag">🏗️ Track 01</div>
+        <h2>Civil Engineering<br/>Specialization</h2>
+        <p>Master structural design, BIM modeling, and digital construction workflows used by India's top infrastructure firms.</p>
+        <div class="track-tools">
+          <span class="t-tool">Revit</span>
+          <span class="t-tool">STAAD Pro</span>
+          <span class="t-tool">ETABS</span>
+          <span class="t-tool">AutoCAD</span>
+          <span class="t-tool">Civil 3D</span>
+        </div>
+        <button class="track-cta" onclick="filterPrograms('civil', document.querySelector('.civil-btn'))">Explore Specialization →</button>
+      </div>
+
+      <!-- Track 02: Mechanical -->
+      <div class="track-hero mech reveal">
+        <div class="track-bp"></div>
+        <div class="track-hero-glow"></div>
+        <div class="track-tag">⚙️ Track 02</div>
+        <h2>Mechanical Engineering<br/>Specialization</h2>
+        <p>Dive deep into FEA, simulation, product design and manufacturing engineering tools used by aerospace and automotive industries.</p>
+        <div class="track-tools">
+          <span class="t-tool">ANSYS</span>
+          <span class="t-tool">HyperMesh</span>
+          <span class="t-tool">SolidWorks</span>
+          <span class="t-tool">HAANS Mech</span>
+        </div>
+        <button class="track-cta" onclick="filterPrograms('mech', document.querySelector('.mech-btn'))">Explore Specialization →</button>
+      </div>
+
+      <!-- Track 03: CSE -->
+      <div class="track-hero cse reveal">
+        <div class="track-bp"></div>
+        <div class="track-hero-glow"></div>
+        <div class="track-tag">💻 Track 03</div>
+        <h2>Computer Science<br/>Specialization</h2>
+        <p>Master full-stack DevOps development, cloud architecture, and modern artificial intelligence/machine learning pipelines.</p>
+        <div class="track-tools">
+          <span class="t-tool">React</span>
+          <span class="t-tool">Node.js</span>
+          <span class="t-tool">AWS</span>
+          <span class="t-tool">Docker</span>
+          <span class="t-tool">Python</span>
+        </div>
+        <button class="track-cta" onclick="filterPrograms('cse', document.querySelector('.cse-btn'))">Explore Specialization →</button>
+      </div>
+
+      <!-- Track 04: Electrical -->
+      <div class="track-hero eee reveal">
+        <div class="track-bp"></div>
+        <div class="track-hero-glow"></div>
+        <div class="track-tag">⚡ Track 04</div>
+        <h2>Electrical Engineering<br/>Specialization</h2>
+        <p>Design electric vehicle powertrains, model battery management systems, and analyze smart grid renewable systems.</p>
+        <div class="track-tools">
+          <span class="t-tool">MATLAB</span>
+          <span class="t-tool">Simulink</span>
+          <span class="t-tool">Ansys Maxwell</span>
+          <span class="t-tool">ETAP</span>
+        </div>
+        <button class="track-cta" onclick="filterPrograms('eee', document.querySelector('.eee-btn'))">Explore Specialization →</button>
+      </div>
+
+      <!-- Track 05: Electronics -->
+      <div class="track-hero ece reveal">
+        <div class="track-bp"></div>
+        <div class="track-hero-glow"></div>
+        <div class="track-tag">🔌 Track 05</div>
+        <h2>Electronics Engineering<br/>Specialization</h2>
+        <p>Master VLSI digital system design, FPGA architectures, and microelectronic circuit modeling.</p>
+        <div class="track-tools">
+          <span class="t-tool">Verilog</span>
+          <span class="t-tool">Vivado</span>
+          <span class="t-tool">Cadence</span>
+          <span class="t-tool">Altium</span>
+        </div>
+        <button class="track-cta" onclick="filterPrograms('ece', document.querySelector('.ece-btn'))">Explore Specialization →</button>
+      </div>
+
+      <!-- Track 06: Communication -->
+      <div class="track-hero comm reveal">
+        <div class="track-bp"></div>
+        <div class="track-hero-glow"></div>
+        <div class="track-tag">📡 Track 06</div>
+        <h2>Communication Engineering<br/>Specialization</h2>
+        <p>Develop embedded firmware, program IoT networks, and design real-time communication systems.</p>
+        <div class="track-tools">
+          <span class="t-tool">C/C++</span>
+          <span class="t-tool">FreeRTOS</span>
+          <span class="t-tool">RTOS</span>
+          <span class="t-tool">IoT Protocols</span>
+        </div>
+        <button class="track-cta" onclick="filterPrograms('comm', document.querySelector('.comm-btn'))">Explore Specialization →</button>
+      </div>
+
+      <!-- Track 07: Chemical -->
+      <div class="track-hero chem reveal">
+        <div class="track-bp"></div>
+        <div class="track-hero-glow"></div>
+        <div class="track-tag">⚗️ Track 07</div>
+        <h2>Chemical Engineering<br/>Specialization</h2>
+        <p>Run process simulations with Aspen HYSYS, design piping layouts, and engineer industrial water treatment systems.</p>
+        <div class="track-tools">
+          <span class="t-tool">Aspen Plus</span>
+          <span class="t-tool">Aspen HYSYS</span>
+          <span class="t-tool">Plant 3D</span>
+          <span class="t-tool">GPS-X</span>
+        </div>
+        <button class="track-cta" onclick="filterPrograms('chem', document.querySelector('.chem-btn'))">Explore Specialization →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMS -->
+<section id="programs" style="background:var(--offwhite)">
+  <div class="sec-inner">
+    <div style="text-align:center;margin-bottom:48px;" class="reveal">
+      <div class="sec-eyebrow" style="justify-content:center">Explore Our Programs</div>
+      <h2 class="sec-title" style="text-align:center">Skill Up with <span class="t-blue">Global Mentors</span> & Hands-On Projects</h2>
+    </div>
+    
+    <div class="track-filter" style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 40px;">
+      <button class="tf-btn active-all" onclick="filterPrograms('all',this)">All Tracks</button>
+      <button class="tf-btn civil-btn" onclick="filterPrograms('civil',this)">Civil</button>
+      <button class="tf-btn mech-btn" onclick="filterPrograms('mech',this)">Mechanical</button>
+      <button class="tf-btn cse-btn" onclick="filterPrograms('cse',this)">Computer Science</button>
+      <button class="tf-btn eee-btn" onclick="filterPrograms('eee',this)">Electrical</button>
+      <button class="tf-btn ece-btn" onclick="filterPrograms('ece',this)">Electronics</button>
+      <button class="tf-btn comm-btn" onclick="filterPrograms('comm',this)">Communication</button>
+      <button class="tf-btn chem-btn" onclick="filterPrograms('chem',this)">Chemical</button>
+    </div>
+
+    <div class="programs-grid" id="programsGrid">
+      <!-- Populated by JS -->
+    </div>
+  </div>
+</section><!-- TOOLS ECOSYSTEM -->
+<section>
+  <div class="sec-inner">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-bottom:0" class="reveal">
+      <div>
+        <div class="sec-eyebrow">Tool Ecosystem</div>
+        <h2 class="sec-title">Industry Tools<br/>You'll <span class="t-blue">Actually Master</span></h2>
+        <p class="sec-sub">Every tool in our curriculum is used by top engineering firms today. Not theoretical exercises — real workflows, real projects.</p>
+      </div>
+      <div style="background:var(--offwhite);border:1px solid rgba(11,31,58,.08);border-radius:16px;padding:28px">
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <span style="padding:8px 16px;border-radius:6px;background:rgba(30,111,217,.08);color:var(--blue);font-size:.8rem;font-weight:700;border:1px solid rgba(30,111,217,.15)">🏗️ Civil</span>
+          <span style="padding:8px 16px;border-radius:6px;background:rgba(215,38,56,.08);color:var(--red);font-size:.8rem;font-weight:700;border:1px solid rgba(215,38,56,.15)">⚙️ Mechanical</span>
+          <span style="padding:8px 16px;border-radius:6px;background:rgba(123,47,247,.08);color:var(--cse);font-size:.8rem;font-weight:700;border:1px solid rgba(123,47,247,.15)">💻 CSE</span>
+          <span style="padding:8px 16px;border-radius:6px;background:rgba(234,179,8,.08);color:var(--eee);font-size:.8rem;font-weight:700;border:1px solid rgba(234,179,8,.15)">⚡ EEE</span>
+          <span style="padding:8px 16px;border-radius:6px;background:rgba(14,165,233,.08);color:var(--ece);font-size:.8rem;font-weight:700;border:1px solid rgba(14,165,233,.15)">📡 ECE</span>
+          <span style="padding:8px 16px;border-radius:6px;background:rgba(16,185,129,.08);color:var(--chem);font-size:.8rem;font-weight:700;border:1px solid rgba(16,185,129,.15)">⚗️ Chemical</span>
+        </div>
+        <div style="margin-top:20px;font-size:.82rem;color:var(--grey2);line-height:1.7">24+ industry-standard tools. Structured training from fundamentals to advanced workflows. Certifications recognized by top technology and engineering consultancies across India.</div>
+      </div>
+    </div>
+    <div class="tools-grid reveal">
+      <div class="tool-cell">
+        <div class="tool-icon">📐</div>
+        <div class="tool-name">Revit</div>
+        <div class="tool-track both">Both Tracks</div>
+      </div>
+      <div class="tool-cell">
+        <div class="tool-icon">🏗️</div>
+        <div class="tool-name">STAAD Pro</div>
+        <div class="tool-track both">Both Tracks</div>
+      </div>
+      <div class="tool-cell">
+        <div class="tool-icon">🏢</div>
+        <div class="tool-name">ETABS</div>
+        <div class="tool-track civil">Civil</div>
+      </div>
+      <div class="tool-cell">
+        <div class="tool-icon">✏️</div>
+        <div class="tool-name">AutoCAD</div>
+        <div class="tool-track civil">Civil</div>
+      </div>
+      <div class="tool-cell">
+        <div class="tool-icon">🗺️</div>
+        <div class="tool-name">Civil 3D</div>
+        <div class="tool-track civil">Civil</div>
+      </div>
+      <div class="tool-cell">
+        <div class="tool-icon">📊</div>
+        <div class="tool-name">BIM 360</div>
+        <div class="tool-track civil">Civil</div>
+      </div>
+      <div class="tool-cell">
+        <div class="tool-icon">🔬</div>
+        <div class="tool-name">ANSYS</div>
+        <div class="tool-track mech">Mechanical</div>
+      </div>
+      <div class="tool-cell">
+        <div class="tool-icon">⚡</div>
+        <div class="tool-name">HyperMesh</div>
+        <div class="tool-track mech">Mechanical</div>
+      </div>
+      <div class="tool-cell">
+        <div class="tool-icon">🔩</div>
+        <div class="tool-name">HAANS Mech</div>
+        <div class="tool-track mech">Mechanical</div>
+      </div>
+      <div class="tool-cell">
+        <div class="tool-icon">🛠️</div>
+        <div class="tool-name">SolidWorks</div>
+        <div class="tool-track mech">Mechanical</div>
+      </div>
+      <div class="tool-cell">
+        <div class="tool-icon">🌀</div>
+        <div class="tool-name">ANSYS Fluent</div>
+        <div class="tool-track mech">Mechanical</div>
+      </div>
+      <div class="tool-cell">
+        <div class="tool-icon">⚙️</div>
+        <div class="tool-name">Mastercam</div>
+        <div class="tool-track mech">Mechanical</div>
+      </div>
+      <div class="tool-cell">
+        <div class="tool-icon">💻</div>
+        <div class="tool-name">React & Node</div>
+        <div class="tool-track cse">CSE</div>
+      </div>
+      <div class="tool-cell">
+        <div class="tool-icon">☁️</div>
+        <div class="tool-name">AWS Cloud</div>
+        <div class="tool-track cse">CSE</div>
+      </div>
+      <div class="tool-cell">
+        <div class="tool-icon">🧠</div>
+        <div class="tool-name">TensorFlow</div>
+        <div class="tool-track cse">CSE</div>
+      </div>
+      <div class="tool-cell">
+        <div class="tool-icon">🔐</div>
+        <div class="tool-name">Kali Linux</div>
+        <div class="tool-track cse">CSE</div>
+      </div>
+      <div class="tool-cell">
+        <div class="tool-icon">📈</div>
+        <div class="tool-name">MATLAB</div>
+        <div class="tool-track both">Both Tracks</div>
+      </div>
+      <div class="tool-cell">
+        <div class="tool-icon">🔌</div>
+        <div class="tool-name">Altium Designer</div>
+        <div class="tool-track eee">EEE</div>
+      </div>
+      <div class="tool-cell">
+        <div class="tool-icon">⚙️</div>
+        <div class="tool-name">Siemens TIA</div>
+        <div class="tool-track eee">EEE</div>
+      </div>
+      <div class="tool-cell">
+        <div class="tool-icon">☀️</div>
+        <div class="tool-name">PVSyst</div>
+        <div class="tool-track eee">EEE</div>
+      </div>
+      <div class="tool-cell">
+        <div class="tool-icon">📡</div>
+        <div class="tool-name">Xilinx Vivado</div>
+        <div class="tool-track ece">ECE</div>
+      </div>
+      <div class="tool-cell">
+        <div class="tool-icon">🤖</div>
+        <div class="tool-name">Embedded C</div>
+        <div class="tool-track ece">ECE</div>
+      </div>
+      <div class="tool-cell">
+        <div class="tool-icon">⚗️</div>
+        <div class="tool-name">Aspen Plus</div>
+        <div class="tool-track chem">Chemical</div>
+      </div>
+      <div class="tool-cell">
+        <div class="tool-icon">⛽</div>
+        <div class="tool-name">Aspen HYSYS</div>
+        <div class="tool-track chem">Chemical</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LABS VISION -->
+<section class="labs-section" id="labs-vision">
+  <div class="labs-bp"></div>
+  <div class="labs-glow"></div>
+  <div class="sec-inner labs-inner">
+    <div class="reveal">
+      <div class="labs-eyebrow">Our Vision</div>
+      <h2 class="labs-title">Engineering Labs Inside<br/><span>Every Institution</span></h2>
+      <p class="labs-sub">TechM4Engineering's vision is to build dedicated, industry-standard engineering labs inside colleges and universities across India — bringing professional-grade tools directly to students on campus.</p>
+    </div>
+    <div class="labs-grid">
+      <div class="lab-card reveal">
+        <div class="lab-icon">🏛️</div>
+        <h4>Institute-Embedded Labs</h4>
+        <p>Dedicated Revit, STAAD Pro, and ANSYS workstation labs set up inside engineering colleges — giving students daily access to industry tools without leaving campus.</p>
+        <div class="lab-badge">MoU Partnership Model</div>
+      </div>
+      <div class="lab-card reveal">
+        <div class="lab-icon">🎓</div>
+        <h4>Credit-Based Integration</h4>
+        <p>Programs designed to be recognized as academic credit by universities — bridging the gap between industry training and official university curriculum requirements.</p>
+        <div class="lab-badge">University Credit Ready</div>
+      </div>
+      <div class="lab-card reveal">
+        <div class="lab-icon">👨‍🏫</div>
+        <h4>Industry Mentor Faculty</h4>
+        <p>Experienced industry practitioners embedded as guest faculty — bringing real project experience and current industry workflows directly into the classroom.</p>
+        <div class="lab-badge">Expert-Led Training</div>
+      </div>
+      <div class="lab-card reveal">
+        <div class="lab-icon">🔬</div>
+        <h4>Live Project Studios</h4>
+        <p>Project studios where students work on actual engineering assignments sourced from industry partners — building real portfolios with real deliverables.</p>
+        <div class="lab-badge">Real Industry Projects</div>
+      </div>
+      <div class="lab-card reveal">
+        <div class="lab-icon">🚀</div>
+        <h4>Innovation & R&D Cells</h4>
+        <p>Dedicated innovation spaces for student-led research, prototype development, and applied engineering — supported by TechM4India's technical ecosystem.</p>
+        <div class="lab-badge">Research Enabled</div>
+      </div>
+      <div class="lab-card reveal">
+        <div class="lab-icon">🤝</div>
+        <h4>Placement Ecosystem</h4>
+        <p>Direct pipelines to engineering consultancies, construction firms, manufacturing industries, and infrastructure companies for internship and full-time placement.</p>
+        <div class="lab-badge">Industry Connected</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CREDIT-BASED PROGRAMS -->
+<section>
+  <div class="sec-inner">
+    <div class="reveal">
+      <div class="sec-eyebrow">Program Structure</div>
+      <h2 class="sec-title">Credit-Based<br/><span class="t-blue">Semester Programs</span></h2>
+      <p class="sec-sub">Structured as semester-length programs aligned with university academic calendars — enabling seamless integration with B.Tech and M.Tech curriculum frameworks.</p>
+    </div>
+    <div class="credit-grid">
+      <div class="credit-card a reveal-l">
+        <div class="credit-corner">📐</div>
+        <div class="credit-label">🏗️ Semester I Program</div>
+        <h3>Engineering Foundations & Digital Tools</h3>
+        <p>Semester-1 introduction to industry software — CAD basics, BIM fundamentals, drawing standards, and engineering documentation practices.</p>
+        <ul class="credit-features">
+          <li>AutoCAD 2D/3D — Drafting & Documentation</li>
+          <li>Revit Fundamentals — Architectural Modeling</li>
+          <li>Engineering Drawing Standards & BIS Codes</li>
+          <li>Industry workflow introduction & project brief</li>
+          <li>Capstone: Complete building layout drawing set</li>
+        </ul>
+      </div>
+      <div class="credit-card b reveal-r">
+        <div class="credit-corner">⚙️</div>
+        <div class="credit-label">⚙️ Semester II Program</div>
+        <h3>Structural Analysis & Simulation</h3>
+        <p>Advanced structural analysis workflows — from modeling to analysis to design verification using STAAD Pro, ETABS, and ANSYS.</p>
+        <ul class="credit-features">
+          <li>STAAD Pro — Multi-storey structural modeling</li>
+          <li>ETABS — Seismic analysis & design</li>
+          <li>ANSYS — FEA simulation fundamentals</li>
+          <li>Load combinations, IS code compliance</li>
+          <li>Capstone: Complete structural analysis report</li>
+        </ul>
+      </div>
+      <div class="credit-card c reveal-l">
+        <div class="credit-corner">🔬</div>
+        <div class="credit-label">🔬 Advanced Program</div>
+        <h3>Advanced Simulation & BIM Workflows</h3>
+        <p>Industry-level advanced programs — HyperMesh meshing workflows, advanced BIM coordination, clash detection, and construction documentation.</p>
+        <ul class="credit-features">
+          <li>HyperMesh — Advanced FE mesh generation</li>
+          <li>Revit Advanced — MEP & structural coordination</li>
+          <li>BIM 360 — Cloud collaboration workflows</li>
+          <li>Clash detection & model coordination</li>
+          <li>Capstone: Full BIM project delivery</li>
+        </ul>
+      </div>
+      <div class="credit-card d reveal-r">
+        <div class="credit-corner">🤝</div>
+        <div class="credit-label">🤝 Industry Partnership</div>
+        <h3>MoU-Based Institute Programs</h3>
+        <p>Tailored programs designed for university partnerships — integrated into curriculum with faculty co-training, lab setup, and student certification pathways.</p>
+        <ul class="credit-features">
+          <li>Custom curriculum aligned to university syllabus</li>
+          <li>Faculty Development Program (FDP) included</li>
+          <li>Software lab setup support & licensing</li>
+          <li>Industry-recognized certification for students</li>
+          <li>Placement support pipeline for graduates</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUTCOMES -->
+<section class="outcomes-dark">
+  <div class="sec-inner">
+    <div style="text-align:center;max-width:600px;margin:0 auto" class="reveal">
+      <div class="sec-eyebrow" style="justify-content:center">What You Gain</div>
+      <h2 class="sec-title" style="text-align:center">Built for <span class="t-blue">Engineering</span> Excellence</h2>
+      <p class="sec-sub" style="margin:0 auto;text-align:center">Every program outcome is designed around what real engineering employers and project teams expect from day-one professionals.</p>
+    </div>
+    <div class="outcomes-grid">
+      <div class="oc reveal">
+        <div class="oc-icon" style="background:rgba(30,111,217,.1)">📐</div>
+        <h4>Industry-Standard Portfolio</h4>
+        <p>Complete project deliverables — structural drawings, analysis reports, BIM models, and simulation results that showcase real capability.</p>
+      </div>
+      <div class="oc reveal">
+        <div class="oc-icon" style="background:rgba(215,38,56,.1)">🔬</div>
+        <h4>Multi-Software Proficiency</h4>
+        <p>Hands-on mastery across 5+ industry tools. Not basic introductions — deep, workflow-level proficiency that employers recognize.</p>
+      </div>
+      <div class="oc reveal">
+        <div class="oc-icon" style="background:rgba(255,107,53,.1)">🏆</div>
+        <h4>Professional Certification</h4>
+        <p>TechM4India certification recognized by industry partners across infrastructure, construction, and manufacturing sectors in India.</p>
+      </div>
+      <div class="oc reveal">
+        <div class="oc-icon" style="background:rgba(22,163,74,.1)">🤝</div>
+        <h4>Placement Readiness</h4>
+        <p>Resume building, interview preparation, and direct referrals to engineering consultancies, EPC companies, and manufacturing firms.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-sec">
+  <div class="cta-bp"></div>
+  <div class="cta-glow"></div>
+  <div class="sec-inner cta-inner reveal">
+    <h2>Ready to Build<br/>Real Engineering Careers?</h2>
+    <p>Join TechM4Engineering — where Civil and Mechanical engineers learn with industry tools, real projects, and structured pathways to professional success.</p>
+    <div class="cta-btns">
+      <a href="/contact" class="btn-white">Talk to Our Team →</a>
+      <a href="#programs" class="btn-ghost-white">View All Programs</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div style="font-family:'Sora',sans-serif;font-weight:800;font-size:1.3rem;color:#fff;letter-spacing:-0.5px">Tech<span style="background:var(--g-brand);-webkit-background-clip:text;-webkit-text-fill-color:transparent">M4</span>India</div>
+        <p>Building India's next generation of Civil and Mechanical engineers through world-class industry training programs.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore TechM4India</h4>
+        <ul>
+          <li><a href="/engineering">TechM4Engineering</a></li>
+          <li><a href="/solutions">TechM4Solutions</a></li>
+          <li><a href="/schools">TechM4Schools</a></li>
+          <li><a href="/space">TechM4Space</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="#programs">Civil Engineering</a></li>
+          <li><a href="#programs">Mechanical Engineering</a></li>
+          <li><a href="#labs-vision">Institute Labs</a></li>
+          <li><a href="#programs">Credit Programs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/about">About TechM4India</a></li>
+          <li><a href="/careers">Careers</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="https://www.linkedin.com/company/techm4india" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 TechM4India Innovations Pvt Ltd · www.techm4india.com</p>
+      <div class="footer-socials">
+<a href="https://www.linkedin.com/company/techm4india" target="_blank" rel="noopener" aria-label="LinkedIn">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.28V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+</a>
+<a href="https://www.instagram.com/techm4india" target="_blank" rel="noopener" aria-label="Instagram">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.31.975.975 1.248 2.242 1.31 3.608.058 1.265.07 1.645.07 4.849s-.012 3.584-.07 4.849c-.062 1.366-.335 2.633-1.31 3.608-.975.975-2.242 1.248-3.608 1.31-1.265.058-1.645.07-4.85.07s-3.584-.012-4.849-.07c-1.366-.062-2.633-.335-3.608-1.31-.975-.975-1.248-2.242-1.31-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.849c.062-1.366.335-2.633 1.31-3.608.975-.975 2.242-1.248 3.608-1.31C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.74 0 8.333.013 7.053.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.053.013 8.333 0 8.74 0 12c0 3.26.013 3.667.072 4.947.085 1.856.601 3.698 1.942 5.039 1.341 1.341 3.183 1.857 5.039 1.942C8.333 23.987 8.74 24 12 24s3.667-.013 4.947-.072c1.856-.085 3.698-.601 5.039-1.942 1.341-1.341 1.857-3.183 1.942-5.039.059-1.28.072-1.687.072-4.947s-.013-3.667-.072-4.947c-.085-1.856-.601-3.698-1.942-5.039C20.645.673 18.803.157 16.947.072 15.667.013 15.26 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+</a>
+<a href="https://x.com/TechM4India" target="_blank" rel="noopener" aria-label="X (Twitter)">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.259 5.633 5.905-5.633zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+</a>
+<a href="https://www.youtube.com/@TechM4India" target="_blank" rel="noopener" aria-label="YouTube">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+</a>
+<a href="https://www.facebook.com/TechM4India" target="_blank" rel="noopener" aria-label="Facebook">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+</a>
+<a href="https://wa.me/916301814246" target="_blank" rel="noopener" aria-label="WhatsApp">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+</a>
+</div>
+    </div>
+  </div>
+</footer>
+
+<!-- PROGRAM DETAIL PANEL -->
+<div id="progPanel">
+  <div class="pp-backdrop" onclick="closeProgPanel()"></div>
+  <div class="pp-content" id="ppContent"></div>
+  <button class="pp-close" onclick="closeProgPanel()">✕</button>
+</div>
+
+<script>
+// ===== PROGRAM DATA =====
+const programs = [
+  {
+    id: 'c1',
+    track: 'civil',
+    title: 'Structural Design with Revit & STAAD Pro',
+    badge: 'Core Program',
+    desc: 'Master the complete structural design workflow — from architectural modeling in Revit to structural analysis in STAAD Pro — as used by India\'s top structural engineering firms.',
+    tools: ["Revit", "STAAD Pro", "AutoCAD"],
+    duration: '4 Months',
+    sessions: '48 Sessions',
+    credit: '4 Credits',
+    thumbBg: 'linear-gradient(135deg, #0B1F3A 0%, #1A3F7A 100%)',
+    formula: ["Model", "Analyze", "Design", "Verify", "Deliver"],
+    formulaColors: ["#1E6FD9", "#1A5CC7", "#163DB3", "#0F1F6B", "#0B1F3A"],
+    phases: [
+      {
+        num: 'P1', color: '#1E6FD9',
+        label: 'Months 1–2 · Foundation',
+        name: 'Revit Structural Modeling',
+        topics: ["Revit interface, families, and project setup", "Architectural to structural model coordination", "Grids, levels, and column/beam placement", "Foundation modeling — isolated, combined, mat", "Structural slab and staircase modeling", "Drawing sheets, schedules and annotation"],
+        projects: ["5-storey RC framed building model in Revit", "Foundation layout and structural drawing set"]
+      },
+      {
+        num: 'P2', color: '#0B3A8C',
+        label: 'Months 3–4 · Analysis',
+        name: 'STAAD Pro Structural Analysis',
+        topics: ["STAAD Pro geometry input and member properties", "Load definition — dead, live, wind, seismic (IS 875/1893)", "Load combinations as per IS 456 / IS 800", "Analysis run and result interpretation", "Member design — beams, columns, slabs", "Footing design and design brief generation"],
+        projects: ["Complete structural analysis of G+4 building", "Structural design report with IS code compliance"]
+      },
+      {
+        num: 'P3', color: '#0B1F5A',
+        label: 'Capstone · Integration',
+        name: 'Integrated Project Delivery',
+        topics: ["Revit to STAAD Pro link and data exchange", "Structural documentation package preparation", "Quantity take-off and BOQ generation", "Industry review and submission format", "Portfolio presentation and documentation"],
+        projects: ["Full structural project package — model + analysis + drawings + report"]
+      }
+    ],
+    outcomes: [
+      {icon: '📐', title: 'BIM Proficiency', desc: 'Create industry-standard Revit structural models from architectural inputs.'},
+      {icon: '🔬', title: 'Structural Analysis', desc: 'Run complete STAAD Pro analysis with IS code load combinations and design outputs.'},
+      {icon: '📋', title: 'Complete Documentation', desc: 'Produce full structural drawing sets, schedules, and technical reports.'}
+    ],
+    careers: ["Structural Engineer", "BIM Coordinator", "Design Engineer", "Revit Modeler", "Structural Drafter", "Site Engineer"]
+  },
+  {
+    id: 'c2',
+    track: 'civil',
+    title: 'BIM & Digital Construction with ETABS',
+    badge: 'Advanced Program',
+    desc: 'Advanced BIM workflows and high-rise structural analysis using ETABS — the industry standard for multi-storey building and seismic analysis in India.',
+    tools: ["ETABS", "Revit", "BIM 360"],
+    duration: '3 Months',
+    sessions: '36 Sessions',
+    credit: '3 Credits',
+    thumbBg: 'linear-gradient(135deg, #0D2B54 0%, #1957A8 100%)',
+    formula: ["Plan", "Model", "Analyze", "Coordinate", "Deliver"],
+    formulaColors: ["#1E6FD9", "#1A5CC7", "#163DB3", "#0F1F6B", "#0B1F3A"],
+    phases: [
+      {
+        num: 'P1', color: '#1E6FD9',
+        label: 'Month 1 · ETABS Foundation',
+        name: 'ETABS Modeling & Setup',
+        topics: ["ETABS interface and project configuration", "Grid and story level definition", "Column, beam, wall, and slab modeling", "Material and section property assignment", "Diaphragm assignment and rigid zone definition", "Static load case definition"],
+        projects: ["G+10 RC framed structure model in ETABS"]
+      },
+      {
+        num: 'P2', color: '#0B3A8C',
+        label: 'Month 2 · Seismic Analysis',
+        name: 'Dynamic & Seismic Analysis',
+        topics: ["IS 1893 seismic zone and soil type parameters", "Response spectrum analysis setup", "Time history analysis fundamentals", "Lateral force distribution and drift checks", "P-delta and geometric nonlinearity", "Story shear, overturning moment and displacement"],
+        projects: ["Seismic analysis report for G+10 structure with IS 1893 compliance"]
+      },
+      {
+        num: 'P3', color: '#0B1F5A',
+        label: 'Month 3 · BIM Coordination',
+        name: 'BIM Coordination & Documentation',
+        topics: ["Revit-ETABS interoperability workflows", "Model coordination and clash detection", "BIM 360 cloud collaboration basics", "Construction documentation from BIM", "Project handover documentation standards"],
+        projects: ["Fully coordinated BIM model with analysis-backed structural design"]
+      }
+    ],
+    outcomes: [
+      {icon: '🏢', title: 'High-Rise Analysis', desc: 'Model and analyze multi-storey buildings with ETABS to IS 1893 seismic standards.'},
+      {icon: '🔗', title: 'BIM Integration', desc: 'Coordinate Revit models with ETABS analysis in a real BIM workflow pipeline.'},
+      {icon: '📊', title: 'Seismic Compliance', desc: 'Produce complete seismic analysis reports meeting IS code requirements.'}
+    ],
+    careers: ["Structural Analyst", "ETABS Engineer", "BIM Engineer", "High-Rise Designer", "Seismic Analyst", "Structural Design Engineer"]
+  },
+  {
+    id: 'c3',
+    track: 'civil',
+    title: 'AutoCAD & Civil 3D — Site & Infrastructure',
+    badge: 'Foundation Program',
+    desc: 'Complete AutoCAD and Civil 3D training for site planning, road design, drainage networks and infrastructure layout — essential skills for every civil engineering professional.',
+    tools: ["AutoCAD", "Civil 3D", "HAANS Civil"],
+    duration: '3 Months',
+    sessions: '36 Sessions',
+    credit: '3 Credits',
+    thumbBg: 'linear-gradient(135deg, #153060 0%, #2467C0 100%)',
+    formula: ["Draft", "Survey", "Design", "Plan", "Document"],
+    formulaColors: ["#1E6FD9", "#1A5CC7", "#163DB3", "#0F1F6B", "#0B1F3A"],
+    phases: [
+      {
+        num: 'P1', color: '#1E6FD9',
+        label: 'Month 1 · AutoCAD Mastery',
+        name: 'AutoCAD 2D & 3D Drafting',
+        topics: ["AutoCAD interface, workspaces, and shortcuts", "Precision drafting — lines, arcs, polygons", "Layers, linetypes, dimensions, and text", "Blocks, attributes and external references", "Layout tabs, viewports and print setup", "3D modeling basics for civil applications"],
+        projects: ["Complete building site plan with dimensions, levels and legend"]
+      },
+      {
+        num: 'P2', color: '#0B3A8C',
+        label: 'Months 2–3 · Civil 3D',
+        name: 'Civil 3D Infrastructure Design',
+        topics: ["Civil 3D data model — surfaces, alignments, profiles", "Survey data import and surface creation", "Horizontal and vertical road alignment design", "Cross-section generation and earthwork volumes", "Stormwater drainage network design", "HAANS Civil — plan and profile workflows"],
+        projects: ["1 km road design with alignments, profile, cross-sections and drainage network"]
+      }
+    ],
+    outcomes: [
+      {icon: '✏️', title: 'AutoCAD Mastery', desc: 'Professional-level 2D and 3D drafting for architectural and civil engineering drawings.'},
+      {icon: '🗺️', title: 'Infrastructure Design', desc: 'Design road alignments, drainage systems, and site infrastructure with Civil 3D.'},
+      {icon: '📁', title: 'Professional Output', desc: 'Produce complete drawing packages meeting industry and municipal submission standards.'}
+    ],
+    careers: ["Civil CAD Draftsman", "Site Engineer", "Infrastructure Designer", "Survey Engineer", "Road Design Engineer", "Municipal Engineer"]
+  },
+  {
+    id: 'c4',
+    track: 'civil',
+    title: 'Construction Project Management with MSP & Primavera',
+    badge: 'Industry Program',
+    desc: 'Master project scheduling, resource allocation, cost estimation, and earned value management (EVM) for large-scale infrastructure projects.',
+    tools: ["Primavera P6", "MS Project", "Excel"],
+    duration: '3 Months',
+    sessions: '36 Sessions',
+    credit: '3 Credits',
+    thumbBg: 'linear-gradient(135deg, #1B355A 0%, #2A5A90 100%)',
+    formula: ["Estimate", "Schedule", "Budget", "Monitor", "Control"],
+    formulaColors: ["#1E6FD9", "#1A5CC7", "#163DB3", "#0F1F6B", "#0B1F3A"],
+    phases: [
+      {
+        num: 'P1', color: '#1E6FD9',
+        label: 'Month 1 · Estimating',
+        name: 'Quantity Surveying & Rate Analysis',
+        topics: ["Reading structural blueprints and drawings", "Standard methods of measurement (IS 1200)", "Quantity estimation for excavation, concrete, reinforcement", "Rate analysis of materials, labor, and machinery", "Bill of Quantities (BOQ) preparation in Excel"],
+        projects: ["Complete BOQ and cost estimation for G+2 residential villa"]
+      },
+      {
+        num: 'P2', color: '#0B3A8C',
+        label: 'Months 2–3 · Scheduling',
+        name: 'Primavera P6 & MSP Workflows',
+        topics: ["Work Breakdown Structure (WBS) design", "Activity definitions, relationships, and lags", "Resource loading and leveling techniques", "Baseline creation and progress tracking", "Earned Value Management (EVM) reporting"],
+        projects: ["Project schedule for a commercial high-rise building on Primavera P6"]
+      }
+    ],
+    outcomes: [
+      {icon: '📊', title: 'Scheduling Mastery', desc: 'Build and manage complex resource-loaded project schedules in Primavera P6.'},
+      {icon: '💰', title: 'Cost Control', desc: 'Determine precise construction cost estimates and monitor variances using EVM.'},
+      {icon: '📈', title: 'Resource Optimization', desc: 'Level project resources to avoid overallocation and balance workloads.'}
+    ],
+    careers: ["Planning Engineer", "Project Scheduler", "Quantity Surveyor", "Cost Estimator", "Billing Engineer"]
+  },
+  {
+    id: 'c5',
+    track: 'civil',
+    title: 'Geotechnical & Foundation Engineering',
+    badge: 'Specialist Program',
+    desc: 'Learn soil mechanics, slope stability analysis, shallow and deep foundation design, and soil-structure interaction modeling using industry tools.',
+    tools: ["PLAXIS 2D", "GeoStudio", "Excel"],
+    duration: '3 Months',
+    sessions: '36 Sessions',
+    credit: '3 Credits',
+    thumbBg: 'linear-gradient(135deg, #1C2833 0%, #34495E 100%)',
+    formula: ["Investigate", "Analyze", "Design", "Model", "Verify"],
+    formulaColors: ["#1E6FD9", "#1A5CC7", "#163DB3", "#0F1F6B", "#0B1F3A"],
+    phases: [
+      {
+        num: 'P1', color: '#1E6FD9',
+        label: 'Month 1 · Soil Mechanics',
+        name: 'Soil Investigation & Bearing Capacity',
+        topics: ["Soil classifications and phase relationships", "Shear strength parameters — cohesive & cohesionless", "Standard Penetration Test (SPT) result evaluation", "Bearing capacity calculations for shallow footings", "Settlement analysis — immediate and consolidation"],
+        projects: ["Foundation bearing capacity calculation report based on borehole log data"]
+      },
+      {
+        num: 'P2', color: '#0B3A8C',
+        label: 'Months 2–3 · PLAXIS modeling',
+        name: 'PLAXIS 2D Foundation Design & Stability',
+        topics: ["PLAXIS 2D boundary setups and material models", "Deep foundation design — piles under axial and lateral loads", "Retaining wall modeling and lateral earth pressures", "Slope stability analysis using GeoStudio SLOPE/W", "Ground water seepage modeling basics"],
+        projects: ["Slope stability design for an embankment", "PLAXIS 2D FE analysis of a pile foundation group"]
+      }
+    ],
+    outcomes: [
+      {icon: '🪨', title: 'Soil Characterization', desc: 'Interpret site investigation reports and derive shear strength values for designs.'},
+      {icon: '🏗️', title: 'Foundation Design', desc: 'Design shallow footings, raft foundations, and pile groups to Indian Standard codes.'},
+      {icon: '💻', title: 'Numerical Modeling', desc: 'Simulate soil settlement and earth-retaining structure behaviors in PLAXIS 2D.'}
+    ],
+    careers: ["Geotechnical Engineer", "Foundation Designer", "Site Geologist", "FE Modeler", "Civil Designer"]
+  },
+  {
+    id: 'm1',
+    track: 'mech',
+    title: 'FEA Simulation with ANSYS Workbench',
+    badge: 'Core Program',
+    desc: 'Master Finite Element Analysis (FEA) using ANSYS Workbench — the world\'s leading simulation platform used by aerospace, automotive, and mechanical engineering industries globally.',
+    tools: ["ANSYS", "HyperMesh", "FEA"],
+    duration: '4 Months',
+    sessions: '48 Sessions',
+    credit: '4 Credits',
+    thumbBg: 'linear-gradient(135deg, #3D0A10 0%, #991020 100%)',
+    formula: ["Geometry", "Mesh", "Setup", "Solve", "Post-process"],
+    formulaColors: ["#D72638", "#C01525", "#AB1020", "#8A0B1A", "#6A0613"],
+    phases: [
+      {
+        num: 'P1', color: '#D72638',
+        label: 'Months 1–2 · FEA Fundamentals',
+        name: 'ANSYS Structural Analysis',
+        topics: ["FEA theory — elements, nodes, DOF, stiffness matrix", "ANSYS Workbench interface and project workflow", "Geometry import from CAD and DesignModeler", "Material definition and assignment", "Boundary conditions — supports, forces, pressure", "Static structural analysis and result evaluation"],
+        projects: ["Structural analysis of machine bracket under multi-directional loading"]
+      },
+      {
+        num: 'P2', color: '#9B0F1E',
+        label: 'Months 3–4 · Advanced Simulation',
+        name: 'Thermal & Modal Analysis',
+        topics: ["Steady-state and transient thermal analysis", "Coupled thermal-structural analysis", "Modal analysis — natural frequencies and mode shapes", "Harmonic response analysis", "Fatigue analysis basics", "Convergence study and mesh sensitivity"],
+        projects: ["Engine bracket thermal analysis + modal analysis with frequency report"]
+      },
+      {
+        num: 'P3', color: '#6A0613',
+        label: 'Capstone · Industrial Project',
+        name: 'Industry Simulation Project',
+        topics: ["Real component selection and CAD import", "Complete pre-processing workflow", "Analysis setup, solve, and result extraction", "Technical report writing and presentation", "Industry standard documentation format"],
+        projects: ["Complete FEA project on an automotive or aerospace component with full technical report"]
+      }
+    ],
+    outcomes: [
+      {icon: '🔬', title: 'FEA Expertise', desc: 'Run complete structural, thermal, and modal analyses using ANSYS Workbench at industry level.'},
+      {icon: '📊', title: 'Result Interpretation', desc: 'Interpret stress, deformation, temperature, and frequency results to drive design decisions.'},
+      {icon: '📋', title: 'Technical Reports', desc: 'Produce industry-standard FEA reports meeting aerospace and automotive documentation standards.'}
+    ],
+    careers: ["FEA Engineer", "Simulation Engineer", "Structural Analyst", "Design Validation Engineer", "Product Engineer", "CAE Analyst"]
+  },
+  {
+    id: 'm2',
+    track: 'mech',
+    title: 'HyperMesh — Advanced FE Pre-Processing',
+    badge: 'Advanced Program',
+    desc: 'Altair HyperMesh is the industry benchmark for FE model preparation in automotive and aerospace. This program gives you deep, workflow-level mastery of the world\'s meshing software.',
+    tools: ["HyperMesh", "ANSYS", "HyperView"],
+    duration: '3 Months',
+    sessions: '36 Sessions',
+    credit: '3 Credits',
+    thumbBg: 'linear-gradient(135deg, #4A0912 0%, #C81426 100%)',
+    formula: ["Import", "Clean", "Mesh", "Validate", "Export"],
+    formulaColors: ["#D72638", "#C01525", "#AB1020", "#8A0B1A", "#6A0613"],
+    phases: [
+      {
+        num: 'P1', color: '#D72638',
+        label: 'Month 1 · HyperMesh Foundations',
+        name: 'Geometry & 2D Meshing',
+        topics: ["HyperMesh interface, panels, and workflow", "CAD geometry import and cleanup", "Surface midsurfacing for shell elements", "2D mesh generation — mapped, automesh, free", "Mesh quality criteria — aspect ratio, skewness, warping", "Component and material assignment"],
+        projects: ["Shell mesh of automotive body panel with quality report"]
+      },
+      {
+        num: 'P2', color: '#9B0F1E',
+        label: 'Months 2–3 · 3D Meshing & Advanced',
+        name: '3D Solid Meshing & Export',
+        topics: ["3D solid meshing — hex, tet, and hybrid meshing", "Connector elements — welds, bolts, adhesives", "Contact surface definition and penetration check", "Boundary condition application", "HyperView post-processing fundamentals", "Solver export — ANSYS, Abaqus, Nastran formats"],
+        projects: ["Complete 3D FE model of mechanical assembly ready for ANSYS analysis"]
+      }
+    ],
+    outcomes: [
+      {icon: '⚡', title: 'HyperMesh Proficiency', desc: 'Generate industry-quality 2D and 3D FE meshes meeting automotive and aerospace standards.'},
+      {icon: '🔧', title: 'Pre-Processing Workflow', desc: 'Complete end-to-end FE model preparation from CAD import to solver-ready output.'},
+      {icon: '🎯', title: 'Quality Verification', desc: 'Run mesh quality checks against industry criteria and produce quality index reports.'}
+    ],
+    careers: ["CAE Analyst", "FE Modeler", "Pre-Process Engineer", "Meshing Engineer", "Simulation Analyst", "Automotive CAE Engineer"]
+  },
+  {
+    id: 'm3',
+    track: 'mech',
+    title: 'Product Design & Manufacturing Engineering',
+    badge: 'Industry Program',
+    desc: 'End-to-end product engineering — from concept design in SolidWorks to manufacturing process planning with HAANS Mechanical, bridging design and production.',
+    tools: ["SolidWorks", "HAANS Mech", "STAAD Pro"],
+    duration: '3 Months',
+    sessions: '36 Sessions',
+    credit: '3 Credits',
+    thumbBg: 'linear-gradient(135deg, #5A1020 0%, #AA1B35 100%)',
+    formula: ["Concept", "Model", "Prototype", "Validate", "Manufacture"],
+    formulaColors: ["#D72638", "#C01525", "#AB1020", "#8A0B1A", "#6A0613"],
+    phases: [
+      {
+        num: 'P1', color: '#D72638',
+        label: 'Months 1–2 · Product Design',
+        name: 'SolidWorks 3D Design',
+        topics: ["SolidWorks parametric part modeling", "Assembly modeling — mates, motion, interference", "Engineering drawings and GD&T", "Sheet metal design and flat pattern development", "Design for manufacturing principles", "Design intent and parametric design strategies"],
+        projects: ["Mechanical assembly design — gearbox or pump housing with full drawing package"]
+      },
+      {
+        num: 'P2', color: '#9B0F1E',
+        label: 'Month 3 · Manufacturing',
+        name: 'Manufacturing Process Engineering',
+        topics: ["HAANS Mechanical — process planning workflows", "Manufacturing process selection and planning", "Bill of materials and work instructions", "Quality control documentation", "Cost estimation and material selection", "Industry handover documentation standards"],
+        projects: ["Complete product engineering package — design + drawings + process plan + BOM"]
+      }
+    ],
+    outcomes: [
+      {icon: '🛠️', title: 'Product Design Skills', desc: 'Create parametric 3D models and engineering drawings using SolidWorks at professional level.'},
+      {icon: '🏭', title: 'Manufacturing Knowledge', desc: 'Develop manufacturing process plans, BOMs, and production documentation using HAANS.'},
+      {icon: '📐', title: 'Complete Engineering Package', desc: 'Deliver a full product engineering package from concept to production-ready documentation.'}
+    ],
+    careers: ["Product Design Engineer", "Manufacturing Engineer", "Design Draftsman", "Process Planner", "R&D Engineer", "Mechanical Designer"]
+  },
+  {
+    id: 'm4',
+    track: 'mech',
+    title: 'Computational Fluid Dynamics (CFD) with ANSYS Fluent',
+    badge: 'Specialist Program',
+    desc: 'Master fluid flow, heat transfer, turbulence modeling, and aerodynamics simulation for automotive, aerospace, and HVAC components.',
+    tools: ["ANSYS Fluent", "SpaceClaim", "CFD-Post"],
+    duration: '4 Months',
+    sessions: '48 Sessions',
+    credit: '4 Credits',
+    thumbBg: 'linear-gradient(135deg, #4A0E17 0%, #B0182C 100%)',
+    formula: ["Pre-process", "Mesh", "Setup", "Solve", "Visualize"],
+    formulaColors: ["#D72638", "#C01525", "#AB1020", "#8A0B1A", "#6A0613"],
+    phases: [
+      {
+        num: 'P1', color: '#D72638',
+        label: 'Months 1–2 · CFD Basics',
+        name: 'Fluid Dynamics & Mesh Generation',
+        topics: ["Navier-Stokes equations & CFD fundamentals", "SpaceClaim geometry preparation and fluid domain extraction", "ANSYS Meshing — inflation layers, structured, unstructured mesh", "Mesh quality evaluation (orthogonal quality, aspect ratio)", "Boundary conditions definition"],
+        projects: ["Fluid flow mesh and setup for a pipe junction with manifold"]
+      },
+      {
+        num: 'P2', color: '#9B0F1E',
+        label: 'Months 3–4 · Fluent solver',
+        name: 'Fluent Solvers & Turbulence',
+        topics: ["Turbulence models (k-epsilon, k-omega, SST)", "Heat transfer, convection, and radiation setups", "Multiphase flow and transient simulations", "Solver settings, convergence monitors, residuals", "CFD-Post visualization — streamlines, contours, vectors"],
+        projects: ["Aerodynamic lift and drag simulation of an airfoil", "Thermal-CFD analysis of an electronics cooling block"]
+      }
+    ],
+    outcomes: [
+      {icon: '🌀', title: 'Fluid Simulation', desc: 'Solve internal and external flow scenarios using Fluent solver setups.'},
+      {icon: '🔥', title: 'Thermal Management', desc: 'Model heat sinks, conduction, and forced convection cooling components.'},
+      {icon: '📊', title: 'CFD Post-Processing', desc: 'Extract drag/lift coefficients, pressure drops, and plot flow contours.'}
+    ],
+    careers: ["CFD Engineer", "Thermal Engineer", "Aerodynamicist", "Analysis Engineer", "CAE Analyst"]
+  },
+  {
+    id: 'm5',
+    track: 'mech',
+    title: 'CNC Programming & CAM Technology',
+    badge: 'Foundation Program',
+    desc: 'Learn 2-axis and 3-axis milling/turning toolpath generation, G-Code programming, and machine operation workflows.',
+    tools: ["Mastercam", "CNC G-Code", "SolidWorks CAM"],
+    duration: '3 Months',
+    sessions: '36 Sessions',
+    credit: '3 Credits',
+    thumbBg: 'linear-gradient(135deg, #2B070B 0%, #6E121E 100%)',
+    formula: ["CAD", "CAM", "Post-process", "Setup", "Machining"],
+    formulaColors: ["#D72638", "#C01525", "#AB1020", "#8A0B1A", "#6A0613"],
+    phases: [
+      {
+        num: 'P1', color: '#D72638',
+        label: 'Month 1 · Manual G-Code',
+        name: 'Manual G-Code & CNC Setup',
+        topics: ["Introduction to CNC milling & turning centers", "G-codes and M-codes manual programming", "Work coordinate systems (G54-G59) & tool offsets", "Speeds, feeds, and cutting depth calculations", "Machine control panel setup and test runs"],
+        projects: ["Manual G-code program for step turning and pocket milling profiles"]
+      },
+      {
+        num: 'P2', color: '#9B0F1E',
+        label: 'Months 2–3 · Mastercam',
+        name: 'Mastercam 2D & 3D CAM Programming',
+        topics: ["Mastercam CAD interface and geometry import", "2D toolpaths — contouring, pocketing, drilling", "3D high-speed toolpaths — roughing, semi-finishing, finishing", "Toolpath simulation, verification, and collision check", "Post-processing and CNC code export for FANUC/Siemens"],
+        projects: ["CAM toolpaths and G-code generation for a molded engine bracket block"]
+      }
+    ],
+    outcomes: [
+      {icon: '⚙️', title: 'CNC Operations', desc: 'Write manual G-Code and set tool/work offsets on industrial CNC centers.'},
+      {icon: '🛠️', title: 'CAM Toolpaths', desc: 'Generate complex 2D and 3D milling toolpaths using Mastercam.'},
+      {icon: '🔬', title: 'Virtual Verification', desc: 'Simulate cutting processes to verify tolerances and prevent tool crashes.'}
+    ],
+    careers: ["CAM Engineer", "CNC Programmer", "Production Engineer", "Tool Room Engineer", "CAD/CAM Designer"]
+  },
+  {
+    id: 'cse1',
+    track: 'cse',
+    title: 'Full-Stack Web Development & DevOps',
+    badge: 'Core Program',
+    desc: 'Become an industry-ready full-stack software engineer. Master Frontend (React, Next.js), Backend (Node.js, Express), Databases (PostgreSQL, MongoDB), and cloud deployment using AWS and Docker.',
+    tools: ["React", "Node.js", "AWS", "Docker", "Git"],
+    duration: '6 Months',
+    sessions: '72 Sessions',
+    credit: '6 Credits',
+    thumbBg: 'linear-gradient(135deg, #100925 0%, #3B006F 100%)',
+    formula: ["Design", "Develop", "Test", "Deploy", "Scale"],
+    formulaColors: ["#7B2FF7", "#631BB7", "#4F15B7", "#3A0E93", "#2D0A7F"],
+    phases: [
+      {
+        num: 'P1', color: '#7B2FF7',
+        label: 'Months 1–2 · Frontend',
+        name: 'Responsive Web UI with React',
+        topics: ["HTML5 semantic markup, CSS3 layout (Flexbox/Grid)", "JavaScript ES6+ fundamentals, DOM manipulation", "React component model, state, and hooks", "Tailwind CSS & modern design systems integration", "API fetching, routing, and asynchronous state", "Responsive design principles and mobile testing"],
+        projects: ["Fully responsive multi-page dashboard application", "Real-time collaborative task manager"]
+      },
+      {
+        num: 'P2', color: '#4F15B7',
+        label: 'Months 3–4 · Backend',
+        name: 'Secure API Engineering & DBs',
+        topics: ["Node.js runtime environment and Express framework", "Database design — PostgreSQL (SQL) & MongoDB (NoSQL)", "RESTful API architecture and custom JSON endpoints", "User authentication (JWT, OAuth) & security best practices", "Redis caching layer and performance optimization", "Unit testing with Jest and Supertest"],
+        projects: ["Secure REST API backend with user roles and payments", "High-throughput chat server using WebSockets"]
+      },
+      {
+        num: 'P3', color: '#2D0A7F',
+        label: 'Months 5–6 · DevOps & Cloud',
+        name: 'CI/CD Pipelines & Cloud Scale',
+        topics: ["Docker containerization and compose setups", "AWS core services — EC2, S3, RDS, IAM", "Continuous Integration & Deployment (GitHub Actions)", "Serverless deployment with Vercel & AWS Lambda", "Nginx reverse proxy, SSL certification setup", "System monitoring, logging, and load balancing"],
+        projects: ["Dockerized full-stack app deployed on AWS EC2 via CI/CD"]
+      }
+    ],
+    outcomes: [
+      {icon: '💻', title: 'Full-Stack Proficiency', desc: 'Build and deploy fully functional web applications from database schemas to client-side UI.'},
+      {icon: '🛡️', title: 'DevOps & Scaling', desc: 'Package services inside Docker containers and configure automated cloud deployments on AWS.'},
+      {icon: '💾', title: 'Database Design', desc: 'Model structured and unstructured data using modern Postgres and MongoDB standards.'}
+    ],
+    careers: ["Full-Stack Developer", "Backend Engineer", "DevOps Engineer", "Cloud Software Developer", "React Developer"]
+  },
+  {
+    id: 'cse2',
+    track: 'cse',
+    title: 'Artificial Intelligence & Data Engineering',
+    badge: 'Specialist Program',
+    desc: 'Master the state-of-the-art in AI and ML. Learn data preprocessing, statistical modeling, supervised/unsupervised machine learning, deep learning with TensorFlow, and modern generative AI/LLMs.',
+    tools: ["Python", "TensorFlow", "PyTorch", "SQL", "Pandas"],
+    duration: '4 Months',
+    sessions: '48 Sessions',
+    credit: '4 Credits',
+    thumbBg: 'linear-gradient(135deg, #0A1128 0%, #102B5C 100%)',
+    formula: ["Wrangle", "Analyze", "Model", "Validate", "Deploy"],
+    formulaColors: ["#7B2FF7", "#631BB7", "#4F15B7", "#3A0E93", "#2D0A7F"],
+    phases: [
+      {
+        num: 'P1', color: '#7B2FF7',
+        label: 'Month 1 · Foundations',
+        name: 'Python for Data Analysis',
+        topics: ["Python programming basics, functions, and OOP", "Data wrangling with NumPy and Pandas libraries", "Data visualization with Matplotlib and Seaborn", "Relational database querying and advanced SQL joins", "Exploratory Data Analysis (EDA) methodologies", "Statistical distributions and hypothesis testing"],
+        projects: ["Complete sales intelligence EDA dataset analysis", "SQL database schema design and KPI extraction"]
+      },
+      {
+        num: 'P2', color: '#4F15B7',
+        label: 'Months 2–3 · Modeling',
+        name: 'Machine Learning & Deep Learning',
+        topics: ["Supervised learning — linear/logistic regression, trees", "Unsupervised learning — clustering, dimensional reduction", "Model evaluation metrics, cross-validation, hyperparameter tuning", "Neural network architectures with Keras & TensorFlow", "Convolutional Neural Networks (CNN) for computer vision", "Recurrent Neural Networks (RNN) for sequence modeling"],
+        projects: ["Predictive customer churn model with scikit-learn", "Chest X-ray disease classification model with CNNs"]
+      },
+      {
+        num: 'P3', color: '#2D0A7F',
+        label: 'Month 4 · GenAI & MLOps',
+        name: 'Generative AI & LLMs in Production',
+        topics: ["Transformer architectures and self-attention mechanisms", "LLM prompt engineering and Retrieval-Augmented Generation (RAG)", "LangChain framework and vector database indexing", "HuggingFace spaces and API integrations", "Model optimization, quantization, and edge deployment", "MLOps pipelines for serving predictions"],
+        projects: ["Enterprise PDF document QA bot using LangChain & RAG"]
+      }
+    ],
+    outcomes: [
+      {icon: '🧠', title: 'AI Engineering', desc: 'Train, evaluate, and fine-tune supervised, unsupervised, and deep learning neural models.'},
+      {icon: '📈', title: 'Data Analytics', desc: 'Clean, normalize, and query complex datasets to extract predictive insights.'},
+      {icon: '🤖', title: 'GenAI Integration', desc: 'Build intelligent chatbots and RAG agents leveraging large language models.'}
+    ],
+    careers: ["AI Engineer", "Machine Learning Engineer", "Data Scientist", "NLP Specialist", "Data Analyst"]
+  },
+  {
+    id: 'cse3',
+    track: 'cse',
+    title: 'Cybersecurity & Ethical Hacking',
+    badge: 'Advanced Program',
+    desc: 'Master network security, vulnerability assessment, web application penetration testing, system hardening, and incident response under industry guidelines.',
+    tools: ["Kali Linux", "Wireshark", "Nmap", "Metasploit", "Burp Suite"],
+    duration: '4 Months',
+    sessions: '48 Sessions',
+    credit: '4 Credits',
+    thumbBg: 'linear-gradient(135deg, #1C0A25 0%, #4D0E60 100%)',
+    formula: ["Recon", "Scan", "Exploit", "Escalate", "Harden"],
+    formulaColors: ["#7B2FF7", "#631BB7", "#4F15B7", "#3A0E93", "#2D0A7F"],
+    phases: [
+      {
+        num: 'P1', color: '#7B2FF7',
+        label: 'Months 1–2 · Recon & Scanning',
+        name: 'Network Reconnaissance & Vulnerabilities',
+        topics: ["Linux foundations and security administration", "TCP/IP networking model and port scanning with Nmap", "Network sniffing and traffic analysis with Wireshark", "Vulnerability scanning with Nessus and OpenVAS", "Social engineering methodologies and security awareness"],
+        projects: ["Vulnerability assessment report of a sandbox enterprise network"]
+      },
+      {
+        num: 'P2', color: '#4F15B7',
+        label: 'Months 3–4 · Pen Testing',
+        name: 'Exploitation & Web App Pentesting',
+        topics: ["Metasploit framework and payloads delivery", "Web security vulnerabilities — OWASP Top 10", "SQL injection, XSS, CSRF, and broken authentication", "Burp Suite proxy manipulation and API testing", "Privilege escalation techniques (Windows/Linux)", "Firewalls, IDS/IPS, and system defense hardening"],
+        projects: ["Complete penetration testing report on an OWASP vulnerable server"]
+      }
+    ],
+    outcomes: [
+      {icon: '🛡️', title: 'Ethical Hacking', desc: 'Identify and safely exploit network and web application security gaps.'},
+      {icon: '🔍', title: 'Traffic Auditing', desc: 'Intercept and analyze packet streams with Wireshark to locate indicators of compromise (IoC).'},
+      {icon: '🔐', title: 'System Hardening', desc: 'Configure firewalls, policies, and secure endpoints to mitigate cyber threats.'}
+    ],
+    careers: ["Security Analyst", "Penetration Tester", "SOC Engineer", "Information Security Consultant"]
+  },
+  {
+    id: 'cse4',
+    track: 'cse',
+    title: 'Cloud Computing & AWS Solutions Architecture',
+    badge: 'Industry Program',
+    desc: 'Design highly available, fault-tolerant, secure, and scalable cloud architectures on Amazon Web Services using Infrastructure as Code (IaC).',
+    tools: ["AWS", "Terraform", "Docker", "Kubernetes", "Linux"],
+    duration: '3 Months',
+    sessions: '36 Sessions',
+    credit: '3 Credits',
+    thumbBg: 'linear-gradient(135deg, #091A25 0%, #154D6E 100%)',
+    formula: ["Architect", "Provision", "Containerize", "Orchestrate", "Monitor"],
+    formulaColors: ["#7B2FF7", "#631BB7", "#4F15B7", "#3A0E93", "#2D0A7F"],
+    phases: [
+      {
+        num: 'P1', color: '#7B2FF7',
+        label: 'Month 1 · AWS Core',
+        name: 'AWS Core Services & Infrastructure',
+        topics: ["Cloud computing models (IaaS, PaaS, SaaS)", "VPCs, subnets, route tables, security groups", "EC2 instances, load balancers, auto-scaling groups", "S3 buckets, IAM user roles and policies", "Relational (RDS) and NoSQL (DynamoDB) databases"],
+        projects: ["Multi-tier VPC hosting a high-availability auto-scaled website"]
+      },
+      {
+        num: 'P2', color: '#4F15B7',
+        label: 'Months 2–3 · Automation',
+        name: 'IaC, Containers & Kubernetes',
+        topics: ["Infrastructure as Code with Terraform syntax", "Containerization with Docker and multi-stage builds", "Kubernetes cluster architecture and pod controllers", "Deploying applications on Amazon EKS", "Cloud monitoring with CloudWatch and Prometheus"],
+        projects: ["Automated Kubernetes application deployment on AWS using Terraform"]
+      }
+    ],
+    outcomes: [
+      {icon: '☁️', title: 'AWS Architecture', desc: 'Design reliable and secure multi-tier infrastructure configurations on AWS.'},
+      {icon: '⚙️', title: 'Infrastructure as Code', desc: 'Define and manage cloud resources programmatically with Terraform.'},
+      {icon: '🚢', title: 'Container Orchestration', desc: 'Package web apps inside Docker containers and run them in Kubernetes clusters.'}
+    ],
+    careers: ["Cloud Engineer", "AWS Solutions Architect", "DevOps Engineer", "System Administrator"]
+  },
+  {
+    id: 'cse5',
+    track: 'cse',
+    title: 'Blockchain & Smart Contract Engineering',
+    badge: 'Specialist Program',
+    desc: 'Learn decentralized application (DApp) development, Solidity smart contracts scripting, token design, and consensus protocols.',
+    tools: ["Solidity", "Hardhat", "Ethereum", "Web3.js", "Cryptography"],
+    duration: '3 Months',
+    sessions: '36 Sessions',
+    credit: '3 Credits',
+    thumbBg: 'linear-gradient(135deg, #1A0925 0%, #401060 100%)',
+    formula: ["Understand", "Code", "Test", "Deploy", "Integrate"],
+    formulaColors: ["#7B2FF7", "#631BB7", "#4F15B7", "#3A0E93", "#2D0A7F"],
+    phases: [
+      {
+        num: 'P1', color: '#7B2FF7',
+        label: 'Month 1 · Blockchain Core',
+        name: 'Solidity Smart Contract Design',
+        topics: ["Blockchain structures, hashing, asymmetric cryptography", "Ethereum Virtual Machine (EVM) and gas optimization", "Solidity variables, control flows, structures, mappings", "Inheritance, modifiers, and custom events", "Security best practices — avoiding reentrancy attacks"],
+        projects: ["Secure custom ERC-20 token contract with burning mechanism"]
+      },
+      {
+        num: 'P2', color: '#4F15B7',
+        label: 'Months 2–3 · Hardhat & DApps',
+        name: 'Hardhat Testing & Frontend Link',
+        topics: ["Hardhat project setup, compiling, and network configs", "Writing smart contract unit tests in Mocha & Chai", "Deploying smart contracts to Sepolia/Polygon testnets", "Connecting frontends with Ethers.js or Web3.js", "Integrating MetaMask wallets and state triggers"],
+        projects: ["Decentralized crowdfunding platform (DApp) with React frontend"]
+      }
+    ],
+    outcomes: [
+      {icon: '🔗', title: 'Smart Contracts', desc: 'Write smart contracts using Solidity.'},
+      {icon: '🛡️', title: 'Security Audits', desc: 'Recognize and resolve common vulnerability patterns in blockchain contracts.'},
+      {icon: '🌐', title: 'DApp Integration', desc: 'Build client interfaces that authenticate users and interact with the Ethereum network.'}
+    ],
+    careers: ["Solidity Developer", "Blockchain Engineer", "DApp Developer", "Smart Contract Auditor"]
+  },
+  {
+    id: 'eee1',
+    track: 'eee',
+    title: 'Electric Vehicle Powertrain & BMS Engineering',
+    badge: 'Core Program',
+    desc: 'Master the engineering of modern electric mobility. Learn EV battery modeling, thermal management, cell balancing, motor control theory (FOC), and power electronic converter design.',
+    tools: ["MATLAB", "Simulink", "Ansys Maxwell", "Altium Designer"],
+    duration: '4 Months',
+    sessions: '48 Sessions',
+    credit: '4 Credits',
+    thumbBg: 'linear-gradient(135deg, #2A1F02 0%, #705007 100%)',
+    formula: ["Model", "Analyze", "Design", "Prototype", "Validate"],
+    formulaColors: ["#EAB308", "#D99E06", "#C78B03", "#A67302", "#805801"],
+    phases: [
+      {
+        num: 'P1', color: '#EAB308',
+        label: 'Months 1–2 · Batteries & BMS',
+        name: 'EV Batteries & BMS Design',
+        topics: ["Lithium-ion cell chemistry, specs, and charge/discharge curves", "Battery pack assembly configuration (series/parallel matching)", "BMS architectures — master/slave topologies", "State of Charge (SoC) and State of Health (SoH) estimation", "Passive and active cell balancing circuitry", "Over-voltage, under-voltage, over-temperature protection"],
+        projects: ["Simulink model of a 10-cell series lithium-ion pack", "Altium design of a 4S active cell balancer board"]
+      },
+      {
+        num: 'P2', color: '#C78B03',
+        label: 'Month 3 · Motor & Power Electronics',
+        name: 'EV Powertrain & Motor Control',
+        topics: ["EV powertrain configurations (HEV, PHEV, BEV)", "Electric motors — BLDC, PMSM, Induction motor operations", "Power electronic converters — buck, boost, bidir, inverter", "Field Oriented Control (FOC) motor control theory", "PWM generation and gate driver circuit layout", "Thermal management systems for motors and packs"],
+        projects: ["Simulation of PMSM motor closed-loop FOC in Simulink"]
+      },
+      {
+        num: 'P3', color: '#805801',
+        label: 'Month 4 · Systems Integration',
+        name: 'Simulation & Safety Compliance',
+        topics: ["Hardware-in-the-loop (HIL) testing for EV systems", "EV safety standards — ISO 26262 functional safety, ASIL ratings", "Regenerative braking modeling and strategy optimization", "Vehicle dynamics, traction force, and torque profiling", "Design documentation, certification formats and test protocols"],
+        projects: ["Complete EV simulation package — pack model + motor controller + vehicle dynamics"]
+      }
+    ],
+    outcomes: [
+      {icon: '🔋', title: 'BMS Architecture', desc: 'Design protective BMS firmware and balancing circuits to maximize battery life.'},
+      {icon: '🏎️', title: 'EV Dynamics Modeling', desc: 'Simulate EV powertrain drivetrains under dynamic driving cycles in MATLAB.'},
+      {icon: '⚡', title: 'Power Electronics', desc: 'Model and design efficient DC-DC converters and 3-phase inverters for motor drives.'}
+    ],
+    careers: ["EV Systems Engineer", "BMS Hardware Engineer", "Power Electronics Engineer", "Battery Analyst", "Motor Control Engineer"]
+  },
+  {
+    id: 'eee2',
+    track: 'eee',
+    title: 'Smart Grid & Renewable Energy Technology',
+    badge: 'Advanced Program',
+    desc: 'Learn to design and model modern power systems. Master solar PV system design, wind turbine integration, power quality management, grid-tie converters, and smart substation SCADA systems.',
+    tools: ["MATLAB", "ETAP", "PVSyst", "SCADA"],
+    duration: '3 Months',
+    sessions: '36 Sessions',
+    credit: '3 Credits',
+    thumbBg: 'linear-gradient(135deg, #3A2E05 0%, #8C700D 100%)',
+    formula: ["Plan", "Model", "Connect", "Control", "Monitor"],
+    formulaColors: ["#EAB308", "#D99E06", "#C78B03", "#A67302", "#805801"],
+    phases: [
+      {
+        num: 'P1', color: '#EAB308',
+        label: 'Month 1 · Solar & Renewable Design',
+        name: 'Solar PV Systems & PVSyst Modeling',
+        topics: ["Solar PV cell physics, parameters, and mismatch losses", "Solar array sizing, string configuration, and inverter matching", "Off-grid, on-grid, and hybrid solar PV system designs", "PVSyst software interface, meteorological data import", "System loss analysis — shading, IAM, wiring, temperature", "Financial analysis, LCOE calculation and yield reports"],
+        projects: ["Feasibility study and PVSyst model of a 500kW rooftop PV array"]
+      },
+      {
+        num: 'P2', color: '#C78B03',
+        label: 'Month 2 · Power Systems & Grid Link',
+        name: 'Grid Integration & Power Electronics',
+        topics: ["Grid-tie inverter topologies and control loop designs", "Synchronization techniques — Phase Locked Loops (PLL)", "Power quality issues — harmonics, voltage sags, power factor", "Active power filters and static compensators (STATCOM)", "Microgrid control strategies and energy storage link", "Net metering concepts and grid compliance standards"],
+        projects: ["Simulation of grid-tie solar inverter with active control in Simulink"]
+      },
+      {
+        num: 'P3', color: '#805801',
+        label: 'Month 3 · Substation & Analysis',
+        name: 'ETAP Power System & Substation Design',
+        topics: ["Introduction to ETAP — one line diagram construction", "Load flow analysis and short circuit calculations", "Protection coordination — relay settings, breaker sizing", "Smart substation automation — SCADA systems, IEC 61850", "Substation grounding grid designs (IEEE 80 standards)", "Smart meter integration and advanced metering infrastructure"],
+        projects: ["Industrial distribution grid load flow & protection coordination in ETAP"]
+      }
+    ],
+    outcomes: [
+      {icon: '☀️', title: 'PV Yield Analysis', desc: 'Design PV systems and run detailed loss-yield reports using PVSyst.'},
+      {icon: '📈', title: 'Grid Control Loop', desc: 'Design synchronization PLL control loops for grid-tied power electronics.'},
+      {icon: '🏢', title: 'Power System Modeling', desc: 'Perform short-circuit, load-flow, and grounding grid designs using ETAP.'}
+    ],
+    careers: ["Smart Grid Engineer", "Solar PV Designer", "Substation Engineer", "Power Systems Analyst", "SCADA Integrator"]
+  },
+  {
+    id: 'eee3',
+    track: 'eee',
+    title: 'Industrial Automation, PLC & SCADA Systems',
+    badge: 'Industry Program',
+    desc: 'Master industrial automation workflows. Learn PLC programming (Ladder, FBD), HMI design, SCADA systems configuration, and industrial networking.',
+    tools: ["Siemens TIA Portal", "Wonderware SCADA", "PLC", "HMI"],
+    duration: '3 Months',
+    sessions: '36 Sessions',
+    credit: '3 Credits',
+    thumbBg: 'linear-gradient(135deg, #2D1B05 0%, #754406 100%)',
+    formula: ["Input", "Logic", "Visualize", "Network", "Automate"],
+    formulaColors: ["#EAB308", "#D99E06", "#C78B03", "#A67302", "#805801"],
+    phases: [
+      {
+        num: 'P1', color: '#EAB308',
+        label: 'Month 1 · PLC Architecture',
+        name: 'PLC Wiring & Ladder Logic',
+        topics: ["PLC hardware components, memory layouts, I/O modules", "Wiring sensor inputs and actuator outputs to PLC", "Ladder Diagram (LD) and Function Block Diagram (FBD) rules", "Timers, counters, comparators, and math instructions", "Analog input scaling and temperature controller loops"],
+        projects: ["Pick and place robotic pneumatic arm control sequence on TIA Portal"]
+      },
+      {
+        num: 'P2', color: '#C78B03',
+        label: 'Months 2–3 · SCADA & HMI',
+        name: 'HMI Interfacing & SCADA Networking',
+        topics: ["HMI screen development — buttons, bars, alarms, trends", "Linking HMI variables to PLC data blocks", "SCADA server setup and database integration", "Industrial networking — Modbus, Profinet, OPC-UA", "System troubleshooting and alarm logs handling"],
+        projects: ["Substation monitoring SCADA system layout with alarm limits database"]
+      }
+    ],
+    outcomes: [
+      {icon: '⚙️', title: 'PLC Development', desc: 'Write PLC programs using TIA Portal for industrial systems.'},
+      {icon: '🖥️', title: 'SCADA Engineering', desc: 'Design HMI panels and configure real-time SCADA servers.'},
+      {icon: '🌐', title: 'Network Protocols', desc: 'Implement Modbus/Profinet communication links between controllers.'}
+    ],
+    careers: ["Automation Engineer", "PLC Programmer", "SCADA Integrator", "Control System Technician"]
+  },
+  {
+    id: 'eee4',
+    track: 'eee',
+    title: 'Power Electronics & Motor Control Drives',
+    badge: 'Specialist Program',
+    desc: 'Design power converters, high-frequency switching circuits, and closed-loop motor control drives (FOC/DTC) for industrial applications.',
+    tools: ["MATLAB", "Simulink", "Altium", "DSP Controllers"],
+    duration: '4 Months',
+    sessions: '48 Sessions',
+    credit: '4 Credits',
+    thumbBg: 'linear-gradient(135deg, #1F1502 0%, #543905 100%)',
+    formula: ["Simulate", "Verify", "Schematic", "PCB", "Drive"],
+    formulaColors: ["#EAB308", "#D99E06", "#C78B03", "#A67302", "#805801"],
+    phases: [
+      {
+        num: 'P1', color: '#EAB308',
+        label: 'Months 1–2 · Converters',
+        name: 'DC-DC & AC-DC Converter Designs',
+        topics: ["Semiconductor switching components (MOSFETs, IGBTs, SiC)", "Buck, Boost, Buck-Boost, and isolated Flyback converters", "Single-phase and three-phase inverter topologies", "Gate driver circuits and isolation design configurations", "Magnetics design — inductors, transformers sizing"],
+        projects: ["Simulink model and board design of 100W buck-boost converter"]
+      },
+      {
+        num: 'P2', color: '#C78B03',
+        label: 'Months 3–4 · Motors',
+        name: 'AC Motor Drive Control Loops',
+        topics: ["V/f control of three-phase induction motors", "Field Oriented Control (FOC) for PMSM/BLDC motors", "Space Vector PWM (SVPWM) generation logic", "Programming motor drive algorithms on DSP chips", "Hardware-in-the-loop test benches"],
+        projects: ["Real-time speed control of BLDC motor using DSP board controller"]
+      }
+    ],
+    outcomes: [
+      {icon: '⚡', title: 'Converter Design', desc: 'Model and design power converters.'},
+      {icon: '🌀', title: 'Motor Dynamics', desc: 'Implement advanced vector control structures for PMSM motors.'},
+      {icon: '🔌', title: 'PCB Layout', desc: 'Route gate driver layouts and high-power tracks maintaining isolation standards.'}
+    ],
+    careers: ["Power Electronics Engineer", "Motor Drive Developer", "Analog Hardware Specialist", "Hardware Designer"]
+  },
+  {
+    id: 'eee5',
+    track: 'eee',
+    title: 'Electrical Machine Design & CAD Modeling',
+    badge: 'Foundation Program',
+    desc: 'Learn magnetic circuit design, slot-pole configuration, thermal profiling, and CAD modeling for transformers, induction motors, and alternators.',
+    tools: ["Ansys Maxwell", "AutoCAD Electrical", "Simulink"],
+    duration: '3 Months',
+    sessions: '36 Sessions',
+    credit: '3 Credits',
+    thumbBg: 'linear-gradient(135deg, #1C1C02 0%, #474706 100%)',
+    formula: ["Sizing", "Drafting", "FEM", "Thermal", "Optimize"],
+    formulaColors: ["#EAB308", "#D99E06", "#C78B03", "#A67302", "#805801"],
+    phases: [
+      {
+        num: 'P1', color: '#EAB308',
+        label: 'Month 1 · CAD Drafting',
+        name: 'AutoCAD Electrical Schematic Design',
+        topics: ["AutoCAD Electrical interface and symbol libraries", "Drafting single line diagrams and power schematics", "Panel layout drafting and terminal block configs", "Transformer rating parameters and core sizing", "Stator and rotor core slot sizing basics"],
+        projects: ["Electrical control panel layout for a water treatment pump station"]
+      },
+      {
+        num: 'P2', color: '#C78B03',
+        label: 'Months 2–3 · Maxwell FEM',
+        name: 'Ansys Maxwell Electromagnetic Analysis',
+        topics: ["2D/3D modeling of motors and magnets in Maxwell", "Defining transient and static magnetic boundary inputs", "Evaluating magnetic flux density and core saturation", "Calculating stator winding copper losses & core losses", "Transient torque and speed profiling calculations"],
+        projects: ["Electromagnetic design and efficiency optimization of 5kW Induction Motor"]
+      }
+    ],
+    outcomes: [
+      {icon: '📐', title: 'CAD Schematics', desc: 'Produce electrical power distribution drawings to standards.'},
+      {icon: ' vanity', title: 'Maxwell FEM Analysis', desc: 'Solve electromagnetic fields to verify flux saturation points.'},
+      {icon: '🔥', title: 'Efficiency Rating', desc: 'Quantify stator/rotor losses and compute motor performance curves.'}
+    ],
+    careers: ["Machine Design Engineer", "Electrical CAD Draftsman", "FEM Analysis Specialist", "Development Engineer"]
+  },
+  {
+    id: 'ece1',
+    track: 'ece',
+    title: 'VLSI Design & Digital System Verification',
+    badge: 'Core Program',
+    desc: 'Deep dive into modern chip design, FPGA architecture, and digital system verification. Master Verilog/VHDL description, ASIC design flow, synthesis, and physical layout concepts.',
+    tools: ["Verilog", "Vivado", "Cadence", "FPGA", "ASIC"],
+    duration: '4 Months',
+    sessions: '48 Sessions',
+    credit: '4 Credits',
+    thumbBg: 'linear-gradient(135deg, #031720 0%, #084860 100%)',
+    formula: ["Design", "Simulate", "Verify", "Synthesize", "Implement"],
+    formulaColors: ["#0EA5E9", "#0C93D0", "#097EB2", "#06638C", "#044C6D"],
+    phases: [
+      {
+        num: 'P1', color: '#0EA5E9',
+        label: 'Months 1–2 · Digital & RTL',
+        name: 'Digital System & Verilog Design',
+        topics: ["Boolean algebra, logic gates, and combinational circuits", "Sequential circuits — flip-flops, registers, counters", "Verilog HDL syntax — structural, dataflow, behavioral", "Writing testbenches and simulation waveforms", "Finite State Machine (FSM) design patterns", "Memory architectures — RAM, ROM, FIFO buffers"],
+        projects: ["Verilog design of an 8-bit Arithmetic Logic Unit (ALU)", "Synchronous FIFO memory controller with testbench"]
+      },
+      {
+        num: 'P2', color: '#097EB2',
+        label: 'Month 3 · Synthesis & FPGA',
+        name: 'FPGA Prototyping & Vivado Flow',
+        topics: ["FPGA architecture — LUTs, CLBs, interconnects, DSP blocks", "Xilinx Vivado design suite workflow", "Logic synthesis and physical placement constraints", "Static Timing Analysis (STA) and clock domain crossings", "Hardware validation on Xilinx Basys3/Nexys boards", "debugging IP cores and logic analyzers"],
+        projects: ["FPGA implementation of a digital clock and frequency divider"]
+      },
+      {
+        num: 'P3', color: '#044C6D',
+        label: 'Month 4 · Verification & ASIC',
+        name: 'SystemVerilog & Verification Basics',
+        topics: ["Introduction to SystemVerilog verification constructs", "ASIC design flow — RTL to GDSII layout steps", "Timing optimization and power reduction techniques", "DFT (Design for Test) concepts and boundary scans", "Industry case study — RISC-V processor architecture", "Physical design, routing, and DRC/LVS checks"],
+        projects: ["ASIC synthesis report and physical layout design of ALU"]
+      }
+    ],
+    outcomes: [
+      {icon: '🔌', title: 'ASIC/FPGA Design', desc: 'Implement digital circuits in Verilog and synthesize them onto FPGAs.'},
+      {icon: '⏱️', title: 'Timing & Constraints', desc: 'Resolve timing violations and define timing constraints for complex clock domains.'},
+      {icon: '🔍', title: 'RTL Verification', desc: 'Construct testbenches to validate hardware components prior to manufacturing.'}
+    ],
+    careers: ["VLSI Design Engineer", "RTL Design Engineer", "FPGA Prototyping Engineer", "ASIC Verification Engineer"]
+  },
+  {
+    id: 'ece2',
+    track: 'comm',
+    title: 'Embedded Systems & IoT Solutions Architecture',
+    badge: 'Industry Program',
+    desc: 'Bridge the physical and digital worlds. Learn microcontroller architectures (ARM Cortex, ESP32), sensor interfacing, RTOS concepts, wireless protocols (BLE, Wi-Fi, LoRa), and cloud IoT integrations.',
+    tools: ["C/C++", "ESP32", "FreeRTOS", "MQTT", "Embedded C"],
+    duration: '3 Months',
+    sessions: '36 Sessions',
+    credit: '3 Credits',
+    thumbBg: 'linear-gradient(135deg, #052230 0%, #0B638A 100%)',
+    formula: ["Wire", "Code", "Interface", "Connect", "Deploy"],
+    formulaColors: ["#0EA5E9", "#0C93D0", "#097EB2", "#06638C", "#044C6D"],
+    phases: [
+      {
+        num: 'P1', color: '#0EA5E9',
+        label: 'Month 1 · Embedded Firmware',
+        name: 'Embedded C & Microcontrollers',
+        topics: ["C/C++ for embedded applications, pointer arrays, bitwise", "ESP32 microcontroller architecture and GPIO pinout", "Serial communication protocols — I2C, SPI, UART", "ADC/DAC configuration and analog sensor interfacing", "Interrupt handling and hardware timers", "Power management, sleep modes, and flash storage"],
+        projects: ["Multi-sensor data logger with ESP32 and microSD interface"]
+      },
+      {
+        num: 'P2', color: '#097EB2',
+        label: 'Month 2 · RTOS & Protocols',
+        name: 'FreeRTOS & Wireless Systems',
+        topics: ["Multitasking concepts and RTOS schedulers", "FreeRTOS task creation, priority, and states", "Task synchronization — semaphores, queues, and mutexes", "Wi-Fi and BLE stack configuration on ESP32", "MQTT protocol for secure, low-overhead IoT telemetry", "HTTP REST endpoints integration for device firmware"],
+        projects: ["Real-time industrial sensor hub with FreeRTOS and MQTT"]
+      },
+      {
+        num: 'P3', color: '#044C6D',
+        label: 'Month 3 · Cloud IoT Integration',
+        name: 'End-to-End IoT Solutions',
+        topics: ["Connecting ESP32 to AWS IoT Core / ThingSpeak cloud", "Secure TLS socket connection and certificate provisioning", "Over-The-Air (OTA) firmware update architecture", "IoT web/mobile dashboard design with Node-RED", "Hardware-in-the-loop (HIL) testing workflows", "Troubleshooting and power profiling IoT hardware"],
+        projects: ["Deployable IoT home automation hub with OTA and dashboard"]
+      }
+    ],
+    outcomes: [
+      {icon: '📡', title: 'Firmware Engineering', desc: 'Write efficient C/C++ drivers for sensors, displays, and communication chips.'},
+      {icon: '⚙️', title: 'RTOS Scheduling', desc: 'Deploy FreeRTOS to manage concurrent tasks, interrupt callbacks, and shared resources.'},
+      {icon: '☁️', title: 'IoT Integrations', desc: 'Connect embedded nodes to cloud servers via secure MQTT and design control panels.'}
+    ],
+    careers: ["Embedded Firmware Engineer", "IoT Systems Architect", "Microcontroller Programmer", "Hardware Validation Specialist"]
+  },
+  {
+    id: 'ece3',
+    track: 'ece',
+    title: 'Digital Signal & Image Processing with MATLAB',
+    badge: 'Foundation Program',
+    desc: 'Understand frequency analysis, filter design (FIR/IIR), speech synthesis, computer vision filters, and real-time signal processing algorithms.',
+    tools: ["MATLAB", "Simulink", "Python", "OpenCV"],
+    duration: '3 Months',
+    sessions: '36 Sessions',
+    credit: '3 Credits',
+    thumbBg: 'linear-gradient(135deg, #021E2C 0%, #075075 100%)',
+    formula: ["Sample", "Filter", "Transform", "Feature", "Output"],
+    formulaColors: ["#0EA5E9", "#0C93D0", "#097EB2", "#06638C", "#044C6D"],
+    phases: [
+      {
+        num: 'P1', color: '#0EA5E9',
+        label: 'Month 1 · Signal Basics',
+        name: 'Signal Transforms & Filter Designs',
+        topics: ["Discrete-time signals, sampling theorem, quantization", "Z-transform and Discrete Fourier Transform (DFT)", "Fast Fourier Transform (FFT) analysis", "Design of FIR and IIR digital filters in MATLAB", "Filter realization structures and quantization effects"],
+        projects: ["Real-time audio noise filtering module in MATLAB"]
+      },
+      {
+        num: 'P2', color: '#097EB2',
+        label: 'Months 2–3 · Image & CV',
+        name: 'Image Enhancement & Computer Vision',
+        topics: ["Digital image representation, colorspaces, pixel operations", "Image enhancement — histogram equalization, spatial filtering", "Edge detection algorithms (Sobel, Canny, Laplacian)", "Morphological operations and object segmentation", "Computer vision libraries — Python OpenCV integration"],
+        projects: ["Automated license plate region extractor using OpenCV edge filters"]
+      }
+    ],
+    outcomes: [
+      {icon: '📊', title: 'DSP Implementations', desc: 'Design and simulate digital filters (FIR/IIR) in MATLAB.'},
+      {icon: '🖼️', title: 'Image Processing', desc: 'Deploy OpenCV operators for edge detection and thresholding.'},
+      {icon: '👁️', title: 'Computer Vision', desc: 'Extract geometric and texture features to build object identification workflows.'}
+    ],
+    careers: ["DSP Engineer", "Computer Vision Specialist", "Algorithm Developer", "Validation Engineer"]
+  },
+  {
+    id: 'ece4',
+    track: 'comm',
+    title: 'Wireless Communication & 5G Network Technology',
+    badge: 'Specialist Program',
+    desc: 'Study wireless propagation, MIMO systems, beamforming, OFDMA modulation, 5G NR physical layer, and network architecture.',
+    tools: ["MATLAB", "NS-3", "SDR (Software Defined Radio)"],
+    duration: '3 Months',
+    sessions: '36 Sessions',
+    credit: '3 Credits',
+    thumbBg: 'linear-gradient(135deg, #01141E 0%, #033954 100%)',
+    formula: ["Propagate", "Modulate", "Transmit", "Receive", "Analyze"],
+    formulaColors: ["#0EA5E9", "#0C93D0", "#097EB2", "#06638C", "#044C6D"],
+    phases: [
+      {
+        num: 'P1', color: '#0EA5E9',
+        label: 'Month 1 · Telecom Basics',
+        name: 'Wireless Channels & Modulations',
+        topics: ["Fading channel models — Rayleigh, Rician, path loss", "Digital modulations — QAM, PSK, and BER analysis", "Orthogonal Frequency Division Multiplexing (OFDM) logic", "Error control coding — Reed-Solomon, Turbo, LDPC codes", "Simulating transceiver links in MATLAB"],
+        projects: ["MATLAB simulation of an OFDM transceiver under Rayleigh fading"]
+      },
+      {
+        num: 'P2', color: '#097EB2',
+        label: 'Months 2–3 · 5G NR Flow',
+        name: 'MIMO, 5G Architecture & NS-3',
+        topics: ["Multi-Antenna systems (MIMO) & spatial multiplexing", "Beamforming concepts and channel estimation", "5G NR physical channels, numerology, and frame structure", "5G network architecture — gNodeB, UPF, AMF core elements", "Network simulator (NS-3) packet routing simulation"],
+        projects: ["NS-3 simulation of packet throughput in 5G micro-cell network"]
+      }
+    ],
+    outcomes: [
+      {icon: '📡', title: 'OFDM System Design', desc: 'Model OFDM transceivers and calculate Bit Error Rate (BER) curves in MATLAB.'},
+      {icon: '📶', title: '5G Architecture', desc: 'Analyze the physical layer parameters of 5G networks.'},
+      {icon: '🖥️', title: 'Network Simulation', desc: 'Model packet latency, drop-rate, and traffic routing in NS-3 clusters.'}
+    ],
+    careers: ["Telecom Engineer", "5G Systems Specialist", "RF Engineer", "Network Analyst", "Wireless Systems Developer"]
+  },
+  {
+    id: 'ece5',
+    track: 'ece',
+    title: 'PCB Design & Hardware Prototyping',
+    badge: 'Foundation Program',
+    desc: 'Master schematic capture, multi-layer PCB layout routing, signal integrity check, thermal relief, and manufacturing Gerber file exports.',
+    tools: ["Altium Designer", "KiCad", "Multisim"],
+    duration: '3 Months',
+    sessions: '36 Sessions',
+    credit: '3 Credits',
+    thumbBg: 'linear-gradient(135deg, #042535 0%, #0F5E85 100%)',
+    formula: ["Schematic", "Layout", "Route", "Verify", "Export"],
+    formulaColors: ["#0EA5E9", "#0C93D0", "#097EB2", "#06638C", "#044C6D"],
+    phases: [
+      {
+        num: 'P1', color: '#0EA5E9',
+        label: 'Month 1 · Schematic',
+        name: 'Schematic Capture & Simulation',
+        topics: ["Altium Designer interface and library setup", "Creating schematic symbols and linking footprints", "Drawing schematics, placing ports, and wire connections", "SPICE simulation basics in Multisim", "Design Rule Check (DRC) on schematics"],
+        projects: ["Schematic design of an adjustable switching power supply unit"]
+      },
+      {
+        num: 'P2', color: '#097EB2',
+        label: 'Months 2–3 · Layout',
+        name: 'PCB Layout Routing & Gerber generation',
+        topics: ["Transferring schematic to board layout layout", "Component placement strategies for signal flow", "Multi-layer board configurations & ground planes", "Routing trace width guidelines for high currents", "Gerber files, NC drill logs, and BOM generation"],
+        projects: ["Double-layer PCB layout routing for an STM32 development board"]
+      }
+    ],
+    outcomes: [
+      {icon: '📐', title: 'Schematic Capture', desc: 'Convert paper circuits into footprints-linked Altium schematics.'},
+      {icon: '🔌', title: 'PCB Layout Routing', desc: 'Route multi-layer PCBs satisfying mechanical boundaries and clearance guidelines.'},
+      {icon: '📁', title: 'Gerber Exporting', desc: 'Compile Gerber files and drilling tables ready for manufacture.'}
+    ],
+    careers: ["PCB Layout Engineer", "Hardware Developer", "EDA Draftsman", "Hardware Prototyper"]
+  },
+  {
+    id: 'chem1',
+    track: 'chem',
+    title: 'Process Simulation & Piping Engineering',
+    badge: 'Core Program',
+    desc: 'Master process design and simulation using industry-standard Aspen Plus and HYSYS. Learn to model thermodynamic states, heat exchangers, distillation columns, piping layouts, and plant utilities.',
+    tools: ["Aspen Plus", "Aspen HYSYS", "AutoCAD Plant 3D", "P&ID"],
+    duration: '4 Months',
+    sessions: '48 Sessions',
+    credit: '4 Credits',
+    thumbBg: 'linear-gradient(135deg, #052419 0%, #0F6344 100%)',
+    formula: ["Model", "Simulate", "Design", "Draft", "Verify"],
+    formulaColors: ["#10B981", "#0E9E6D", "#0B825A", "#086546", "#064E35"],
+    phases: [
+      {
+        num: 'P1', color: '#10B981',
+        label: 'Months 1–2 · Simulation',
+        name: 'Aspen Plus & HYSYS Modeling',
+        topics: ["Thermodynamic property packages selection (Peng-Robinson, NRTL)", "Pure component definition and hypothetical compounds", "Material and energy balances in Aspen Plus", "Modeling unit operations — mixers, splitters, flash drums", "Distillation column modeling (DSTWU vs RadFrac)", "Reactor modeling — stoichiometric, yield, equilibrium"],
+        projects: ["Thermodynamic phase envelope model for natural gas", "RadFrac column simulation for ethanol-water separation"]
+      },
+      {
+        num: 'P2', color: '#0B825A',
+        label: 'Month 3 · Heat Exchangers & Piping',
+        name: 'Heat Integration & Piping Design',
+        topics: ["Shell and tube heat exchanger rating in Aspen EDR", "Process flow diagram (PFD) and P&ID drafting standards", "Control valve sizing and pressure drop calculations", "Piping design fundamentals — ASME B31.3 codes", "Pipe sizing, schedule calculation, and pressure drop", "Piping materials spec sheet generation"],
+        projects: ["Thermal design of shell-and-tube heat exchanger in Aspen EDR"]
+      },
+      {
+        num: 'P3', color: '#064E35',
+        label: 'Month 4 · Plant Layout & AutoCAD',
+        name: 'Plant 3D Drafting & Isometric Layouts',
+        topics: ["AutoCAD Plant 3D workspace and project setup", "Equipment modeling — pumps, vessels, structures in 3D", "Routing pipes, inserting inline valves, fittings, instruments", "Generating piping isometric drawings and BOMs", "Clash check in 3D layouts, structural clearance checks", "Technical project package formatting"],
+        projects: ["Complete 3D model of a distillation plant section with ISO drawings"]
+      }
+    ],
+    outcomes: [
+      {icon: '⚗️', title: 'Process Engineering', desc: 'Simulate complex multi-stage distillation column systems and chemical reactors in Aspen.'},
+      {icon: '📐', title: 'Piping & Instrument Layout', desc: 'Draft comprehensive P&IDs and build 3D piping routing layouts in AutoCAD Plant 3D.'},
+      {icon: '🔥', title: 'Thermal Equipment Sizing', desc: 'Design and rate heat exchangers according to standard ASME codes and process specs.'}
+    ],
+    careers: ["Process Simulation Engineer", "Chemical Design Engineer", "Plant Piping Designer", "ASME Sizing Analyst"]
+  },
+  {
+    id: 'chem2',
+    track: 'chem',
+    title: 'Industrial Effluent Treatment & Green Process Design',
+    badge: 'Industry Program',
+    desc: 'Understand the design of industrial wastewater treatment plants, zero-liquid discharge (ZLD) systems, air pollution control, and sustainable green chemical processes that meet environmental standards.',
+    tools: ["GPS-X", "Aspen Plus", "AutoCAD", "EHS Compliance"],
+    duration: '3 Months',
+    sessions: '36 Sessions',
+    credit: '3 Credits',
+    thumbBg: 'linear-gradient(135deg, #093223 0%, #157E58 100%)',
+    formula: ["Analyze", "Design", "Model", "Scale", "Comply"],
+    formulaColors: ["#10B981", "#0E9E6D", "#0B825A", "#086546", "#064E35"],
+    phases: [
+      {
+        num: 'P1', color: '#10B981',
+        label: 'Month 1 · ETP Foundations',
+        name: 'Effluent Characterization & Physical Processes',
+        topics: ["Industrial wastewater parameters — COD, BOD, TSS, TDS, pH", "ETP process flowsheet design — physical & chemical steps", "Design of screen chambers, grit channels, oil traps", "Coagulation-flocculation reactions & clarifier sizing", "Chemical dosing calculations, neutralisation tank design", "Sludge thickener, filter press sizing calculations"],
+        projects: ["ETP process design report and mass balance for a textile mill"]
+      },
+      {
+        num: 'P2', color: '#0B825A',
+        label: 'Month 2 · Biological Treatment & Modeling',
+        name: 'Biological Reactors & GPS-X Simulation',
+        topics: ["Kinetics of biological growth — Monod equation parameters", "Activated sludge process (ASP) reactor calculations", "Moving Bed Bio-Reactor (MBBR) & SBR systems design", "GPS-X software setup for wastewater simulation", "Steady-state simulation of biological bioreactors", "Aeration system requirements & dissolved oxygen calculations"],
+        projects: ["GPS-X biological simulator model of an ASP plant"]
+      },
+      {
+        num: 'P3', color: '#064E35',
+        label: 'Month 3 · Advanced Treatment & Green Design',
+        name: 'Zero-Liquid Discharge & Green Processes',
+        topics: ["Membrane filtration — Ultrafiltration, Reverse Osmosis sizing", "Multi-Effect Evaporator (MEE) & ATFD sizing for ZLD", "EHS compliance, environmental clearance documentation in India", "Green chemical process principles — atom economy, life cycle", "Carbon footprint calculation methodologies", "Sustainable raw material substitution, process efficiency improvements"],
+        projects: ["Zero-Liquid Discharge (ZLD) design layout and mass balance report"]
+      }
+    ],
+    outcomes: [
+      {icon: '💧', title: 'ETP Process Design', desc: 'Develop wastewater plant flowsheets and size physical, chemical, and biological reactors.'},
+      {icon: '🧬', title: 'Bio-Reactor Modeling', desc: 'Simulate activated sludge and MBBR bio-treatment efficiency in GPS-X.'},
+      {icon: '🍃', title: 'Environmental Compliance', desc: 'Model Zero-Liquid Discharge systems and compile EHS audit documentation.'}
+    ],
+    careers: ["Environmental Process Engineer", "ETP Design Engineer", "Water Treatment Consultant", "EHS Compliance Specialist"]
+  },
+  {
+    id: 'chem3',
+    track: 'chem',
+    title: 'Petroleum Refinery & Petrochemical Processes',
+    badge: 'Foundation Program',
+    desc: 'Model crude distillation columns, FCC reactors, hydrotreaters, steam reformers, and petrochemical synthesis pipelines.',
+    tools: ["Aspen HYSYS", "Petro-Sim", "Excel"],
+    duration: '3 Months',
+    sessions: '36 Sessions',
+    credit: '3 Credits',
+    thumbBg: 'linear-gradient(135deg, #031D14 0%, #0A5038 100%)',
+    formula: ["Characterize", "Simulate", "Fractionate", "React", "Refine"],
+    formulaColors: ["#10B981", "#0E9E6D", "#0B825A", "#086546", "#064E35"],
+    phases: [
+      {
+        num: 'P1', color: '#10B981',
+        label: 'Month 1 · Crude Characterization',
+        name: 'Crude Assay & HYSYS Setup',
+        topics: ["Crude oil composition, TBP, ASTM distillation assays", "Importing assay data into Aspen HYSYS petroleum interface", "Generating pseudocomponents and light end fractions", "Thermodynamic models for oil refining (Peng-Robinson, Chao-Seader)", "Atmospheric Distillation Unit (ADU) flowsheets configuration"],
+        projects: ["Assay characterization and true boiling point curve modeling in HYSYS"]
+      },
+      {
+        num: 'P2', color: '#0B825A',
+        label: 'Months 2–3 · Refining',
+        name: 'Secondary Conversion & Gas Processing',
+        topics: ["Vacuum Distillation Unit (VDU) modeling & sizing", "Hydrotreating and catalytic reforming reactions", "Fluid Catalytic Cracking (FCC) unit dynamics", "Petrochemical building blocks — ethylene & propylene synthesis", "Refinery utility systems and steam balance models"],
+        projects: ["Simulation of ADU column with side-strippers and product returns"]
+      }
+    ],
+    outcomes: [
+      {icon: '⛽', title: 'Refinery Simulation', desc: 'Characterize raw crude assays and simulate atmospheric distillation columns.'},
+      {icon: '🔥', title: 'Conversion Reactor Modeling', desc: 'Model secondary cracking and reforming reactors in petroleum flowsheets.'},
+      {icon: '📊', title: 'Petrochemical Synthesis', desc: 'Evaluate process loops for main monomers production.'}
+    ],
+    careers: ["Refinery Process Engineer", "HYSYS Modeler", "Petrochemical Specialist", "Consulting Engineer"]
+  },
+  {
+    id: 'chem4',
+    track: 'chem',
+    title: 'Polymer Engineering & Plastics Technology',
+    badge: 'Specialist Program',
+    desc: 'Understand polymerization reactors, polymer extrusion/injection molding process design, material characterization, and biodegradable plastics.',
+    tools: ["Moldflow", "SolidWorks", "Aspen Plus"],
+    duration: '3 Months',
+    sessions: '36 Sessions',
+    credit: '3 Credits',
+    thumbBg: 'linear-gradient(135deg, #051F14 0%, #0E5437 100%)',
+    formula: ["Synthesize", "Characterize", "Model", "Mold", "Test"],
+    formulaColors: ["#10B981", "#0E9E6D", "#0B825A", "#086546", "#064E35"],
+    phases: [
+      {
+        num: 'P1', color: '#10B981',
+        label: 'Month 1 · Polymerization',
+        name: 'Polymer Chemistry & Reactor Sizing',
+        topics: ["Step-growth & chain-growth polymerization kinetics", "Industrial reactors for polymer production (CSTR, batch, loop)", "Molecular weight distribution (MWD) calculations", "Characterization methods — DSC, TGA, melt flow index (MFI)", "Properties of thermoplastic and thermosetting materials"],
+        projects: ["Sizing calculation and kinetics simulation for a polystyrene reactor loop"]
+      },
+      {
+        num: 'P2', color: '#0B825A',
+        label: 'Months 2–3 · Molding',
+        name: 'Extrusion & Moldflow Simulation',
+        topics: ["Polymer extrusion screw geometry & die operations", "Injection molding machine parameters & defects", "Designing plastic parts using SolidWorks draft guidelines", "Autodesk Moldflow mold filling and cooling simulations", "Biodegradable polymer compounding techniques"],
+        projects: ["Moldflow simulation and gate location optimize report for a plastic component"]
+      }
+    ],
+    outcomes: [
+      {icon: '🧪', title: 'Reactor Kinetics', desc: 'Calculate kinetics parameters and size polymerization reactors.'},
+      {icon: '📐', title: 'Molding Simulations', desc: 'Run mold filling and warp simulations in Moldflow to optimize processes.'},
+      {icon: '♻️', title: 'Green Polymers', desc: 'Determine specs and compounding recipes for bio-plastics.'}
+    ],
+    careers: ["Polymer Design Engineer", "Molding Consultant", "Compounding Chemist", "Process Sizing Specialist"]
+  },
+  {
+    id: 'chem5',
+    track: 'chem',
+    title: 'Biochemical Engineering & Bioprocess Design',
+    badge: 'Specialist Program',
+    desc: 'Model fermenters, bioreactors, separation process scale-up (chromatography, filtration), and enzymatic pathway reaction kinetics.',
+    tools: ["SuperPro Designer", "MATLAB", "Aspen Plus"],
+    duration: '3 Months',
+    sessions: '36 Sessions',
+    credit: '3 Credits',
+    thumbBg: 'linear-gradient(135deg, #021C11 0%, #06472D 100%)',
+    formula: ["Enzyme", "Culture", "Ferment", "Filter", "Purify"],
+    formulaColors: ["#10B981", "#0E9E6D", "#0B825A", "#086546", "#064E35"],
+    phases: [
+      {
+        num: 'P1', color: '#10B981',
+        label: 'Month 1 · Bioreactors',
+        name: 'Enzyme Kinetics & Fermenter Sizing',
+        topics: ["Michaelis-Menten enzyme kinetics equations", "Cell growth kinetics — Monod models, yield factors", "Aseptic design, sterilization cycles calculations", "Bioreactor geometry design — stirred tank, airlift, packed bed", "Aeration and agitation power consumption sizing"],
+        projects: ["Sizing and oxygen mass transfer calculations for 10,000L fermenter"]
+      },
+      {
+        num: 'P2', color: '#0B825A',
+        label: 'Months 2–3 · Downstream',
+        name: 'Downstream Purification & SuperPro Design',
+        topics: ["Cell disruption techniques (homogenizers, microfluidizers)", "Centrifugation and rotary vacuum filtration sizing", "Industrial chromatography column modeling", "SuperPro Designer bioprocess flowsheet modeling", "Economic evaluations and scheduling of batch bioprocesses"],
+        projects: ["SuperPro simulation model for the production of penicillin batch"]
+      }
+    ],
+    outcomes: [
+      {icon: '🧬', title: 'Bioreactor Kinetics', desc: 'Design batch/fed-batch fermentation runs and compute oxygen transfer rates.'},
+      {icon: '💧', title: 'Downstream Sizing', desc: 'Size filtration, centrifugation, and chromatography columns for purification.'},
+      {icon: '📊', title: 'Batch Process Modeling', desc: 'Construct complete bio-pharmaceutical process models in SuperPro Designer.'}
+    ],
+    careers: ["Bioprocess Engineer", "Biotech Process Analyst", "Downstream Sizing Chemist", "Simulation Specialist"]
+  }
+];
+
+let activeTrack = 'all';
+const trackLabels = {
+  civil: '🏗️ Civil',
+  mech: '⚙️ Mechanical',
+  cse: '💻 CSE',
+  eee: '⚡ Electrical',
+  ece: '🔌 Electronics',
+  comm: '📡 Comm.',
+  chem: '⚗️ Chemical'
+};
+
+const fullTrackNames = {
+  civil: '🏗️ Civil Engineering',
+  mech: '⚙️ Mechanical Engineering',
+  cse: '💻 Computer Science Engineering',
+  eee: '⚡ Electrical Engineering',
+  ece: '🔌 Electronics Engineering',
+  comm: '📡 Communication Engineering',
+  chem: '⚗️ Chemical Engineering'
+};
+
+const trackImages = {
+  civil: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=600&q=80',
+  mech:  'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80',
+  cse:   'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80',
+  eee:   'https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=600&q=80',
+  ece:   'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80',
+  comm:  'https://images.unsplash.com/photo-1517059224940-d4af9eec41b7?auto=format&fit=crop&w=600&q=80',
+  chem:  'https://images.unsplash.com/photo-1513828742140-ccaa34f3be09?auto=format&fit=crop&w=600&q=80'
+};
+
+const programImages = {
+  /* ── CIVIL ── */
+  c1:    'https://images.unsplash.com/photo-1587502537745-84b86da1204f?auto=format&fit=crop&w=600&q=80', // structural steel
+  c2:    'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80', // BIM blueprint
+  c3:    'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=600&q=80', // AutoCAD site infrastructure
+  c4:    'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80', // construction project
+  c5:    'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80', // geotechnical / soil drilling
+  /* ── MECHANICAL ── */
+  m1:    'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80', // ANSYS FEA simulation
+  m2:    'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=600&q=80', // FE mesh pre-processing
+  m3:    'https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&w=600&q=80', // product CAD design
+  m4:    'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=600&q=80', // CFD fluid flow
+  m5:    'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=600&q=80', // CNC machining
+  /* ── CSE ── */
+  cse1:  'https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80', // full-stack code
+  cse2:  'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?auto=format&fit=crop&w=600&q=80', // AI neural network
+  cse3:  'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600&q=80', // cybersecurity
+  cse4:  'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80', // AWS cloud
+  cse5:  'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=600&q=80', // blockchain
+  /* ── ELECTRICAL (EEE) ── */
+  eee1:  'https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=600&q=80', // EV battery pack
+  eee2:  'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=600&q=80', // smart grid / power lines
+  eee3:  'https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=600&q=80', // industrial automation PLC
+  eee4:  'https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=600&q=80', // power electronics inverter
+  eee5:  'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80', // electrical machine motor
+  /* ── ELECTRONICS (ECE) ── */
+  ece1:  'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80', // VLSI semiconductor chip
+  ece3:  'https://images.unsplash.com/photo-1516110833967-0b5716ca1387?auto=format&fit=crop&w=600&q=80', // signal waveform DSP
+  ece5:  'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80', // PCB circuit board close-up
+  /* ── COMMUNICATION (COMM) ── */
+  ece2:  'https://images.unsplash.com/photo-1517059224940-d4af9eec41b7?auto=format&fit=crop&w=600&q=80', // embedded IoT board
+  ece4:  'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=600&q=80', // 5G wireless tower
+  /* ── CHEMICAL ── */
+  chem1: 'https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?auto=format&fit=crop&w=600&q=80', // chemical process piping plant
+  chem2: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=600&q=80', // water treatment facility
+  chem3: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=600&q=80', // petroleum refinery
+  chem4: 'https://images.unsplash.com/photo-1614935151651-0bea6508db6b?auto=format&fit=crop&w=600&q=80', // polymer plastics lab
+  chem5: 'https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&w=600&q=80'  // bioprocess lab
+};
+
+function renderPrograms() {
+  const grid = document.getElementById('programsGrid');
+  if (!grid) return;
+  const filtered = activeTrack === 'all' ? programs : programs.filter(p => p.track === activeTrack);
+  grid.innerHTML = filtered.map(p => {
+    const imageUrl = programImages[p.id] || trackImages[p.track] || trackImages.civil;
+    const titleParts = p.title.split(/\s*[&]\s*/);
+    const mainTitle = titleParts[0].trim();
+    const subTitle = titleParts[1] ? `<div class="prog-title-split">${titleParts[1].trim()}</div>` : '';
+    return `
+      <div class="prog-card" onclick="openProgram('${p.id}')">
+        <div class="prog-img-wrap">
+          <img src="${imageUrl}" alt="${p.title}">
+          <div class="prog-badge">
+            <span class="badge-dot"></span>
+            Limited seats
+          </div>
+        </div>
+        <div class="prog-eyebrow">Explore Program</div>
+        <div class="prog-title">${mainTitle}</div>
+        ${subTitle}
+        <div class="prog-sub">${p.desc.substring(0, 90)}...</div>
+        <div class="prog-meta-row">
+          <div class="prog-meta-item cert">
+            <span class="cert-check">✓</span> Certification
+          </div>
+          <div class="prog-meta-item">
+            <span>🕒 ${p.duration || '2-3 Months'}</span>
+          </div>
+        </div>
+        <button class="prog-btn">View Program</button>
+      </div>
+    `;
+  }).join('');
+}
+
+function filterPrograms(track, btn) {
+  activeTrack = track;
+  document.querySelectorAll('.tf-btn').forEach(b => b.classList.remove('active-all','active-civil','active-mech','active-cse','active-eee','active-ece','active-comm','active-chem'));
+  if (btn) {
+    btn.classList.add('active-' + track);
+  }
+  renderPrograms();
+  document.getElementById('programs').scrollIntoView({behavior:'smooth'});
+}
+
+function openProgram(id) {
+  const p = programs.find(x => x.id === id);
+  if (!p) return;
+  const trackClass = p.track;
+  const phaseColors = p.formulaColors || [];
+
+  const formulaHTML = p.formula.map((step, i) => `
+    <div class="pp-fs">
+      <div class="pp-fs-circle" style="background:${phaseColors[i] || '#1E6FD9'}">${i+1}</div>
+      <h5>${step}</h5>
+    </div>
+    ${i < p.formula.length - 1 ? '<div class="pp-arrow">→</div>' : ''}
+  `).join('');
+
+  const phasesHTML = p.phases.map(ph => `
+    <div class="curr-phase">
+      <div class="curr-phase-header">
+        <div class="curr-phase-num" style="background:${ph.color}">${ph.num}</div>
+        <div>
+          <div class="curr-phase-label">${ph.label}</div>
+          <div class="curr-phase-name">${ph.name}</div>
+        </div>
+      </div>
+      <ul class="curr-topics">${ph.topics.map(t => `<li>${t}</li>`).join('')}</ul>
+      <div class="curr-projects">
+        <div class="curr-projects-label">Projects Built</div>
+        ${ph.projects.map(pr => `<div class="curr-project-item">${pr}</div>`).join('')}
+      </div>
+    </div>
+  `).join('');
+
+  const outcomesHTML = p.outcomes.map(o => `
+    <div class="pp-outcome">
+      <div class="pp-outcome-icon">${o.icon}</div>
+      <h5>${o.title}</h5>
+      <p>${o.desc}</p>
+    </div>
+  `).join('');
+
+  const careersHTML = p.careers.map(c => `<div class="pp-career">${c}</div>`).join('');
+
+  document.getElementById('ppContent').innerHTML = `
+    <div class="pp-hero ${trackClass}">
+      <div class="pp-hero-bp"></div>
+      <div class="pp-hero-glow"></div>
+      <div class="pp-hero-img-wrap">
+        <img src="${programImages[p.id] || trackImages[p.track] || trackImages.civil}" alt="${p.title}" class="pp-hero-img">
+        <div class="pp-hero-img-overlay"></div>
+      </div>
+      <div class="pp-hero-content">
+        <div class="pp-track-tag">${fullTrackNames[trackClass] || 'Engineering'} · ${p.badge}</div>
+        <h1>${p.title}</h1>
+        <p>${p.desc}</p>
+        <div class="pp-hero-stats">
+          <div class="pp-hs"><div class="n">${p.duration}</div><div class="l">Duration</div></div>
+          <div class="pp-hs"><div class="n">${p.sessions}</div><div class="l">Live Sessions</div></div>
+          <div class="pp-hs"><div class="n">${p.credit}</div><div class="l">Academic Credits</div></div>
+        </div>
+        <div class="pp-hero-tools" style="margin-top:24px">
+          ${p.tools.map(t => `<div class="pp-tool-badge">${t}</div>`).join('')}
+        </div>
+      </div>
+    </div>
+    <div class="pp-body">
+      <div class="pp-formula">
+        <div class="pp-formula-title">The TechM4 Learning Formula</div>
+        <div class="pp-formula-steps">${formulaHTML}</div>
+      </div>
+
+      <div class="pp-section-title">Program Curriculum</div>
+      <div class="curriculum-grid">${phasesHTML}</div>
+
+      <div class="pp-section-title">What You'll Gain</div>
+      <div class="pp-outcomes" style="margin-bottom:40px">${outcomesHTML}</div>
+
+      <div class="pp-section-title">Career Paths After This Program</div>
+      <div class="pp-careers" style="margin-bottom:40px">${careersHTML}</div>
+
+      <div class="pp-cta">
+        <h3>Interested in This Program?</h3>
+        <p>Reach out to our team to learn more about enrollment, institute partnerships, MoU collaborations, or credit-based integration with your curriculum.</p>
+        <div class="pp-cta-btns">
+          <a href="/contact" class="btn-primary" style="border-radius:8px">Contact Our Team →</a>
+          <a href="https://wa.me/916301814246" target="_blank" class="btn-ghost" style="border:1.5px solid rgba(11,31,58,.2);color:var(--ink);border-radius:8px;padding:13px 28px;text-decoration:none;font-weight:600;font-size:.9rem;display:inline-flex;align-items:center;gap:8px;transition:all .25s">WhatsApp Us</a>
+        </div>
+      </div>
+    </div>
+  `;
+
+  document.getElementById('progPanel').classList.add('open');
+  document.getElementById('progPanel').scrollTop = 0;
+  document.body.style.overflow = 'hidden';
+}
+
+function closeProgPanel() {
+  document.getElementById('progPanel').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// Close panel with ESC key
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeProgPanel(); });
+
+</script>
+<script src="../assets/js/site-init.js"></script>
+<script>
+// ===== INIT =====
+renderPrograms();
+// Set initial filter button state
+document.querySelector('.tf-btn').classList.add('active-all');
+</script>
+</body>
+</html>
