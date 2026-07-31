@@ -448,5 +448,20 @@
     "export_markets": "USA NFPA 70E + NEC 110.16, EU IEC 62271-200, Saudi ARAMCO SAES-P-100, Australia",
     "tech_stack": "Osram SFH 2701 optical + ACS758 CT + STM32F4 \\<1ms trip + IEEE 1584 engine + NFPA label",
     "website_url": "techm4.in/products/arcflash-guard"
+  },
+  {
+    "num": 31,
+    "id": "IG1",
+    "name": "IGNITE AI",
+    "category": "Pure Software SaaS & AI Platforms",
+    "cat_code": "D",
+    "tagline": "2-Day 1-Night Immersive AI Bootcamp & Transformation Program for UG & PG Students in AP & TS",
+    "msme_theme": "Skill India & AI Transformation",
+    "india_market": "All UG & PG engineering, degree, & management students across Telangana & Andhra Pradesh",
+    "saas_price": "**₹4,099 registration fee**",
+    "loss_addressed": "Skill gap in practical AI, prompt engineering & 20+ industry AI tools among graduating students",
+    "export_markets": "Global student skilling & AI readiness certification programs",
+    "tech_stack": "ChatGPT + Prompt Engineering + 20+ Industry AI Tools + AI for Coding & Development",
+    "website_url": "https://pages.razorpay.com/pl_TJ0yNF4mVuy1kI/view"
   }
 ]
